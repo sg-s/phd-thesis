@@ -588,6 +588,13 @@ acro{PID}{Photo Ionization Detector}
 
 \begin_layout Plain Layout
 
+  
+\backslash
+acro{LIF}{Linear Integrate and Fire}
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 end{acronym}              

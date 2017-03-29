@@ -999,7 +999,14 @@ f).
  the response to the standard deviation of the stimulus.
  This measure yielded similar values of ORN gain, and also decreased as
  a power law with exponent -1 (Fig.
- 2 – figure supplement 1b).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law-supp"
+
+\end_inset
+
+b).
  This exponent is consistent with the Weber-Fechner Law, which postulates
  that the just noticeable difference between two stimuli is inversely proportion
 al to the stimulus magnitude 
@@ -1027,7 +1034,7 @@ g).
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1301,8 +1308,8 @@ To determine if similar gain-control relative to mean signal intensity was
  used ecologically relevant odorants from three different functional groups
  (ketones: 2-butanone, alcohols: 1-pentanol, esters: isoamyl acetate) in
  various combinations.
- In all 5 cases, the neurons decreased gain with increasing odorant concentratio
-n, and obeyed a roughly inverse scaling (Fig.
+ In all five cases, the neurons decreased gain with increasing odorant concentra
+tion, and obeyed a roughly inverse scaling (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1444,8 +1451,15 @@ ORNs decrease gain with stimulus variance.
  (b) Distributions of stimulus intensity for the epochs of low (blue) and
  high (red) variance.
  (c) ab3A firing rate responses corresponding to the trials shown in (a)
- following the switch from low to high variance, which takes place at t=0
- s and from high to low, which takes place at t=5 s.
+ following the switch from low to high variance, which takes place at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ s and from high to low, which takes place at 
+\begin_inset Formula $t=5$
+\end_inset
+
+ s.
  (d) Probability distributions of the response.
  (e) Solid lines are ORN input-output curves computed from a single filter
  from both low (blue) and high (red) variance epochs.
@@ -1460,7 +1474,11 @@ ORNs decrease gain with stimulus variance.
  Dashed lines indicate crossover times of stimulus contrast and instantaneous
  gain.
  The delay is ~130 ms.
- n = 248 trials from 5 ab3A ORNs in 2 flies.
+ 
+\begin_inset Formula $n=248$
+\end_inset
+
+ trials from 5 ab3A ORNs in 2 flies.
 \end_layout
 
 \end_inset
@@ -1594,10 +1612,21 @@ Variance gain control in Gaussian stimuli.
  (by construction), the low variance trials also tend to have slightly higher
  means.
  (b) ORN gain estimated by dividing the standard deviation of the response
- by the standard deviation of the stimulus, for each trial, vs.
+ by the standard deviation of the stimulus, for each trial, 
+\emph on
+vs.
+
+\emph default
  the standard deviation of the stimulus (cf.
  Fig.
- 3f).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+f).
  (c) Input-output curves for the ab3A ORN uncorrected for the change in
  the mean stimulus.
  The blue curve intersects the red curve, and is steeper than the red curve,
@@ -1613,14 +1642,22 @@ Variance gain control in Gaussian stimuli.
  Therefore, we averaged all filters (black) and used that averaged filter
  to project all the stimulus in this dataset.
  (f) Coefficient of determination (
-\begin_inset Formula $\rho$
+\begin_inset Formula $r^{2}$
 \end_inset
 
-) vs.
+) 
+\emph on
+vs
+\emph default
+.
  the standard deviation of the stimulus.
- ~80% of trials had >.8.
+ ~80% of trials had 
+\begin_inset Formula $r^{2}>0.8$
+\end_inset
+
+.
  (g) Coefficient of determination (
-\begin_inset Formula $\rho$
+\begin_inset Formula $r^{2}$
 \end_inset
 
 ) 
@@ -1806,7 +1843,21 @@ Mean gain control occurs primarily at transduction, and variance gain control
  Projections of stimulus are divided by the mean stimulus in each trial
  to remove the small effect Weber-Fechner gain scaling.
  Data in this figure is same as in Figs.
- 2 and 3.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+.
  (a,c,e,g) Mean across all trials.
  (b,d,f,h) Individual trials.
  
@@ -1996,7 +2047,11 @@ Mean and variance gain control at transduction and spiking.
  (e-f) Comparison of gain changes at transduction and firing due to changes
  in stimulus variance.
  (e) Trial-wise overall gain fold change (otal = ORN gain at low variance/ORN
- gain at high variance) vs.
+ gain at high variance) 
+\emph on
+vs
+\emph default
+.
  trial-wise product of gain fold changes at transduction () and firing ().
  (f) Comparison of average fold change in gain due to changing stimulus
  variance.
@@ -2148,11 +2203,23 @@ Intracellular Calcium increases with odor concentration.
  Odorant was applied for 5 second from t=5s to t=10s.
  (b) GCamp6 fluorescence fold change as a function of peak stimulus, for
  ROIs over ab3 sensilla (red) and for control ROIs (black).
- (c) Pre-stimulus fluorescence vs.
+ (c) Pre-stimulus fluorescence 
+\emph on
+vs
+\emph default
+.
  peak stimulus of odorant stimulus.
- (d) Rising timescale of Calcium signals in (a) vs.
+ (d) Rising timescale of Calcium signals in (a) 
+\emph on
+vs
+\emph default
+.
  peak stimulus (see Methods).
- (e) Off timescale of Calcium signals in (a) vs.
+ (e) Off timescale of Calcium signals in (a) 
+\emph on
+vs
+\emph default
+.
  peak stimulus (see Methods).
  
 \end_layout
@@ -2171,7 +2238,7 @@ Intracellular Calcium increases with odor concentration.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2236,20 +2303,40 @@ Intracellular Calcium does not change with stimulus variance.
 \emph default
 Intracellular Calcium does not change with stimulus variance.
  (a) Odorant stimulus applied, consisting of alternating 5 s epochs of low
- variance (0-5s) and high variance (5-10s).
+ variance (0 - 5 s) and high variance (5 - 10 s).
  (b) Relative fold change of GCamp6 fluorescence from ROIs over ab3 sensilla
  in w; 22a-GAL4/+; UAS-GCamp6/+ flies.
  (c) Relative fold change of GCamp6 fluorescence from ROIs over control
  regions outside sensilla in w; 22a-GAL4/+; UAS-GCamp6/+ flies.
- (d) Mean stimulus vs.
+ (d) Mean stimulus 
+\emph on
+vs
+\emph default
+.
  standard deviation of stimulus for low variance epochs (blue) and high
  variance epochs (red).
  (e) Relative fold change in GCamp6 fluorescence from ROIs over ab3 sensilla
  between high-variance epochs and low-variance epochs.
- No significant change was observed (t=test, p=0.52).
+ No significant change was observed (
+\emph on
+t
+\emph default
+-test, 
+\begin_inset Formula $p=0.52$
+\end_inset
+
+).
  (f) Relative fold change in GCamp6 fluorescence from control ROIs between
  high-variance epochs and low-variance epochs.
- No significant change was observed (t=test, p=0.71).
+ No significant change was observed (
+\emph on
+t
+\emph default
+-test, 
+\begin_inset Formula $p=0.71$
+\end_inset
+
+).
  
 \end_layout
 
@@ -2373,7 +2460,7 @@ a-d).
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2439,24 +2526,48 @@ Modularity of gain control revealed by optogenetic stimulation.
  ab3A ORNs in w; 22a-GAL4/+; UAS-Chrimson/+ flies can be activated by ethyl
  acetate odorant or by red light.
  (a-b) Fluctuating odor foreground and constant light background.
- (a) Transduction gain to fluctuating odor vs.
+ (a) Transduction gain to fluctuating odor .
  background light stimulation intensity.
- (b) Overall ORN gain to fluctuating odor stimulus vs.
+ (b) Overall ORN gain to fluctuating odor stimulus 
+\emph on
+vs.
+
+\emph default
  background light stimulation intensity.
- (b, inset) ORN firing rate vs.
+ (b, inset) ORN firing rate 
+\emph on
+vs
+\emph default
+.
  background light intensity.
  (c-d) Fluctuating light foreground and constant odor background stimulus.
  (c) Input-output curves to fluctuating light stimulus for increasing background
  odor (lighter colors indicate larger odor background).
  (d) ORN gain is invariant with background odor concentration.
- (d, inset) Odor-induced firing gain vs.
+ (d, inset) Odor-induced firing gain 
+\emph on
+vs
+\emph default
+.
  background odor concentration.
  (e-f) Fluctuating light stimulus with different variances.
  (e) Input-output curves for high (red) and low (blue) variance light stimuli.
  (f) ORN gain as a function of the standard deviation of the light stimulus.
- (a-b) n= 75 trials from 13 ORNs.
- (c-d) n= 64 trials from 5 ORNs.
- (e-f) n= 21 trials from 3 ORNs.
+ (a-b) 
+\begin_inset Formula $n=75$
+\end_inset
+
+ trials from 13 ORNs.
+ (c-d) 
+\begin_inset Formula $n=64$
+\end_inset
+
+ trials from 5 ORNs.
+ (e-f) 
+\begin_inset Formula $n=21$
+\end_inset
+
+ trials from 3 ORNs.
  Lines link trials from a single ORN.
  
 \end_layout
@@ -2636,7 +2747,11 @@ Adaptation to the mean slows down LFP, but not firing rate.
  firing rate responses for low (purple) and high (yellow) background stimuli.
  (c) Stimulus autocorrelation functions for low (purple) and high (yellow)
  background stimuli.
- (d-g) LFP and firing rate lags w.r.t to the stimulus vs.
+ (d-g) LFP and firing rate lags w.r.t to the stimulus 
+\emph on
+vs.
+
+\emph default
  the mean stimulus for various odor-receptor combinations.
  LFP lags increase with mean stimulus, while firing rate lags do not.
  (h) Firing lags of ab3A ORNs expressing Chrimson channels 
@@ -2841,30 +2956,50 @@ Variance gain control does not change response kinetics.
 \begin_inset Formula $\nicefrac{1}{e}$
 \end_inset
 
-) vs.
+) 
+\emph on
+vs
+\emph default
+.
  the standard deviation of the stimulus, for each trial.
  (c) Cross correlation functions from stimulus to LFP.
  The cross correlation functions are very similar between high (red) and
  low (blue) variance epochs.
  (d) LFP lag w.r.t the stimulus, estimated from the location of the peak cross-cor
-relation, vs.
+relation, 
+\emph on
+vs
+\emph default
+.
  standard deviation of the stimulus.
  No significant change in lag was observed (
 \begin_inset Formula $p=0.4$
 \end_inset
 
-, t-test).
+, 
+\emph on
+t
+\emph default
+-test).
  (e) Cross correlation functions from stimulus to firing rate.
  The cross correlation functions are very similar between high (red) and
  low (blue) variance epochs.
  (f) Firing rate lag w.r.t the stimulus, estimated from the location of the
- peak cross-correlation, vs.
+ peak cross-correlation, 
+\emph on
+vs
+\emph default
+.
  standard deviation of the stimulus.
  No significant change in lag was observed (
 \begin_inset Formula $p=0.133$
 \end_inset
 
-, t-test).
+, 
+\emph on
+t
+\emph default
+-test).
  
 \end_layout
 
@@ -2919,11 +3054,19 @@ The goal of this work was to study how ORNs encode naturalistic odor signals,
  characterizing how gain control in ORNs is modulated dynamically in response
  to stimuli.
  By using precisely controlled, repeatable odorant stimuli, and linear modelling
-, we found that: (1) ORN gain varies dynamically during responses to naturalisti
-c stimuli, suppressing responses to whiffs following earlier whiffs (Fig.
+, we found that: 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+ORN gain varies dynamically during responses to naturalistic stimuli, suppressin
+g responses to whiffs following earlier whiffs (Fig.
  1).
- (2) Gain varies inversely with the mean stimulus (Weber-Fechner Law) and
- can also decrease with increasing stimulus variance (Figs.
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+Gain varies inversely with the mean stimulus (Weber-Fechner Law) and can
+ also decrease with increasing stimulus variance (Figs.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2939,8 +3082,12 @@ reference "fig:variance"
 \end_inset
 
 ).
- (3) Variance gain control occurs at both transduction and spiking, while
- mean gain control occurs only at transduction (Fig.
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+Variance gain control occurs at both transduction and spiking, while mean
+ gain control occurs only at transduction (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2956,10 +3103,14 @@ reference "fig:chrimson"
 \end_inset
 
 ).
- (4) While gain control slows stimulus-to-transduction kinetics, this is
- compensated for by a corresponding speed up of transduction-to-spiking
- kinetics, therefore maintaining the stimulus-to-firing rate kinetics relatively
- unaffected (Fig.
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+While gain control slows stimulus-to-transduction kinetics, this is compensated
+ for by a corresponding speed up of transduction-to-spiking kinetics, therefore
+ maintaining the stimulus-to-firing rate kinetics relatively unaffected
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2968,7 +3119,11 @@ reference "fig:kinetics"
 \end_inset
 
 ).
- Finally, we proposed two simple models that reproduce several key features
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+Finally, we proposed two simple models that reproduce several key features
  of LFP and firing rate response and gain control (Fig.
  7).
 \end_layout
@@ -3045,8 +3200,8 @@ key "Hallem:2006iu"
 \end_inset
 
 ; however, we found that with their compressive gain control, ORNs maintained
- firing rates between 0-50 Hz to fluctuating odor stimuli, even with a ten-fold
- increase in the mean stimulus.
+ firing rates between 0 - 50 Hz to fluctuating odor stimuli, even with a
+ ten-fold increase in the mean stimulus.
  The ORNs’ postsynaptic partners, the projection neurons (PNs) 
 \begin_inset CommandInset citation
 LatexCommand citep

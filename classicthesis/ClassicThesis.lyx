@@ -7,7 +7,6 @@
 \textclass classicthesis
 \begin_preamble
 \addbibresource{library.bib}
-\addbibresource[label=ownpubs]{AMiede_Publications.bib}
 
 \ExecuteBibliographyOptions{backref=true,isbn=false}
 
@@ -354,7 +353,7 @@ Introduction
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter01.lyx"
+filename "Chapter01_introduction.lyx"
 
 \end_inset
 
@@ -382,13 +381,23 @@ Errem omnium ea per, pro congue populo ornatus cu, ex qui dicant nemore
 \end_layout
 
 \begin_layout Part
-Odorant Stimulus Measurement and Delivery
+Methods
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter02.lyx"
+filename "Chapter02_olfactometers.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter03_recording_from_orns.lyx"
 
 \end_inset
 
@@ -402,7 +411,17 @@ Response and adaptation in Olfactory Receptor Neurons
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter03.lyx"
+filename "Chapter04_ln_modelling.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter05_gain_control.lyx"
 
 \end_inset
 
@@ -416,7 +435,7 @@ Software
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter04.lyx"
+filename "Chapter06_kontroller.lyx"
 
 \end_inset
 

@@ -72,7 +72,78 @@
 \begin_body
 
 \begin_layout Chapter
-Examples
+Measuring and controlling and Odorant Stimuli
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+sensory systems – their study – need to control input signals and measure
+ them.
+ black box characteristion.
+ outputs and inputs measured.
+ 
+\end_layout
+
+\begin_layout Standard
+challenges in olfaction – accessability.
+ how to deliver and measure odorant stimuli.
+ 
+\end_layout
+
+\begin_layout Standard
+how have people done it before – zoo of odor delivery systems.
+ literature review.
+ refer to figure with zoo? advantages and disadvantages of different methods.
+ 
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+A simple procedure to calibrate the PID to any odorant
+\end_layout
+
+\begin_layout Subsection
+How to deliver pulses of odorant with different intensities 
+\end_layout
+
+\begin_layout Subsection
+How to deliver fluctuating odorant signals 
+\end_layout
+
+\begin_layout Subsection
+How to deliver Gaussian odorant signals with different means 
+\end_layout
+
+\begin_layout Subsection
+How to deliver Gaussian odorant signals with different varianes
+\end_layout
+
+\begin_layout Subsection
+How to deliver reproducible naturalistic signals 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Subsection
+Flux or concentration detectors?
+\end_layout
+
+\begin_layout Standard
+Are PIDs flux or conc.
+ detectors? What about neurons? refer to kaissling papers.
+ 
+\end_layout
+
+\begin_layout Standard
+Results
 \end_layout
 
 \begin_layout Standard
@@ -101,6 +172,14 @@ key "taleb:2012"
  In eos meis nominavi, liber soluta vim cu.
  Sea commune suavitate interpretaris eu, vix eu libris efficiantur.
  
+\end_layout
+
+\begin_layout Subsection
+Delivering odors and mixtures of odorants
+\end_layout
+
+\begin_layout Standard
+challenges in measurering differnet components individually 
 \end_layout
 
 \begin_layout Section
@@ -223,7 +302,7 @@ Note: The content of this chapter is just some dummy text.
 \begin_layout Standard
 Errem omnium per, pro 
 \begin_inset Flex CT - acronym
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -232,7 +311,7 @@ UML
 
 \end_inset
 
- congue populo ornatus cu, ex qui dicant nemore melius.
+ congue UML populo ornatus cu, ex qui dicant nemore melius.
  No pri diam iriure euismod.
  Graecis eleifend appellantur quo id.
  Id corpora inimicus nam, facer nonummy ne pro, kasd repudiandae ei mei.
@@ -390,33 +469,6 @@ Personas Initialmente
 Uno pote summario methodicamente al, uso debe nomina hereditage ma.
  Iala rapide ha del, ma nos esser parlar.
  Maximo dictionario sed.
-\end_layout
-
-\begin_layout Subsubsection
-A Subsubsection
-\end_layout
-
-\begin_layout Standard
-Deler utilitate methodicamente con se.
- Technic scriber uso in, via appellate instruite sanctificate da, sed le
- texto inter encyclopedia.
- Ha iste americas que, qui ma tempore capital.
-  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "dueck:trio"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout aEnumerate (ClassicThesis)
-Enumeration with small caps (alpha) 
-\end_layout
-
-\begin_layout aEnumerate (ClassicThesis)
-Second item
 \end_layout
 
 \begin_layout Paragraph
@@ -746,177 +798,6 @@ status open
 
 \backslash
 enlargethispage{2cm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement bth
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename gfx/example_1.jpg
-	width 45line%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Asia personas duo.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \quad{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename gfx/example_2.jpg
-	width 45line%
-
-\end_inset
-
- 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:example-b"
-
-\end_inset
-
-Pan ma signo.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename gfx/example_3.jpg
-	width 45line%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Methodicamente o uno.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \quad{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename gfx/example_4.jpg
-	width 45line%
-
-\end_inset
-
- 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Titulo debitas.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-Tu duo titulo debitas latente
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:example"
-
-\end_inset
-
-Tu duo titulo debitas latente.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
