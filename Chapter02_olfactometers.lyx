@@ -1372,6 +1372,12 @@ g).
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:methods-gas-phase-dilution"
+
+\end_inset
+
 How to deliver pulses of odorant with different intensities 
 \end_layout
 

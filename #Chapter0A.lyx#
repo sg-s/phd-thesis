@@ -125,9 +125,9 @@ acf{TFA}
 
 \end_inset
 
-, originally developed to study insect flight (cite Gotz) and later adapted
- and modified to study vision, mechanosensation, and the visual control
- of flight 
+, originally developed to study insect flight (CITE GOTZ HERE) and later
+ adapted and modified to study vision, mechanosensation, and the visual
+ control of flight 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lehmann:1997vz,Frye:2001ev,Sherman:2003tg,Bender:2006wl,Budick:2007gx"
@@ -155,6 +155,42 @@ key "Frye:2003da,Frye:2004gj,Krishnan:2011eb"
  Since the fly is fixed in place in this assay, it allows delivering and
  measuring olfactroy stimuli and measuring how these olfactroy stimuli modualte
  olfactroy flight behavior.
+ In this assay, the behavior of the fly is quantified by changes in the
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{WBA}
+\end_layout
+
+\end_inset
+
+ and by changes in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{WBF}
+\end_layout
+
+\end_inset
+
+, both of which are measured in real time by the 
+\begin_inset Quotes eld
+\end_inset
+
+Wing Beat Analyzer
+\begin_inset Quotes erd
+\end_inset
+
+ that is part of the assay.
  
 \end_layout
 
@@ -198,7 +234,7 @@ for a picture).
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -409,6 +445,48 @@ b, red).
 \end_layout
 
 \begin_layout Standard
+Having estabilished that flies do not increase their WBF or WBA in the absence
+ of odorant, I then delivered 3 s pulses of four different odors (Apple
+ Cider Vinegar, ethyl butyrate, methyl salicylate and ethyl acetate).
+ Flies' behavior to these odor pulses were measured interleaved with responses
+ to control pulses with no odorant.
+ PID measurement of odor stimuli, control stimuli with no odor, and WBF
+ responses of flies to these odors are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c.
+ In all traces, red curves correspond to test trials with odors, and blue
+ trials correspond to control trials with no odor.
+ For all four odors tested, WBF decreased in control trials where there
+ was no odorant (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c, blue curves) and WBF increased transiently when odor was presented to
+ the flies (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c, red curves).
+ These results suggest that flies can detect these odors, and respond to
+ encounters with these odors by increasing WBF.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -536,6 +614,25 @@ acf{PID}
  The timeseries at the bottom shows the typical experiemntal block, where
  a control pulse (with no odorant) is presented first, followed by a test
  pulse with odorant.
+ In time traces of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF 
+\emph on
+vs.
+
+\emph default
+ time, the mean WBF before the pulse (at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ s) is subtracted from every trace, and the mean 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF is plotted with solid lines.
+ Shading indicates the standard error of the mean.
  
 \end_layout
 
@@ -550,7 +647,1278 @@ acf{PID}
 \end_layout
 
 \begin_layout Subsection
+Flight responses to pulses with different amplitudes
+\end_layout
+
+\begin_layout Standard
+How does fly behavior vary with the amplitude of odorant signal presented?
+ One possibility is that flies execute the same motor program independent
+ of the concentration of the odor detected, and that the concentration of
+ odorant detected triggers a navigational behavior, but not the details
+ of that behavior.
+ Another possibility is that flies modulate their behavioral response based
+ on the amplitude of the stimulus they detect.
+ To distinguish between the two, I delivered pulses of ethyl acetate with
+ varying concnetrations to flies and recorded their flight behavior.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-3.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses of different concentrations.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses of different concentrations.
+ (top row) Changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ (top row) and changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ (middle row) on presentation of ethyl acetate (red) or control (blue) pulses.
+ Bottom row shows the pulse kinetics and amplitudes.
+ Each column corresponds to a different concentration of ethyl acetate (diluted
+ 1/10, 1/100 or 1/1000 in Paraffin Oil).
+ Black lines in the first two rows indicate the duration of the pulse (100
+ ms).
+ In all time traces of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF or 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBA, the mean WBF or WBA before the pulse onset (at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ s) is subtracted from every trace, and the mean
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBA is plotted with solid lines.
+ Shading indicates the standard error of the mean.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I generated three different amplitudes of ethyl acetate pulses by diluting
+ serially in Paraffin Oil (1/10, 1/100 or 1/1000).
+ This serial dilution led to a 
+\begin_inset Formula $\sim10$
+\end_inset
+
+ fold change in the gas phase concentration delivered to the fly (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+bottom row).
+ Pulses with largest amplitude led to the largest changes in the WBF and
+ WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+first column), while pulses with the smallest amplitude led to the smallest
+ changes in the WBF and WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+last column).
+ This suggests that (i) the behavior seen here and in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+ is likely olfactory in origin, and (ii) the concentration of the odor encounter
+ed modulates the amplitude and kinetics of the behavioral response.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:tfa-durations"
+
+\end_inset
+
 Flight responses to pulses of different durations 
+\end_layout
+
+\begin_layout Standard
+How does the duration of the odor pulse encountered affect behavioral responses?
+ Due to the relatively high speed at which Drosophila fly (
+\begin_inset Formula $\sim30$
+\end_inset
+
+ cm/s) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tammero:2002wd"
+
+\end_inset
+
+and the relatively narrow width of odor plumes that they would likely encounter
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Murlis:1981by,Murlis:1992kp,Murlis:2000kk,Justus:2002da"
+
+\end_inset
+
+, flies may experience contact and loss witha plume almost instatneously.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vanBreugel:2014is"
+
+\end_inset
+
+.
+ This suggests that flies may modulate their behavior even to very brief
+ plumes of odorant.
+ To test this hypothesis, I presented flies with pulses of ethyl acetate
+ odorant with varying durations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-4.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-durations"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses with different durations.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses with different durations.
+ (top row) Changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ (top row) and changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ (bottom row) on presentation of ethyl acetate (red) or control (blue) pulses.
+ Each column corresponds to a different duration of the ethyl acetate (diluted
+ 1/100 in Paraffin Oil) pulse.
+ Black lines in all plots indicate the duration of the pulse (30 ms - 3
+ s).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flies modulated their WBF and WBA responses with the duration of the pulse
+ delivered, with the shortest pulses eliciting the smallest and most transient
+ increases in the WBF and WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+, first column).
+ As the duration of the pulse increased, responses grew larger and more
+ long lasting (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+).
+ However, since the pulses delivered using this olfactometer are not perfectly
+ square (largely due to the fact that the valve is upstream of the odor),
+ pulse duration is also strongly correlated with pulse amplitude in this
+ experiment.
+ Thus, it is not clear if the change in responses seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+ are due to changes in pulse duration, or due to changes in pulse amplitude,
+ or some combination of the two.
+ 
+\end_layout
+
+\begin_layout Subsection
+Trial-to-trial variations in behavioral response 
+\end_layout
+
+\begin_layout Standard
+So far, the data presented neglects the variation in behavior from trial
+ to trail and pools all trials to present gross averages (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+).
+ How do fly responses vary from trial to trial? Individual trials from individua
+l flies are very noisy, making interpretation of data challenging.
+ I therefore averaged across different flies, and plot trends in behavior
+ as a function of trial number.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-trial-to-trial.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-trial-to-trial"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Trial-to-trial variability in flight responses.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Trial-to-trial variability in olfactory responses.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ for odor (red) and control (blue) presentations (top row).
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ for odor (red) and control (blue) presentations (bottom row).
+ Each row shows responses averaged across 5 flies for a single trial.
+ The odor used is ethyl acetate (diluted 1/10 in Paraffin Oil).
+ Note that for the first trial, the odor evokes no response either in the
+ WBF or the WBA.
+ However, in the fifth trial, WBF responses are large.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-trial-to-trial"
+
+\end_inset
+
+ shows how WBF and WBA responses vary from trial to trial.
+ This analysis reveals two features of the response that were not evident
+ in the averaged responses: 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+Pre-stimulus WBF drops steadily from trial to trial.
+ It is relaitvely high in the first trial (
+\begin_inset Formula $\sim$
+\end_inset
+
+205 Hz) and drops to 
+\begin_inset Formula $\sim$
+\end_inset
+
+190 Hz by the fifth trial.
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+Odor-evoked responses grow from trial to trial.
+ Odor evokes no response in the WBF in the first trial, but evokes a response
+ by the fifth trial.
+ 
+\end_layout
+
+\begin_layout Standard
+One possibility for this behavior could be because laborotaroy reared flies
+ (Canton S flies were used in this assay) tend to fly much closer to their
+ maximum WBF at rest 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bhandawat:2010eu"
+
+\end_inset
+
+.
+ Thus, at the first trial, they are unable to increase their WBF as they
+ are already close to the maximum.
+ By the fifth trial, however, because their resting WBF drops, their dynamic
+ range of response increases, manifesting as a large odor-evoked response.
+ Why does pre-stimulus WBF drop from trial to trial? One possibility is
+ that flies get progressively exhausted, and reduce their wing beat frequency.
+ Consistent with this possibility was the observation that the probability
+ of stopping increased with time in the assay.
+ 
+\end_layout
+
+\begin_layout Subsection
+A better olfactometer
+\end_layout
+
+\begin_layout Standard
+The olfactometer used thus far (as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-schematic"
+
+\end_inset
+
+) suffers from design flaws.
+ Amongst them are (i) non-square odorant pulses that conflated pulse amplitude
+ and duration, see 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:tfa-durations"
+
+\end_inset
+
+; (ii) dilution in paraffin oil that caused depletion of pulse amplitude
+ over time and made changing pulse amplitude cumbersome.
+ Therefore, I developed a new olfactometer design (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+In this design, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{MFC}
+\end_layout
+
+\end_inset
+
+s are used to create an odorised airstream by blowing air over a scintilation
+ vial containing pure odorant.
+ The concentration of the odorant in the airstream is controlled by varying
+ the ratio of the air flows through the odor vial and through the diluent
+ vial (green box in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+a).
+ 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+for more detail on gas phase dilution, see 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:methods-gas-phase-dilution"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+This odorized airstream feeds into a dual three way valve, which switches
+ between two states.
+ Normally, the valve diverts the odorized airstream to waste, and directs
+ another clean airstream to the fly.
+ When the valve is activated, the odorized airstream is directed to teh
+ fly, and the other airstream is directed to waste.
+ This switch is done using a single valve, that is constructed to have equal
+ resistances along all flow paths, minimising airspeed and pressure changes
+ on valve operation.
+ A second three way valve switches between two other clean airstreams, which
+ is used to deliver control pulses with no odorant.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-design-2.png
+	lyxscale 30
+	width 60page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-design-2"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A better olfactometer.
+\end_layout
+
+\end_inset
+
+
+\emph default
+A better olfactometer.
+ (a) Schematic of the redesigned olfactometer.
+ (b) Different pulse amplitudes generated by varying the ratio of airflows
+ through the odor and diluent vial (ratio in boxes).
+ Diffierent pulse kinetics can be generated by varying the position of the
+ teflon plug in the glass funnel.
+ (c) Constancy of pulse amplitude over time.
+ The odorant used here is ethyl acetate.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This design has several advantages over the earlier design.
+ Using gas phase dilution permits delivering odorant pulses of several different
+ amplitudes using the same device, making it much easier to acquire data
+ as in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+b shows pulses of various amplitudes that are achieved with this olfactometer,
+ by simply varying the flow rates through the odor and clean vials.
+ Note that these pulses are much faster, and more square, as compared to
+ the pulses delivered by the earlier design (cf.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+).
+ In addition, by varying the position of a teflon plug in the final glass
+ funnel (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+a), I can vary the volume of the mixing space between different airstreams
+ before delivery to the fly.
+ This has the effect of changing the kinetics of odorant pulses.
+ In particular, odorants that have intrinsically fast kinetics, like ethyl
+ acetate, that generate square pulses, can be made slower (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+b), with longer rise and decay times, resembling odorants that have intrinsicall
+y slower kinetics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ Finally, using pure odorants and gas phase dilutions ensures that the amplitude
+ of the odorant pulse does not decay over time, since the concetration of
+ the odorant in the vial does not change, as it would if it was diluted
+ in Paraffin Oil.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+c shows the amplitude of a pulse of ethyl acetate remaining relatively constant
+ over 
+\begin_inset Formula $\sim$
+\end_inset
+
+30 minutes.
+ 
+\end_layout
+
+\begin_layout Subsection
+A tale of diminishing responses 
+\end_layout
+
+\begin_layout Standard
+How do flies respond to pulses of odorant delivered with this new olfactometer?
+ I delivered 200 ms pulses of ethyl acetate using this olfactometer to flies
+ and measured their WBA and WBF response.
+ Odorant pulses still elicited increases in the WBF, but the amplitude of
+ responses was much smaller compared to those elicited by pulses delivered
+ using the earler design (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-results-2"
+
+\end_inset
+
+a).
+ While pulses of ethyl acetate elicited a complex response in the WBA, comprisin
+g of transient responses followed by a slow increase, equivalent pulses
+ from the new olfactometer elicited a cleaner WBA response comprising mainly
+ of a slow decrease (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-results-2"
+
+\end_inset
+
+a).
+ On examining the WBA responses more closely, I observed two peaks in the
+ WBA response that occured 
+\begin_inset Formula $\sim40$
+\end_inset
+
+ms after valve opening and closing, in both the control and odorant pulse
+ responses.
+ The fact that these peaks occured so quickly after valve movement, and
+ the fact that they existed in both responses to control pulses and odorant
+ pulses, suggested that these peaks corresponded to a mechanical artifact
+ associated with the motion of the valve.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-design-2-results.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-results-2"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses delivered by olfactometer design
+ #2.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses delivered by olfactometer design
+ #2.
+ (a) Comparison of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ responses to 100 ms ethyl acetate pulses delivered by olfactometer design
+ #1 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-schematic"
+
+\end_inset
+
+) and design #2 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+).
+ (b) WBA responses show transient peaks (black arrows) for both odor pulses
+ (red) and control pulses (blue).
+ These peaks occur 
+\begin_inset Formula $\sim$
+\end_inset
+
+40 ms after valve opening and closing.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To eliminate these mechanical artifacts, I redeisnged the olfactometer once
+ more, taking care to balance airstreams flowing into the two inlets of
+ the two valves, and mechanically isolating the valves to prevent shockwaves
+ from valve closing and opening from propagating through the entire device.
+ These alterations to the design succeeded in greatly attenutating the transient
+s in the WBA response following valve opening and closing (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-results-3"
+
+\end_inset
+
+b, cf.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-results-3"
+
+\end_inset
+
+a).
+ However, responses to pulses of Apple Cider Vinegar delivered by design
+ #3 were smaller than those elicited by pulses delivered by design #2, which
+ in turn were smaller than those elicited by deisng #1 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-results-3"
+
+\end_inset
+
+c-e).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-design-3-results.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-results-3"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses delivered by olfactometer design
+ #2.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses delivered by olfactometer design
+ #2.
+ (a) Design #2 introduced transient peaks in the WBA response 
+\begin_inset Formula $\sim$
+\end_inset
+
+40 ms after valve motion, suggesting a mechanical artifact.
+ (b) Design #3 largely elimiantes this mechanical artifact.
+ (c-e) Comprison of responses evoked by Apple Cider Vinegar by Designs #1,
+ 2 and 3.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion 
+\end_layout
+
+\begin_layout Standard
+The flight of flies is a complex behavior, and depends on the integration
+ of sensory cues from many modalities, including vision
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2004gj,Maimon:2010jy,Muijres:2014km"
+
+\end_inset
+
+, mechanosensation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Budick:2007gx"
+
+\end_inset
+
+ and olfaction
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2004gj,Krishnan:2011eb"
+
+\end_inset
+
+.
+ In this assay I attempted to unravel how various features of stimuli of
+ 
+\emph on
+one
+\emph default
+ modality, olfaction, affect the response of flies.
+ This task was made even more challenging by the fact that flies rely heavily
+ on vision and mechanosensation during flight
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Maimon:2010jy,Muijres:2014km,Muijres:2015ku,Reiser:2013jt,Sherman:2003tg,Tammero:2002wd"
+
+\end_inset
+
+.
+ In order to study how olfactory cues modualted flight behavior, olfactory
+ cues had to be introduced without introducing other cues, which is a very
+ hard problem.
+ Since all olfactory cues need to be transported by moving airstreams, deliverin
+g any olfactory cue typically relies on valves that switches airstreams.
+ Earlier studies have shown that turning valves on and off introduces large,
+ transient fluctuations in the airspeed that occur on timescales as fast
+ as a few milliseconds
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Daly:2013ij"
+
+\end_inset
+
+.
+ The ability of the fly to detect mechanical distrubances in airstreams
+ exceeded that of instruments at my disposal, making it hard to know with
+ certainity if responses observed here were not contamiated by mechanical
+ stimuli originating from valve switching.
+ 
+\end_layout
+
+\begin_layout Standard
+A further challenge in this work was that flies did not fly reliably in
+ this assay.
+ Compared to published studies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender:2006wl,Bhandawat:2010eu"
+
+\end_inset
+
+, I observed that flies flew at lower WBFs.
+ Flies also tended to stop flying intermittently, making data collection
+ arduous.
+ The reasons for the poor flight ability of the flies tested here is not
+ known, but it could be due to (i) the fact that these experiemtns were
+ conducted in the dark, which is an atypical flying environment for fliethe
+ genetic background of the flies tested.
+ 
 \end_layout
 
 \end_body

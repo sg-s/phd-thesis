@@ -357,6 +357,13 @@ listtablename}
 
 
 \backslash
+newpage
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 pdfbookmark[1]{
 \backslash
 listtablename}{lot}
@@ -375,72 +382,6 @@ listoftables
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 8ex
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%*************************
-\end_layout
-
-\begin_layout Plain Layout
-
-% List of Listings
-\end_layout
-
-\begin_layout Plain Layout
-
-%*************************
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-phantomsection
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-refstepcounter{dummy}
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-addcontentsline{toc}{chapter}{
-\backslash
-lstlistlistingname}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-pdfbookmark[1]{
-\backslash
-lstlistlistingname}{lol}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstlistoflistings 
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
