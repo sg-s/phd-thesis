@@ -1,0 +1,212 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass classicthesis
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+Insects and the sense of smell
+\end_layout
+
+\begin_layout Standard
+Olfaction — the sense of smell — is a key sensory modality in animals.
+ Insects use olfaction to find food, mates and to navigate the world.
+ Mosquitoes use thier sense of smell to detect a variety of volatiale molecules
+ produced by humans and animals, especially carbon dioxide, to find hosts
+ to feed on
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Takken:1999ez,Verhulst:2011ko,Qiu:2006ei"
+
+\end_inset
+
+.
+ Male moths use specialised, equisitely sensitive neurons on their antenna
+ to detect molecules of phereonome realeased by female moths and find them
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kennedy:1974tx"
+
+\end_inset
+
+, from up to 200 m away
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wall:1987hb"
+
+\end_inset
+
+.
+ Insects – either as pests or pollinators of crops – play a large role human
+ welfare and olfaction plays a key role in their behavior.
+ 
+\end_layout
+
+\begin_layout Subsection
+Anatomy of the olfactory system 
+\end_layout
+
+\begin_layout Standard
+Insects sense olfactory stimuli 
+\end_layout
+
+\begin_layout Standard
+specialised, diverse receptors, generic neurons.
+ 
+\end_layout
+
+\begin_layout Subsection
+Drosophila as model organism 
+\end_layout
+
+\begin_layout Standard
+- Drosophila as a model organism.
+ the need for a model organism – many different varieties of insects – can't
+ study them all – but we have all these awesome tools in drosohila – genetics.
+ easy of growing them – similarity of drosophila olfactroy system to other
+ insects – evolutionaryily consered.
+ small olfactroy system (onl ~60 ORNs) 
+\end_layout
+
+\begin_layout Subsection
+The olfactory world of insects 
+\end_layout
+
+\begin_layout Standard
+what would they smell flying around? whiffs? intermittentent plumes.
+ flight and the complication that poses.
+ dense abckgrounds.
+ 
+\end_layout
+
+\begin_layout Standard
+Intrinsic Temporal kinetics of odorants - the difference between olfaction
+ in insects and mammals – mammals breate, and kinetics of olfaction are
+ dominated by the respiratory cycle – insects are different – their ORNs
+ are exposed to the air – irectly exposed to all kinetics of odorants in
+ free air (exceptions? moths and fanning – kevin daly – but other insects
+ fly, and flap their wings very quickly– so doesn't affect this) insect
+ ORNs unqieuly located (physically) to know about fast kinetics of odorants
+ in the air (Rinberg papaer about fluid mechanisc corckroach) Intrionisc
+ temporal kinetics affect response of orns (carlotta)
+\end_layout
+
+\begin_layout Section
+Representation of odorants in ORN responses
+\end_layout
+
+\begin_layout Standard
+Spontaneous and odor-evoked transduction 
+\end_layout
+
+\begin_layout Standard
+Transduction kinetics
+\end_layout
+
+\begin_layout Standard
+Adaptation 
+\end_layout
+
+\begin_layout Subsection
+ORN Response phnemonology 
+\end_layout
+
+\begin_layout Standard
+How do ORNs respond to odorants? Complex spatio temoral code - what each
+ receptor detects – Some specific receptors (phermonones, Co2), some generalist
+ - ORs detect fruits, IR detect pheromones, Grs detect tastnts - Dose-response
+ of ORs -
+\end_layout
+
+\begin_layout Subsection
+Odor representations downstream of ORNs
+\end_layout
+
+\begin_layout Standard
+going down to PNs – what happens in PNs – glomeruli – then downstream, mushroom
+ body – 
+\end_layout
+
+\begin_layout Section
+A quantitiative understanding of ORN response and adaptation 
+\end_layout
+
+\begin_layout Standard
+what are the key questions: how do ORNs respond to individual pulses of
+ odorant? to steps? to steps on background? what is adaptation? 
+\end_layout
+
+\end_body
+\end_document

@@ -546,30 +546,6 @@ acro{LFP}{Local Field Potential}
 
 \begin_layout Plain Layout
 
-  
-\backslash
-acro{ab3A}{antennal basiconic 3 A}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{ab3B}{antennal basiconic 3 B}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{ab2A}{antennal basiconic 2 A}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{ab2B}{antennal basiconic 2 B}
 \end_layout
 
 \begin_layout Plain Layout
@@ -591,6 +567,13 @@ acro{PID}{Photo Ionization Detector}
   
 \backslash
 acro{LIF}{Linear Integrate and Fire}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{MFC}{Mass Flow Controller}
 \end_layout
 
 \begin_layout Plain Layout

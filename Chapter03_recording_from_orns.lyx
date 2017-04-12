@@ -79,64 +79,6 @@ Drosophila
  ORNs
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "ch:LyxPortInfo"
-
-\end_inset
-
-The Classic Thesis Template was first ported to \SpecialChar LyX
- by Nick Mariette
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Nick is at 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://soundsorange.net/resources/classic-thesis-for-lyx/
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
- in March 2009.
- In spring of 2011 the original style was adjusted to better suit the \SpecialChar LyX
- port.
- Upon that, a \SpecialChar LyX
- layout file was created and most of this chapter written
- by Ivo Pletikosić
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Ivo is  at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://ivpletik.inet.hr/classicthesis/
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- in May 2011.
-\end_layout
-
 \begin_layout Section
 Flies
 \end_layout
@@ -145,8 +87,51 @@ Flies
 Electrophysiology
 \end_layout
 
-\begin_layout Section
-Calcium Imaging 
+\begin_layout Standard
+Single sensillum recordings.
+ Single sensillum recordings from Drosophila antennae were performed as
+ described previously {deBruyne:2001ur, Martelli:2013it}.
+ The recording electrode was inserted into a sensillum on the antenna of
+ an immobilized Drosophila melanogaster and a reference electrode was placed
+ in the eye.
+ Electrical signals were amplified using an Iso-DAM amplifier (World Precision
+ Instruments).
+ The ab3 sensillum was identified by 1) its size and location on the antenna
+ 2) test pulses of 2-heptanone, to which the B neuron is very sensitive,
+ 3) spike shapes (A spikes are larger than B spikes) and 4) spontaneous
+ firing (ab3B fires at a higher rate than ab3A).
+ Other sensilla were identified using test odors to which either the A or
+ B neuron strongly responded to.
+ 
+\end_layout
+
+\begin_layout Standard
+Local Field Potentials.
+ The local field potential was recorded by lowering the gain of the amplifier
+ and switching to DC mode, where we recorded the sensillar potential without
+ any low frequency cutoff.
+ Spike detection and sorting was reliable in either mode.
+ Since we were only interested in the deflections of LFP in response to
+ a fluctuating odor stimulus, we band-passed the raw voltage in software
+ to remove spikes and slow fluctuations.
+ 
+\end_layout
+
+\begin_layout Standard
+Fly stocks and genetic strategies Flies were reared at 25°C on conventional
+ fly medium.
+ All experiments were performed on adult female flies 3-5 days post-eclosion.
+ Unless otherwise mentioned, recordings were from ab3A neurons in Canton-S
+ flies.
+ In Fig.
+ 6 and Fig.
+ 7h, we recorded from ab3A ORNs in w; Or22a-GAL4/+; UAS-Chrimson/+ flies.
+ In these flies, only ab3A ORNs were sensitive to light, while ab3B neurons
+ and nearby ab2 sensilla were not.
+ In Fig.
+ 5 – figure supplements 2-3, we recorded from w; Or22a-GAL4/+; UAS-GCaMP6/+
+ flies.
+ 
 \end_layout
 
 \begin_layout Section

@@ -72,93 +72,39 @@
 \begin_body
 
 \begin_layout Chapter
-Black Box Analysis of ORN Responses
+kontroller
+\end_layout
+
+\begin_layout Section
+Motivation 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "ch:LyxPortInfo"
-
-\end_inset
-
-The Classic Thesis Template was first ported to \SpecialChar LyX
- by Nick Mariette
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Nick is at 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://soundsorange.net/resources/classic-thesis-for-lyx/
+rail against bespoke software 
 \end_layout
 
-\end_inset
-
- 
+\begin_layout Standard
+modularity 
 \end_layout
 
-\end_inset
-
- in March 2009.
- In spring of 2011 the original style was adjusted to better suit the \SpecialChar LyX
- port.
- Upon that, a \SpecialChar LyX
- layout file was created and most of this chapter written
- by Ivo Pletikosić
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Ivo is  at 
-\begin_inset Flex URL
-status open
-
-\begin_layout Plain Layout
-
-http://ivpletik.inet.hr/classicthesis/
+\begin_layout Standard
+experiemntal flexibility 
 \end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+easy to use for people unfamiliar with programming 
 \end_layout
 
-\end_inset
-
- in May 2011.
+\begin_layout Standard
+free, extensible
 \end_layout
 
 \begin_layout Section
-Baseline activity of ORNs
+Philosophy 
 \end_layout
 
 \begin_layout Section
-Linear kernel extraction 
-\end_layout
-
-\begin_layout Subsection
-Spike triggered average
-\end_layout
-
-\begin_layout Subsection
-Whitening & Regularisation 
-\end_layout
-
-\begin_layout Section
-LN Modelling and gain etimation 
-\end_layout
-
-\begin_layout Subsection
-Gain defined by the slope of the output nonlinearity 
-\end_layout
-
-\begin_layout Subsection
-Other ways to define gain 
+Usage
 \end_layout
 
 \begin_layout Standard

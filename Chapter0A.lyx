@@ -1,0 +1,1180 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass classicthesis
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+The tethered fly assay 
+\end_layout
+
+\begin_layout Section
+Goals
+\end_layout
+
+\begin_layout Standard
+Olfactory stimuli can be decomposed into a few basic features, like the
+ chemical identity of the odorants in the odor, their concnetration, and
+ the kinetics of the stimulus.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acfp{ORN}
+\end_layout
+
+\end_inset
+
+ appear to be able to capture all these features.
+ The chemical identity of the odorant is captured by which olfactory neurons
+ respond, since different neurons have different receptors.
+ The concentration of the odorants in the stimulus is captured in part by
+ the amplitude of neuronal response, and also by the identity of the neurons
+ that respond, since different receptors have different sensitivities to
+ the same odornt.
+ Finally, the temporal structure of the odorant stimulus is encoded in the
+ response kientics of neuron response.
+ Insects on the wing can encounter odorant stimuli with varying cincbentrations
+ and durations, and it is not clear if flies use all these features of the
+ stimulus equally to make navigational decisions.
+ 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{TFA}
+\end_layout
+
+\end_inset
+
+, originally developed to study insect flight (CITE GOTZ HERE) and later
+ adapted and modified to study vision, mechanosensation, and the visual
+ control of flight 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lehmann:1997vz,Frye:2001ev,Sherman:2003tg,Bender:2006wl,Budick:2007gx"
+
+\end_inset
+
+.
+ Recently, the TFA has also been used to study olfaction, either in the
+ fixed tethered configuration 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bhandawat:2010eu"
+
+\end_inset
+
+ or in rotatable tethered configiration, where flies can actively reoirent
+ into or away from an odorised airstream 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2003da,Frye:2004gj,Krishnan:2011eb"
+
+\end_inset
+
+.
+ Since the fly is fixed in place in this assay, it allows delivering and
+ measuring olfactroy stimuli and measuring how these olfactroy stimuli modualte
+ olfactroy flight behavior.
+ In this assay, the behavior of the fly is quantified by changes in the
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{WBA}
+\end_layout
+
+\end_inset
+
+ and by changes in the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{WBF}
+\end_layout
+
+\end_inset
+
+, both of which are measured in real time by the 
+\begin_inset Quotes eld
+\end_inset
+
+Wing Beat Analyzer
+\begin_inset Quotes erd
+\end_inset
+
+ that is part of the assay.
+ 
+\end_layout
+
+\begin_layout Standard
+In the next section, I detail my attempts to use this assay to determine
+ how flies change their flight behaviour with the identitiy, ampliotude
+ and duration of olfactroy stimuli.
+ 
+\end_layout
+
+\begin_layout Section
+Results 
+\end_layout
+
+\begin_layout Standard
+Following 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bhandawat:2010eu"
+
+\end_inset
+
+, I constructed a tethered flight assay where flies are tehtered to insect
+ pins and held in front of an airstream in the dark (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-schematic"
+
+\end_inset
+
+for a picture).
+ A paired olfactometer used four valves, all upstream of vials containing
+ odorant or control, to deliver short pulses of either odorant or control.
+ A PID behind the fly captured the odorant delivered to the fly, and allowed
+ me to record the stimulus simultenously with the behavior of the fly.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-1.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-schematic"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of the tethered flight assay.
+\end_layout
+
+\end_inset
+
+Schematic of the tethered flight assay.
+ 
+\emph default
+A fly is tethered to a fine insect pin and suspended below a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{IR}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{LED}
+\end_layout
+
+\end_inset
+
+ (see top left for a picture).
+ The wings of the fly cast a shadow on two photo detectors below the fly,
+ whose signals can be used to measure the frequnecy and amplitude of the
+ fly's wing beats.
+ An odorant delivery system (labelled 
+\begin_inset Quotes eld
+\end_inset
+
+design #1
+\begin_inset Quotes erd
+\end_inset
+
+ can deliver either pulses of odorant or pulses of clean air to the fly.
+ Valves switch between two symmetrical airstreams, one with odor (red) or
+ one without, to deliver odorant to the fly with minimial changes in airflow.
+ A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{PID}
+\end_layout
+
+\end_inset
+
+ sucks all the air and odorant delivered to the fly, allowing simultenous
+ monitoring of the behavior and the stimulus.
+ Finally, genetic strategies can be used to delete or replace receptors
+ in the fly.
+ The timeseries at the bottom shows the typical experiemntal block, where
+ a control pulse (with no odorant) is presented first, followed by a test
+ pulse with odorant.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Flight responses to pulses of different odorants 
+\end_layout
+
+\begin_layout Standard
+Flies flapped their wings spontensouly when suspended in the device, creating
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+hütchens
+\begin_inset Quotes erd
+\end_inset
+
+ waveform on the photodetector cell (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+a).
+ Each windbeat cycle produced this characteristic bilobed wave, and the
+ height of the waveform was a proxy for the wing beat amplitude, and the
+ frequency of this waveform was the wing beat frequency.
+ Flies tended to gradually decrease their wing beat amplitude when the airstream
+ was turned on (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+b, left panel), though the wing beat amplitude did not change as much ((Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+b, right panel).
+ Switching airstreams in the absence of odorant did not evoke any strong
+ response, either with the control airstream (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+b, blue), or with the 
+\begin_inset Quotes eld
+\end_inset
+
+odor
+\begin_inset Quotes erd
+\end_inset
+
+ airstream (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+b, red).
+ 
+\end_layout
+
+\begin_layout Standard
+Having estabilished that flies do not increase their WBF or WBA in the absence
+ of odorant, I then delivered 3 s pulses of four different odors (Apple
+ Cider Vinegar, ethyl butyrate, methyl salicylate and ethyl acetate).
+ Flies' behavior to these odor pulses were measured interleaved with responses
+ to control pulses with no odorant.
+ PID measurement of odor stimuli, control stimuli with no odor, and WBF
+ responses of flies to these odors are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c.
+ In all traces, red curves correspond to test trials with odors, and blue
+ trials correspond to control trials with no odor.
+ For all four odors tested, WBF decreased in control trials where there
+ was no odorant (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c, blue curves) and WBF increased transiently when odor was presented to
+ the flies (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+c, red curves).
+ These results suggest that flies can detect these odors, and respond to
+ encounters with these odors by increasing WBF.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-2.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-diff-odors"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to different odorants.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to different odorants.
+ A fly is tethered to a fine insect pin and suspended below a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{IR}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{LED}
+\end_layout
+
+\end_inset
+
+ (see top left for a picture).
+ The wings of the fly cast a shadow on two photo detectors below the fly,
+ whose signals can be used to measure the frequnecy and amplitude of the
+ fly's wing beats.
+ An odorant delivery system (labelled 
+\begin_inset Quotes eld
+\end_inset
+
+design #1
+\begin_inset Quotes erd
+\end_inset
+
+ can deliver either pulses of odorant or pulses of clean air to the fly.
+ Valves switch between two symmetrical airstreams, one with odor (red) or
+ one without, to deliver odorant to the fly with minimial changes in airflow.
+ A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{PID}
+\end_layout
+
+\end_inset
+
+ sucks all the air and odorant delivered to the fly, allowing simultenous
+ monitoring of the behavior and the stimulus.
+ Finally, genetic strategies can be used to delete or replace receptors
+ in the fly.
+ The timeseries at the bottom shows the typical experiemntal block, where
+ a control pulse (with no odorant) is presented first, followed by a test
+ pulse with odorant.
+ In time traces of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF 
+\emph on
+vs.
+
+\emph default
+ time, the mean WBF before the pulse (at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ s) is subtracted from every trace, and the mean 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF is plotted with solid lines.
+ Shading indicates the standard error of the mean.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Flight responses to pulses with different amplitudes
+\end_layout
+
+\begin_layout Standard
+How does fly behavior vary with the amplitude of odorant signal presented?
+ One possibility is that flies execute the same motor program independent
+ of the concentration of the odor detected, and that the concentration of
+ odorant detected triggers a navigational behavior, but not the details
+ of that behavior.
+ Another possibility is that flies modulate their behavioral response based
+ on the amplitude of the stimulus they detect.
+ To distinguish between the two, I delivered pulses of ethyl acetate with
+ varying concnetrations to flies and recorded their flight behavior.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-3.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses of different concentrations.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses of different concentrations.
+ (top row) Changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ (top row) and changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ (middle row) on presentation of ethyl acetate (red) or control (blue) pulses.
+ Bottom row shows the pulse kinetics and amplitudes.
+ Each column corresponds to a different concentration of ethyl acetate (diluted
+ 1/10, 1/100 or 1/1000 in Paraffin Oil).
+ Black lines in the first two rows indicate the duration of the pulse (100
+ ms).
+ In all time traces of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF or 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBA, the mean WBF or WBA before the pulse onset (at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ s) is subtracted from every trace, and the mean
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBF and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+WBA is plotted with solid lines.
+ Shading indicates the standard error of the mean.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I generated three different amplitudes of ethyl acetate pulses by diluting
+ serially in Paraffin Oil (1/10, 1/100 or 1/1000).
+ This serial dilution led to a 
+\begin_inset Formula $\sim10$
+\end_inset
+
+ fold change in the gas phase concentration delivered to the fly (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+bottom row).
+ Pulses with largest amplitude led to the largest changes in the WBF and
+ WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+first column), while pulses with the smallest amplitude led to the smallest
+ changes in the WBF and WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+last column).
+ This suggests that (i) the behavior seen here and in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+ is likely olfactory in origin, and (ii) the concentration of the odor encounter
+ed modulates the amplitude and kinetics of the behavioral response.
+\end_layout
+
+\begin_layout Subsection
+Flight responses to pulses of different durations 
+\end_layout
+
+\begin_layout Standard
+How does the duration of the odor pulse encountered affect behavioral responses?
+ Due to the relatively high speed at which Drosophila fly (
+\begin_inset Formula $\sim30$
+\end_inset
+
+ cm/s) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tammero:2002wd"
+
+\end_inset
+
+and the relatively narrow width of odor plumes that they would likely encounter
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Murlis:1981by,Murlis:1992kp,Murlis:2000kk,Justus:2002da"
+
+\end_inset
+
+, flies may experience contact and loss witha plume almost instatneously.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vanBreugel:2014is"
+
+\end_inset
+
+.
+ This suggests that flies may modulate their behavior even to very brief
+ plumes of odorant.
+ To test this hypothesis, I presented flies with pulses of ethyl acetate
+ odorant with varying durations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-4.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-durations"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Flight responses to ethyl acetate pulses with different durations.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Flight responses to ethyl acetate pulses with different durations.
+ (top row) Changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ (top row) and changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ (bottom row) on presentation of ethyl acetate (red) or control (blue) pulses.
+ Each column corresponds to a different duration of the ethyl acetate (diluted
+ 1/100 in Paraffin Oil) pulse.
+ Black lines in all plots indicate the duration of the pulse (30 ms - 3
+ s).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Flies modulated their WBF and WBA responses with the duration of the pulse
+ delivered, with the shortest pulses eliciting the smallest and most transient
+ increases in the WBF and WBA (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+, first column).
+ As the duration of the pulse increased, responses grew larger and more
+ long lasting (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+).
+ However, since the pulses delivered using this olfactometer are not perfectly
+ square (largely due to the fact that the valve is upstream of the odor),
+ pulse duration is also strongly correlated with pulse amplitude in this
+ experiment.
+ Thus, it is not clear if the change in responses seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+ are due to changes in pulse duration, or due to changes in pulse amplitude,
+ or some combination of the two.
+ 
+\end_layout
+
+\begin_layout Subsection
+Trial-to-trial variations in behavioral response 
+\end_layout
+
+\begin_layout Standard
+So far, the data presented neglects the variation in behavior from trial
+ to trail and pools all trials to present gross averages (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-diff-odors"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-pulse-amplitude"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-durations"
+
+\end_inset
+
+).
+ How do fly responses vary from trial to trial? Individual trials from individua
+l flies are very noisy, making interpretation of data challenging.
+ I therefore averaged across different flies, and plot trends in behavior
+ as a function of trial number.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/tfa-trial-to-trial.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tfa-durations-1"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Trial-to-trial variability in flight responses.
+\end_layout
+
+\end_inset
+
+
+\emph default
+Trial-to-trial variability in olfactory responses.
+ .
+ (top row) Changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acs{WBF}
+\end_layout
+
+\end_inset
+
+ (top row) and changes in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{WBA}
+\end_layout
+
+\end_inset
+
+ (bottom row) on presentation of ethyl acetate (red) or control (blue) pulses.
+ Each column corresponds to a different duration of the ethyl acetate (diluted
+ 1/100 in Paraffin Oil) pulse.
+ Black lines in all plots indicate the duration of the pulse (30 ms - 3
+ s).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
