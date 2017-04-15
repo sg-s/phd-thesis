@@ -94,7 +94,7 @@ The study of sensory neurons, especially primary sensory cells, requires
  Olfactory stimuli are harder to deliver than sound or light, and even harder
  to measure.
  This is because olfactory stimuli consist not of energy but of small, volatile
- molcules of bewildering variety that have to be mechanically transported
+ molecules of bewildering variety that have to be mechanically transported
  from the source, typically through the air, to the olfactory receptor neuron.
  Furthermore, odorant molecules interact extensively with their environment,
  including during transport from the odorant source to the sensory neuron.
@@ -148,7 +148,7 @@ e pulses of odorant at various intensities ii) fluctuating Gaussian stimuli
  We also introduce a simple procedure to calibrate the PID to any detectable
  odorant without using any additional equipment.
  The focus of this work is on experimental applications where changes in
- airspeed do not signficantly affect the response properties of 
+ airspeed do not significantly affect the response properties of 
 \begin_inset ERT
 status open
 
@@ -181,7 +181,7 @@ Delivering odorants: olfactometer design
 \end_layout
 
 \begin_layout Standard
-There exists a variety of methods of deliverying odorants.
+There exists a variety of methods of delivering odorants.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -190,8 +190,8 @@ reference "olfactometer-zoo"
 \end_inset
 
  shows a sample of the zoo of olfactometers (devices for delivering odorants)
- that have been developed to deliver odorants in experimental preprarations.
- While the full assortment of olfactormeters is too rich to comprehensively
+ that have been developed to deliver odorants in experimental preparations.
+ While the full assortment of olfactometers is too rich to comprehensively
  survey here, all olfactometers can be classified into a few basic types
  based on: 
 \end_layout
@@ -283,7 +283,7 @@ However, odorants can diffuse when there is no flow, contaminating valves
  that the odorant flows through the valve, necessitating using a different
  valve for every odorant to avoid cross-contamination.
  The costs of choosing to place valves downstream of odorants, both of material
- and time, can be signficant if hundreds of odorant-receptor combinations
+ and time, can be significant if hundreds of odorant-receptor combinations
  are to be tested, as in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -293,11 +293,11 @@ key "Hallem:2004ht,Hallem:2006iu,Kreher:2005va,Mathew:2013ic"
 
 .
  Since the valve is downstream of the odorant, air always flows over the
- odorant, and the valve diverts this odorised airstream either to waste
+ odorant, and the valve diverts this odorized airstream either to waste
  (normally), or to the preparation.
  While this design consumes more odorant, the liquid odorant in its chamber
  can reach steady state with the vapor in the chamber, and the state of
- the valve downstream of the odorant does not disturb this equilibirum,
+ the valve downstream of the odorant does not disturb this equilibrium,
  which could lead to more reproducible stimuli.
  
 \end_layout
@@ -350,12 +350,101 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "olfactometer-zoo"
+name "fig:olfactometer-zoo"
 
 \end_inset
 
-olfactometer zoo.
- inst citations for the zoo here.
+
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+The olfactometer zoo.
+\end_layout
+
+\end_inset
+
+
+\emph on
+ Different olfactometer designs used in the literature.
+ 
+\emph default
+(a) The 
+\begin_inset Quotes eld
+\end_inset
+
+cartridge
+\begin_inset Quotes erd
+\end_inset
+
+ system, as used in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2006iu,Helfand:1989wu,Larter:2016gv,Montague:2011hk"
+
+\end_inset
+
+.
+ Odorant is in liquid phase, on a filter paper disk, within a Pasteur pipette.
+ The valve is upstream of the odorant.
+ A valve upstream of the odorant forces.
+ (b) A design similar to (a), but with the valve downstream of the odorant,
+ as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "French:2007js,Schuckel:2008cd,Schuckel:2008gz,Schuckel:2009er"
+
+\end_inset
+
+.
+ (c) A design similar to (a), but with two pipettes to minimise airflow
+ changes on valve switch, as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Szyszka:2014in"
+
+\end_inset
+
+.
+ (d) In this design, odorant is stored in a scintillation vial, allowing
+ greater volumes of odorant.
+ An upstream valve delivers either odorized air or clean air to the preparation,
+ as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2010ds,Olsson:2011bh,Gupta:2016bc"
+
+\end_inset
+
+.
+ (e) In this variant, the odorant containing vial is filled almost to the
+ top with odorant, minimizing the headspace, making it replenish quickly,
+ as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj"
+
+\end_inset
+
+.
+ (f) In this design, an odorized airstream 
+\emph on
+x 
+\emph default
+is mixed with a clean airstream y and passed through a capillary (dotted
+ line).
+ A dual valve switches simultaneously between two airstreams and waste,
+ keeping airspeeds invariant with valve state, as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Resulaj:2015hp,Gupta:2015ik,Shusterman:2011cp"
+
+\end_inset
+
+.
+ In all panels, the valve is shown in blue, the odorant in red, Pasteur
+ pipettes as narrow rectangles, scintillation vials as rounded rectangles,
+ the main air delivery tube as a hollow tube, and other tubes as lines.
  
 \end_layout
 
@@ -371,13 +460,13 @@ olfactometer zoo.
 
 \begin_layout Standard
 The topology of the olfactometer also determines whether diverting the odorized
- aistream into the main airstream necessarily leads to changes in the airspeed
+ airstream into the main airstream necessarily leads to changes in the airspeed
  of the main flow.
  Unless explicitly compensated for, introducing a new channel into the main
  airstream will increase the airspeed at the outlet, which may be undesirable
  for some organisms or experiments.
- A simple way to compensate for this increase in the aistream is to use
- another valve to switch between an additional clean aistream and the odorised
+ A simple way to compensate for this increase in the airstream is to use
+ another valve to switch between an additional clean airstream and the odorized
  stream, as in Fig.
  
 \begin_inset CommandInset ref
@@ -405,7 +494,7 @@ key "Brockerhoff:1999jg"
 .
  Traditionally, serial dilutions of odorants have been prepared in paraffin
  oil, and small quantities of these mixtures have been applied to filter
- paper disks in glass Pastuer pipettes 
+ paper disks in glass Pasteur pipettes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Clyne:1997eh"
@@ -422,7 +511,7 @@ Cartridges
 \end_inset
 
  so prepared contain odorant in the gas phase that evaporates from the filter
- paper disk, and are typically used in conjuction with a valve before the
+ paper disk, and are typically used in conjunction with a valve before the
  cartridge, that pushes the odorized air towards the preparation 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -431,7 +520,7 @@ key "deBruyne:1999uh,Hallem:2006iu"
 \end_inset
 
 .
- An alternative is to use a vial containing a larger quantitity of the diluted
+ An alternative is to use a vial containing a larger quantity of the diluted
  odorant liquid, either with a very small headspace, as in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -454,17 +543,17 @@ key "Kim:2010ds"
 
 \begin_layout Standard
 Diluting odorants in liquid phase using mineral or paraffin oil leads to
- intrinsic non-reproducability, since every passage of air over the mixture
+ intrinsic non-reproducibility, since every passage of air over the mixture
  depletes the liquid phase concentration of the odorant and the diluent
  to different extents.
- In the extreme case, mineral oil and paraffin are practically involatile
+ In the extreme case, mineral oil and paraffin are practically nonvolatile
  and every passage of air over depletes the odorant but not the diluent.
  Since the gas phase concentration of odorant in the headspace depends on
  the liquid phase concentration of odorant in a region close to the boundary
- layer, the gas phase concentration of the odorant continuiously decreases
+ layer, the gas phase concentration of the odorant continuously decreases
  with time.
  One way to ameliorate this depletion is to use a very large volume of odorant
- mixture, and to stir the mixture continuiously
+ mixture, and to stir the mixture continuously
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Martelli:2013it"
@@ -476,7 +565,7 @@ key "Martelli:2013it"
  the gas phase concentration of the headspace to track the liquid phase
  concentration more closely.
  However, stirring odorants may be impractical in some applications, especially
- in the cramped and electrically sensitive encironment of an electrophysiology
+ in the cramped and electrically sensitive environment of an electrophysiology
  rig, and doesn't ultimately solve the problem of odorant depletion.
  
 \end_layout
@@ -497,7 +586,7 @@ key "Clyne:1997eh,Larsson:2004bx"
 \end_inset
 
 , as they are easily generated by briefly turning on a valve that directs
- odorised air to the preparation.
+ odorized air to the preparation.
  These simple stimuli reveal whether the neuron of interest responds to
  the odorant tested or not, and can also reveal the kinetics of response
  
@@ -519,8 +608,8 @@ More complicated stimuli are difficult to generate due to two reasons: (i)
  odorant stimuli.
  Using large volumes of liquid odorant to fight depletion, some studies
  have used a valve to randomly turn on and off an odorant airstream, generating
- a random binary signal that has been used to characterise the response
- propeorties of ORNs 
+ a random binary signal that has been used to characterize the response
+ properties of ORNs 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "French:2007js,Schuckel:2008gz,Martelli:2013it,Nagel:2011jj"
@@ -570,7 +659,7 @@ nose
 
  has been developed.
  Therefore, measuring odorants is not standard practice in olfactory research.
- One of the earliest atempts to measure odorant stimuli used gas-chromatography
+ One of the earliest attempts to measure odorant stimuli used gas-chromatography
  on the headspace 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -580,7 +669,7 @@ key "Hoskovec:1993dp"
 
 .
  Though cumbersome, slow and expensive, gas-chromatographic techniques are
- still useful, espeically in studies of the chemical ecology of olfactory
+ still useful, especially in studies of the chemical ecology of olfactory
  animals, and coupled with presentations of many odorants eluted from a
  single, natural odor source 
 \begin_inset CommandInset citation
@@ -700,7 +789,7 @@ Relying on liquid phase concentrations can bias estimates of neuron response.
  plotted as a function of the concentration in liquid phase.
  Red line is best fit Hill function, and text shows the parameters of the
  best fit.
- (b) Gas phase cocnentration 
+ (b) Gas phase concentration 
 \emph on
 vs.
 
@@ -744,9 +833,16 @@ acs{PID}
 
  to measure odorant stimuli in the gas phase.
  First used in olfactory research to measure the pheromone intensity delivered
- to moths They have been used for concentration control in an olfactometer
- (cite Johnson e...Noam Sobel 2003), the PID works by sucking odorized air
- into a small chamber, where a 
+ to moths, they have also been used for concentration control in an olfactometer
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Johnson:2003eb"
+
+\end_inset
+
+.
+ The PID works by sucking odorized air into a small chamber, where a 
 \begin_inset ERT
 status open
 
@@ -777,12 +873,12 @@ key "Yao:2005wm,Larter:2016gv,Hallem:2004ht,deBruyne:2001ur"
 \end_inset
 
 , measuring the stimulus presented to ORNs is key to quantitatively describing
- their response, and relying on liquid phase concentrations can bias characteris
-ations of their response phenomonology.
+ their response, and relying on liquid phase concentrations can bias characteriz
+ations of their response phenomenology.
  For example, consider a typical dose-response experiment where ethyl acetate
- stimuli of varying concnetration are presented to a a ab3A ORN.
+ stimuli of varying concentration are presented to a a ab3A ORN.
  Peak ORN responses exhibit a sigmoidal relationship with the log of the
- liquid phase dilutoon (Fig.
+ liquid phase dilution (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -791,7 +887,7 @@ reference "neuron-dose-response-gas-phase"
 \end_inset
 
 a).
- However, simultenous measurement of the stimulus using a PID (Fig.
+ However, simultaneous measurement of the stimulus using a PID (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -799,8 +895,8 @@ reference "neuron-dose-response-gas-phase"
 
 \end_inset
 
-b) reveals that (i) the stimuus is variable from trial to trial and (ii)
- the gas phase concentration is not linear with the liquid phase concnetration,
+b) reveals that (i) the stimulus is variable from trial to trial and (ii)
+ the gas phase concentration is not linear with the liquid phase concentration,
  as assumed in Fig.
  
 \begin_inset CommandInset ref
@@ -810,8 +906,12 @@ reference "neuron-dose-response-gas-phase"
 \end_inset
 
 a.
- Replotting the peak ORN response vs.
- the measured gas phase cocnetration reveals the true dose-response curve
+ Plotting the peak ORN response 
+\emph on
+vs.
+
+\emph default
+ the measured gas phase concentration reveals the true dose-response curve
  (Fig.
  
 \begin_inset CommandInset ref
@@ -837,14 +937,708 @@ reference "neuron-dose-response-gas-phase"
 
 \end_inset
 
-c yeild different parameters, suggesting that relying on liquid phase dilutions
- as a proxy for gas phase concetration can bias estimates of ORN response,
+c yield different parameters, suggesting that relying on liquid phase dilutions
+ as a proxy for gas phase concentration can bias estimates of ORN response,
  even in this simple case where odorant and ORN kinetics are neglected.
  
 \end_layout
 
 \begin_layout Section
 Results
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:puff-model"
+
+\end_inset
+
+Modeling the diversity of stimulus kinetics 
+\end_layout
+
+\begin_layout Standard
+A common method of delivering odorants is to prepare 
+\begin_inset Quotes eld
+\end_inset
+
+cartridges
+\begin_inset Quotes erd
+\end_inset
+
+ from Pasteur pipettes containing 50 
+\begin_inset Formula $\mathrm{\textrm{\mu L}}$
+\end_inset
+
+of odorant diluted in Paraffin Oil on a small filter paper disk, and to
+ force a small volume of air through the cartridge.
+ Odorants delivered this way exhibit a broad range of stimulus kinetics
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:puff-model"
+
+\end_inset
+
+), that depend on the chemical identity of the odorant 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ Since the conditions of the delivery are identical across odorants, we
+ reasoned that the origin of the diversity of stimulus kinetics is variation
+ in the interactions of the odorant with the surfaces of the delivery system,
+ and simple physical properties of the odorants like their vapor pressure.
+ We therefore set out to develop a simple model of odorant evaporation from
+ the filter paper, interaction with the surfaces of the delivery system,
+ and transport by the air flowing through the delivery system.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/puff-schematic.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:puff-model-schematic"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Schematic of a typical odorant delivery system.
+\end_layout
+
+\end_inset
+
+
+\emph on
+Schematic of a typical odorant delivery system.
+ 
+\emph default
+Clean air flows through main delivery tube at a flow rate 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ A small filter paper disk containing odorant diluted in Paraffin Oil is
+ located in tube 1, at a length 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+from the main air tube.
+ For simplicity, we assume that the internal radius of both tubes is the
+ same, 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ When the valve is activated, air flows through tube 1 with rate 
+\begin_inset Formula $Q_{1}<Q_{2}$
+\end_inset
+
+.
+ The junction between the two tubes is at a distance 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+from the outlet of the tube, where the preparation/PID is located.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a typical delivery system, where a main airstream blows clean air
+ onto the preparation/PID, while a smaller airstream introduces odorized
+ air into the main airstream when a valve is activated.
+ Such a device corresponds to the design shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+a and is shown schematized in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:puff-model-schematic"
+
+\end_inset
+
+.
+ Clean air flows through main delivery tube at a flow rate 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ A small filter paper disk containing odorant diluted in Paraffin Oil is
+ located in tube 1 (the Pasteur pipette), at a length 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+from the main air tube.
+ For simplicity, we assume that the internal radius of both tubes is the
+ same, 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ When the valve is activated, air flows through tube 1 with rate 
+\begin_inset Formula $Q_{1}<Q_{2}$
+\end_inset
+
+.
+ The junction between the two tubes is at a distance 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+from the outlet of the tube, where the preparation/PID is located.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/methods_model_fits.eps
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:puff-model"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A model that reproduces the diversity of odorant pulse kinetics.
+ 
+\end_layout
+
+\end_inset
+
+
+\emph on
+The diversity of odorant pulse kinetics.
+
+\emph default
+ A common way of delivering odorants is to prepare 
+\begin_inset Quotes eld
+\end_inset
+
+cartridges
+\begin_inset Quotes erd
+\end_inset
+
+ from Pasteur pipettes containing 50 
+\begin_inset Formula $\mathrm{\textrm{\mu L}}$
+\end_inset
+
+of odorant diluted in Paraffin Oil, and to force a small volume of air through
+ the cartridge.
+ Odorants delivered this way exhibit a broad range of stimulus kinetics,
+ that depend on the chemical identity of the odorant 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ Each panel shows five measurements of the kinetics of stimulus using a
+ PID, normalized by the peak.
+ In each panel, red curves are the model fits (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:puff-model"
+
+\end_inset
+
+).
+ The pulse duration is 500 ms.
+ Data here is the same as in Fig.
+ 1b in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We define the following terms: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tilde{c_{1}}$
+\end_inset
+
+and 
+\begin_inset Formula $\tilde{c_{2}}$
+\end_inset
+
+are the concentrations of odorant in gas phase in tube 1 (the Pasteur pipette)
+ and tube 2 (the main delivery tube)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $w\theta_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $w\theta_{2}$
+\end_inset
+
+are the surface concentrations of odorants bound to tubes 1 and 2; 
+\begin_inset Formula $w$
+\end_inset
+
+ is a material constant describing the density of binding sites on the glass,
+ and 
+\begin_inset Formula $\theta_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $\theta_{2}$
+\end_inset
+
+are the surface coverages for tubes 1 and 2 (
+\begin_inset Formula $\theta_{1,2}\in\left[0,1\right]$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tilde{n}$
+\end_inset
+
+and 
+\begin_inset Formula $\tilde{n}_{p}$
+\end_inset
+
+are the amount in moles of odorant and paraffin oil in liquid phase.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q(t)Q_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+are the flow rates in the pipette and the delivery tube, where 
+\begin_inset Formula $q(t)=1$
+\end_inset
+
+ when the valve is on, and is 0 otherwise.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A_{1}$
+\end_inset
+
+,
+\begin_inset Formula $A_{2}$
+\end_inset
+
+,
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+are the surface areas and volumes of the pipette (1) and delivery tube (2).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A_{S}$
+\end_inset
+
+is the surface area of the filter paper, assumed to determine the surface
+ area of the odorant 
+\end_layout
+
+\begin_layout Standard
+At the boundary between the liquid on the paper filter and the air, the
+ gas phase concentration is at steady state with the liquid phase and 
+\begin_inset Formula $\tilde{c}_{1}|_{surface}=c_{S}\gamma(x)x$
+\end_inset
+
+, where the molar ratio in liquid phase is 
+\begin_inset Formula $x=\tilde{n}/(\tilde{n}+\tilde{n_{p}})$
+\end_inset
+
+and 
+\begin_inset Formula $c_{S}=P_{S}/Pc_{a}$
+\end_inset
+
+ is the saturated vapor concentration where 
+\begin_inset Formula $P$
+\end_inset
+
+ is the air pressure and 
+\begin_inset Formula $c_{a}=P/(RT)$
+\end_inset
+
+ is the concentration of air.
+ The rate of evaporation 
+\begin_inset Formula $-\dot{\tilde{n}}$
+\end_inset
+
+depends on the gradient of the concentration in gas phase above the paper
+ filter, which in turn depends on the thickness 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ of the boundary layer imposed by the air flow over the surface of the paper:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{\tilde{n}}=DA_{S}(\mathbf{m}\cdot\nabla\tilde{c_{1}})\cong DA_{S}/\lambda(c_{S}\gamma(x)x-\tilde{c_{1}})
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{m}$
+\end_inset
+
+ is the outward-pointing normal to the surface of the paper filter.
+ For simplicity we neglect diffusion in the liquid phase and average the
+ concentrations over the entire tube.
+ The evaporation rate therefore becomes 
+\begin_inset Formula $k_{S}A_{S}(c_{S}\gamma(x)x-\tilde{c}_{1})$
+\end_inset
+
+ where 
+\begin_inset Formula $k_{S}\propto D/\lambda$
+\end_inset
+
+ is a kinetic constant that captures the dependency of the rate of evaporation
+ on the diffusion coefficient 
+\begin_inset Formula $D$
+\end_inset
+
+ of the odorant molecules in air, and on the thickness of the boundary layer
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k_{S}$
+\end_inset
+
+ also depends on the molecular forces between the paper filter and the molecules
+ of odorant.
+\end_layout
+
+\begin_layout Standard
+The ODEs that govern this system are given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign*}
+{} & \frac{d\tilde{c_{1}}}{dt}=-\frac{q(t)Q_{1}}{V_{1}}\tilde{c_{1}}+\frac{k_{d}A_{1}w}{V_{1}}\theta_{1}-\frac{k_{a}A_{1}w}{V_{1}}\tilde{c_{1}}(1-\theta_{1})+\frac{k_{S}A_{S}}{V_{1}}\begin{cases}
+c_{s}\gamma(x)-\tilde{c_{1}} & n>0\\
+0 & else
+\end{cases}\\
+{} & \frac{d\theta_{1}}{dt}=-k_{d}\theta_{1}+k_{a}\tilde{c_{1}}(1-\theta_{1})\\
+{} & \frac{d\tilde{n}}{dt}=-k_{S}A_{S}\begin{cases}
+c_{s}\gamma(x)x-\tilde{c_{1}} & n>0\\
+0 & else
+\end{cases}\\
+{} & \frac{d\tilde{c_{2}}}{dt}=-\frac{q(t)Q_{1}+Q_{2}}{V_{2}}\tilde{c_{2}}+\frac{k_{d}A_{2}w}{V_{2}}\theta_{2}-\frac{k_{1}A_{2}w}{V_{2}}\tilde{c_{2}}(1-\theta_{2})+\frac{q(t)Q_{1}}{V_{2}}\tilde{c_{1}}\\
+{} & \frac{d\theta_{2}}{dt}=-k_{d}\theta_{2}+k_{a}\tilde{c_{2}}(1-\theta_{2})
+\end{flalign*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For simplicity, we assume that the paraffin oil does not evaporate.
+ If pure odorant is used on the filter paper, the equations can be simplified
+ since 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+ In this case the equation for 
+\begin_inset Formula $\tilde{n}$
+\end_inset
+
+ does not play a role in the dynamics of the odor profile until 
+\begin_inset Formula $\tilde{n}=0$
+\end_inset
+
+.
+ If we assume that the amount of odorant at the source is much larger than
+ the amount that evaporates during a typical puff, 
+\begin_inset Formula $x\cong\textrm{constant}$
+\end_inset
+
+, and we can normalize these equations by the initial concentration 
+\begin_inset Formula $c_{0}=c_{s}\gamma(x_{0})x_{0}$
+\end_inset
+
+ to get the following variables 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+c_{1}=\frac{\tilde{c_{1}}}{c_{0}} & c_{2}=\frac{\tilde{c_{2}}}{c_{0}} & \theta_{1} & \theta_{2}\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we assume that the internal radii of the two tubes are the same, we
+ have 
+\begin_inset Formula 
+\[
+\frac{A_{1}}{V_{1}}=\frac{A_{2}}{V_{2}}=\frac{2}{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and we can define the following known parameters: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+q_{1}=\frac{Q_{1}}{V_{1}} & q_{2}=\frac{Q_{2}}{V_{2}} & \textrm{and} & L_{12}=\frac{L_{1}}{L_{2}}\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the following unknown parameters: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccccc}
+q_{d}=k_{d} & q_{a}=k_{a}c_{0} & q_{s}=\frac{k_{s}A_{S}}{\pi R^{2}L_{1}} & \textrm{and} & W=\frac{2w}{c_{0}R}\end{array}\label{eq:puff-model-parameters}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This lets us rewrite the ODE system as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+{} & \dot{c_{1}}=-qq_{1}c_{1}+q_{d}W\theta_{1}-q_{a}Wc_{1}(1-\theta_{1})+q_{s}(1-c_{1})\nonumber \\
+{} & \dot{\theta_{1}}=-q_{d}\theta_{1}+q_{a}c_{1}(1-\theta_{1})\nonumber \\
+{} & \dot{c_{2}}=-(qq_{1}L_{12}+q_{2})c_{2}+q_{d}W\theta_{2}-q_{a}Wc_{2}(1-\theta_{2})+qq_{1}L_{12}c_{1}\nonumber \\
+{} & \dot{\theta_{2}}=-q_{d}\theta_{2}+q_{a}c_{2}(1-\theta_{2})\label{eq:puff-model}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In practice, the time between subsequent pulse is long, compared to the
+ duration of the whiff.
+ We can therefore assume that the pipette is at equilibrium before the valve
+ is opened, yielding the following initial conditions: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ccccc}
+c_{1}=1 & \theta_{1}=\frac{1}{1+\frac{q_{d}}{q_{a}}} & c_{2}=0 & \textrm{and} & \theta_{2}=0\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We fit this model (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:puff-model"
+
+\end_inset
+
+) to PID measurements of 500 ms pulses of 27 different odorants (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:puff-model"
+
+\end_inset
+
+).
+ This model was able to reproduce the full range of kinetics in the dataset,
+ with just four unknown parameters (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:puff-model-parameters"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -999,7 +1793,7 @@ key "Olsson:2011bh,vanBreugel:2014is"
 
 \begin_layout Plain Layout
 Assume that odorant headspace is saturated, and use a tracer gas of known
- concnetration.
+ concentration.
  
 \end_layout
 
@@ -1072,7 +1866,7 @@ acfp{PID}
 
 , advantageous for their ease of use, sensitivity and speed, do not report
  an absolute value of the gas phase concentration of odorants.
- Since different odorants have different ionisation potentials, identical
+ Since different odorants have different ionization potentials, identical
  gas phase concentrations of different odorants can lead to different measuremen
 ts from the PID.
  Calibration of the PID, the process of converting the reported voltage
@@ -1086,10 +1880,10 @@ key "Martelli:2013it,Rouyar:2011ct,Nagel:2011jj"
 
 \end_inset
 
-, due to the difficulties of estabilished calibration techniques.
+, due to the difficulties of established calibration techniques.
  Some studies have calibrated the PID can be calibrated by coupling with
- another device that can measure absolutle concentrations, like gas chromatogpra
-hy - mass spectrosocopy devices or flame ionization detectors 
+ another device that can measure absolutely concentrations, like gas chromatogra
+phy - mass spectroscopy devices or flame ionization detectors 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ComettoMuniz:2003tq,Andersson:2012bs"
@@ -1110,7 +1904,7 @@ key "Olsson:2011bh,vanBreugel:2014is"
 
 \end_inset
 
- or in conjunction with a tracer gas of known concnetration 
+ or in conjunction with a tracer gas of known concentration 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kim:2010ds,Kim:2015dm,French:2007js,French:2014ek"
@@ -1119,8 +1913,8 @@ key "Kim:2010ds,Kim:2015dm,French:2007js,French:2014ek"
 
 .
  It is not known how valid the assumption of saturated headspace is, and
- using another gas of known concnetration does not contribute to the accuracy
- of the estimation of the absolute gas phase concnetration fo the test odorant.
+ using another gas of known concentration does not contribute to the accuracy
+ of the estimation of the absolute gas phase concentration of the test odorant.
  
 \end_layout
 
@@ -1128,7 +1922,7 @@ key "Kim:2010ds,Kim:2015dm,French:2007js,French:2014ek"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1199,13 +1993,17 @@ PID calibration for arbitrary odorants.
 
  of a pure odorant is placed in a scintillation vial, and air is blown over
  it at a fixed flow rate.
- A PID is palced the outlet tube close to the target (T).
- (b) Air required to completely deplte the odorant as a function of flow
+ A PID is placed the outlet tube close to the target (T).
+ (b) Air required to completely deplete the odorant as a function of flow
  rate.
  (c) PID traces from start to complete depletion of odorant for various
  flow rates.
  (d) Interrated PID signal as a function of flow rate.
- (e) Cumulative odorant vs.
+ (e) Cumulative odorant 
+\emph on
+vs
+\emph default
+.
  time for various flow rates.
  (f) Odorant flux as a function of flow rate (g) Odorant flux as a function
  of measured PID value, for ethyl acetate (red) and for 2-butanone (blue).
@@ -1227,7 +2025,7 @@ PID calibration for arbitrary odorants.
 Here, we propose a simple method to calibrate the PID to any odorant that
  it can detect.
  This method is easy to perform, does not require additional equipment,
- calibrated gases of known concnetration, or make any assumptions about
+ calibrated gases of known concentration, or make any assumptions about
  the saturation of headspace in the olfactometer.
  It works by depleting a known volume of pure odorant, and integrating the
  total PID signal over the course of depletion.
@@ -1245,7 +2043,7 @@ To calibrate our PID to ethyl acetate odorant, we placed 100
 
  of pure odorant in a 30 mL scintillation vial with a screw top lid with
  two tubes.
- One tube was fed into a clean aristream with a 2000 mL/min flow rate, and
+ One tube was fed into a clean airstream with a 2000 mL/min flow rate, and
  the other led to a 
 \begin_inset ERT
 status open
@@ -1284,10 +2082,10 @@ reference "fig:methods_calibration"
 
 \end_inset
 
-b), refleecting nonlinear relationships between the rate of evaporation
- and the flow rate.
- Correspondingly, smaller flow rates took longer to completelly deplete
- the odorant (Fig.
+b), reflecting nonlinear relationships between the rate of evaporation and
+ the flow rate.
+ Correspondingly, smaller flow rates took longer to completely deplete the
+ odorant (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1321,14 +2119,14 @@ reference "fig:methods_calibration"
 \end_inset
 
 d, red line), and used this to correct for variations in the total signal.
- Integrating the corrected PID curves yeilded curves of cumulative odorant
+ Integrating the corrected PID curves yielded curves of cumulative odorant
  
 \emph on
 vs.
 
 \emph default
- time that reached approximately the same height, correponding to the calcualted
- number of moles of odorant (dashed line, Fig.
+ time that reached approximately the same height, corresponding to the calculate
+d number of moles of odorant (dashed line, Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1343,7 +2141,7 @@ e), confirming that mapping from PID signals to number of molecules was
 
 \begin_layout Standard
 We then computed the odorant flux as a function of the flow rate, by estimating
- the slope of the cumualtive odorant curves in a relatively stable region
+ the slope of the cumulative odorant curves in a relatively stable region
  (Fig.
  
 \begin_inset CommandInset ref
@@ -1353,13 +2151,17 @@ reference "fig:methods_calibration"
 \end_inset
 
 f).
- Finally, we can combine these measurements to plot odorant flux vs.
+ Finally, we can combine these measurements to plot odorant flux 
+\emph on
+vs.
+
+\emph default
  the PID signal, to generate a function that maps PID values onto odorant
  flux.
- Odorant flux here is reported in units of mol/s, so consituties an estiamte
+ Odorant flux here is reported in units of mol/s, so constitutes an estimate
  of the absolute number of molecules of odorant emerging per unit time.
  We repeated this calibration process for another odorant (2-butanone),
- and show find that both curves are apprixmately linear (Fig.
+ and show find that both curves are approximately linear (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1411,15 +2213,15 @@ key "deBruyne:2001ur"
 
 .
  Typically, pulses of odorant have been delivered by forcing air through
- catridges containing a filter paper with a small quantitity of odorant
- diluted in Paraffin Oil.
+ cartridges containing a filter paper with a small quantity of odorant diluted
+ in Paraffin Oil.
  Stimulus duration is controlled by the length of time air is forced through
- the catridge, and stimulus intensity is controlled by the liquid phase
+ the cartridge, and stimulus intensity is controlled by the liquid phase
  dilution of the odorant in Paraffin Oil.
- This means that different catrdiges have to be prepared for different desired
- stimulus intensities, making the process potentially cumbersome.
+ This means that different cartridges have to be prepared for different
+ desired stimulus intensities, making the process potentially cumbersome.
  Furthermore, since odorants contaminate the entire inner surface of the
- cartrdige, cartridges typically are discarded after a certain number of
+ cartridge, cartridges typically are discarded after a certain number of
  uses
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1443,8 +2245,7 @@ key "Andersson:2012bs"
 
 \begin_layout Standard
 Pulses of odorant delivered this way can show dramatic variation from trial
- to trial, especially for volatile odorants with large vapour pressures
- (Fig.
+ to trial, especially for volatile odorants with large vapor pressures (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1453,7 +2254,7 @@ reference "fig:methods-pulse-variability"
 \end_inset
 
 , top row).
- In addition, different concnetrations of odorant in liquid phase can yeild
+ In addition, different concentrations of odorant in liquid phase can yield
  pulses with similar gas phase concentrations, confounding interpretations
  of responses to these stimuli (Fig.
  
@@ -1469,9 +2270,10 @@ reference "fig:methods-pulse-variability"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1524,15 +2326,15 @@ name "fig:methods-pulse-variability"
 status open
 
 \begin_layout Plain Layout
-How to reproducibily deliver pulses of odorant with different intensities.
+How to reproducibly deliver pulses of odorant with different intensities.
  
 \end_layout
 
 \end_inset
 
-How to reproducibily deliver pulses of odorant with different intensities
+How to reproducibly deliver pulses of odorant with different intensities
  (top row).
- Pulses delivered using a cartridge made of a Pastueir pipette with a filter
+ Pulses delivered using a cartridge made of a Pasteur pipette with a filter
  paper spotted with odorant diluted in Paraffin Oil.
  Pulse amplitude is controlled by varying the liquid phase concentrtration.
  (bottom row) Pulses delivered using pure odorant in a scintillation vial.
@@ -1561,7 +2363,7 @@ vs.
 \begin_layout Standard
 Here, we propose using pure odorants contained in a scintillation vial to
  deliver pulses of odorant.
- Pulse height is controlled by varying the flow through the scintilltion
+ Pulse height is controlled by varying the flow through the scintillation
  vial using a 
 \begin_inset ERT
 status open
@@ -1570,21 +2372,21 @@ status open
 
 
 \backslash
-acf{MFC}
+acs{MFC}
 \end_layout
 
 \end_inset
 
 .
  This approach has several advantages over the earlier method.
- First, since pure odorant is used, evaporation of the odorant does nto
- change the effective concentration fo the odorant that remains in the scintilla
-tion vial, and the gas phase concnetration of the headspace in the vial
+ First, since pure odorant is used, evaporation of the odorant does not
+ change the effective concentration of the odorant that remains in the scintilla
+tion vial, and the gas phase concentration of the headspace in the vial
  remains constant, as long as there is some odorant left in the vial.
  Second, it greatly simplifies the apparatus needed to deliver odorants:
  Pasteur pipettes, filter papers, etc.
  are not needed, and there is no need to precisely measure the amount of
- odorant in the scintilaltion vial.
+ odorant in the scintillation vial.
  Third, pulses of several intensities can be delivered with the same apparatus,
  enabling automation of typical experiments.
  Finally, this approach creates no waste, as all parts of the system can
@@ -1592,7 +2394,7 @@ tion vial, and the gas phase concnetration of the headspace in the vial
  When odorant is depleted, the scintillation vial can be refilled with more
  pure odorant.
  Pulses delivered using this method are more reliable from trial to trial
- than the earlier method, and do not show any signficant decay in amplitude
+ than the earlier method, and do not show any significant decay in amplitude
  over 20 trials (Fig.
  
 \begin_inset CommandInset ref
@@ -1609,14 +2411,14 @@ reference "fig:methods-pulse-variability"
 The primary reason to deliver odorant pulses of different intensities to
  a neuron is to determine its dose response curve.
  These results suggest that there are two approaches to this problem.
- First, one can embrace the intrinisc decay in pulse amplitude associated
+ First, one can embrace the intrinsic decay in pulse amplitude associated
  with the older method, and measure the stimulus 
 \emph on
 and
 \emph default
  response, and use the measured stimulus to determine the dose-response
  curve.
- Second, one can use MFCs and pure odorants to generate reprodible pulses,
+ Second, one can use MFCs and pure odorants to generate reproducible pulses,
  and utilize the unitary nature of this hardware approach to automate the
  experiment.
  
@@ -1627,10 +2429,10 @@ How to deliver fluctuating odorant signals
 \end_layout
 
 \begin_layout Standard
-why do it – white noise characterisation – efficient.
- need for reproducability.
+why do it – white noise characterization – efficient.
+ need for reproducibility.
  the old way: binary valves.
- limittations of binary stimuli: 0 to some value.
+ limitations of binary stimuli: 0 to some value.
  extreme distributions.
  
 \end_layout
@@ -1705,16 +2507,16 @@ Delivering fluctuating odorant signals.
 \emph default
  (a-b) Using a valve to deliver binary random sequences of ethyl acetate
  odorant.
- (a) Mean ethyl acetate concnetration (shading is standard error of mean).
+ (a) Mean ethyl acetate concentration (shading is standard error of mean).
  (b) Individual traces.
  (c-d) Using a MFC to deliver ethyl acetate with approximately Gaussian
  statistics.
- (c) Mean ethyl acetate concnetration (shading is standard error of mean).
+ (c) Mean ethyl acetate concentration (shading is standard error of mean).
  (d) Individual traces.
  (e-l) Distributions and autocorrelation functions of stimulus time series
  for various odorants.
  Black traces are binary random sequences delivered using a valve and red
- traces and Gaussian sequences deliverid using a MFC.
+ traces and Gaussian sequences delivered using a MFC.
  
 \end_layout
 
@@ -1734,7 +2536,7 @@ How to deliver Gaussian odorant signals with different means and variances
 \end_layout
 
 \begin_layout Standard
-why you would want to do this – measure how response propoerties of neurons
+why you would want to do this – measure how response properties of neurons
  change with first and second moment of the stimulus distribution.
  point to visual system where 1st and 2nd moment matter, but other moments
  don't matter so much.
@@ -1743,7 +2545,7 @@ why you would want to do this – measure how response propoerties of neurons
 
 \begin_layout Standard
 how to do it – MSG – single MFC set up, just change the control signals
- approporiately.
+ appropriately.
  ansatz for flow.
  
 \end_layout
@@ -1769,38 +2571,6 @@ Flux or concentration detectors?
 \begin_layout Standard
 Are PIDs flux or conc.
  detectors? What about neurons? refer to kaissling papers.
- 
-\end_layout
-
-\begin_layout Standard
-Results
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "ch:examples"
-
-\end_inset
-
-Ei choro aeterno antiopam mea, labitur bonorum pri no 
-\begin_inset CommandInset citation
-LatexCommand citeauthor
-key "taleb:2012"
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "taleb:2012"
-
-\end_inset
-
-.
- His no decore nemore graecis.
- In eos meis nominavi, liber soluta vim cu.
- Sea commune suavitate interpretaris eu, vix eu libris efficiantur.
  
 \end_layout
 

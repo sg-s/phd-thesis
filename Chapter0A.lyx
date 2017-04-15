@@ -81,7 +81,7 @@ Goals
 
 \begin_layout Standard
 Olfactory stimuli can be decomposed into a few basic features, like the
- chemical identity of the odorants in the odor, their concnetration, and
+ chemical identity of the odorants in the odor, their concentration, and
  the kinetics of the stimulus.
  
 \begin_inset ERT
@@ -98,16 +98,50 @@ acfp{ORN}
 
  appear to be able to capture all these features.
  The chemical identity of the odorant is captured by which olfactory neurons
- respond, since different neurons have different receptors.
+ respond, since different neurons have different receptors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ds,Hallem:2004ht"
+
+\end_inset
+
+.
  The concentration of the odorants in the stimulus is captured in part by
- the amplitude of neuronal response, and also by the identity of the neurons
- that respond, since different receptors have different sensitivities to
- the same odornt.
+ the amplitude of neuronal response 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:1999uh,deBruyne:2001ur"
+
+\end_inset
+
+, and also by the identity of the neurons that respond, since different
+ receptors have different sensitivities to the same odorant 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ds,Hallem:2004ht"
+
+\end_inset
+
+.
  Finally, the temporal structure of the odorant stimulus is encoded in the
- response kientics of neuron response.
- Insects on the wing can encounter odorant stimuli with varying cincbentrations
- and durations, and it is not clear if flies use all these features of the
- stimulus equally to make navigational decisions.
+ response kinetics of neuron response 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ Insects on the wing can encounter odorant stimuli with varying concentrations
+ and durations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea,vanBreugel:2014is"
+
+\end_inset
+
+, and it is not clear if flies use all these features of the stimulus equally
+ to make navigational decisions.
  
 \end_layout
 
@@ -125,9 +159,15 @@ acf{TFA}
 
 \end_inset
 
-, originally developed to study insect flight (CITE GOTZ HERE) and later
- adapted and modified to study vision, mechanosensation, and the visual
- control of flight 
+, originally developed to study insect flight 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gotz:1968vx"
+
+\end_inset
+
+ was later adapted and modified to study vision, mechanosensation, and the
+ visual control of flight 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lehmann:1997vz,Frye:2001ev,Sherman:2003tg,Bender:2006wl,Budick:2007gx"
@@ -143,8 +183,8 @@ key "Bhandawat:2010eu"
 
 \end_inset
 
- or in rotatable tethered configiration, where flies can actively reoirent
- into or away from an odorised airstream 
+ or in rotatable tethered configuration, where flies can actively reorient
+ into or away from an odorized airstream 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Frye:2003da,Frye:2004gj,Krishnan:2011eb"
@@ -152,9 +192,9 @@ key "Frye:2003da,Frye:2004gj,Krishnan:2011eb"
 \end_inset
 
 .
- Since the fly is fixed in place in this assay, it allows delivering and
- measuring olfactroy stimuli and measuring how these olfactroy stimuli modualte
- olfactroy flight behavior.
+ Since the fly is fixed in place in this assay, this makes it possible to
+ deliver and measure olfactory stimuli and permits measuring how these olfactory
+ stimuli modulate olfactory flight behavior.
  In this assay, the behavior of the fly is quantified by changes in the
  
 \begin_inset ERT
@@ -196,8 +236,8 @@ Wing Beat Analyzer
 
 \begin_layout Standard
 In the next section, I detail my attempts to use this assay to determine
- how flies change their flight behaviour with the identitiy, ampliotude
- and duration of olfactroy stimuli.
+ how flies change their flight behavior with the identity, amplitude and
+ duration of olfactory stimuli.
  
 \end_layout
 
@@ -213,7 +253,7 @@ key "Bhandawat:2010eu"
 
 \end_inset
 
-, I constructed a tethered flight assay where flies are tehtered to insect
+, I constructed a tethered flight assay where flies are tethered to insect
  pins and held in front of an airstream in the dark (see Fig.
  
 \begin_inset CommandInset ref
@@ -226,7 +266,7 @@ for a picture).
  A paired olfactometer used four valves, all upstream of vials containing
  odorant or control, to deliver short pulses of either odorant or control.
  A PID behind the fly captured the odorant delivered to the fly, and allowed
- me to record the stimulus simultenously with the behavior of the fly.
+ me to record the stimulus simultaneously with the behavior of the fly.
  
 \end_layout
 
@@ -325,7 +365,7 @@ acf{LED}
 
  (see top left for a picture).
  The wings of the fly cast a shadow on two photo detectors below the fly,
- whose signals can be used to measure the frequnecy and amplitude of the
+ whose signals can be used to measure the frequency and amplitude of the
  fly's wing beats.
  An odorant delivery system (labelled 
 \begin_inset Quotes eld
@@ -337,7 +377,7 @@ design #1
 
  can deliver either pulses of odorant or pulses of clean air to the fly.
  Valves switch between two symmetrical airstreams, one with odor (red) or
- one without, to deliver odorant to the fly with minimial changes in airflow.
+ one without, to deliver odorant to the fly with minimal changes in airflow.
  A 
 \begin_inset ERT
 status open
@@ -351,11 +391,11 @@ acf{PID}
 
 \end_inset
 
- sucks all the air and odorant delivered to the fly, allowing simultenous
+ sucks all the air and odorant delivered to the fly, allowing simultaneous
  monitoring of the behavior and the stimulus.
  Finally, genetic strategies can be used to delete or replace receptors
  in the fly.
- The timeseries at the bottom shows the typical experiemntal block, where
+ The time-series at the bottom shows the typical experimental block, where
  a control pulse (with no odorant) is presented first, followed by a test
  pulse with odorant.
  
@@ -376,7 +416,7 @@ Flight responses to pulses of different odorants
 \end_layout
 
 \begin_layout Standard
-Flies flapped their wings spontensouly when suspended in the device, creating
+Flies flapped their wings spontaneously when suspended in the device, creating
  the 
 \begin_inset Quotes eld
 \end_inset
@@ -394,10 +434,10 @@ reference "fig:tfa-diff-odors"
 \end_inset
 
 a).
- Each windbeat cycle produced this characteristic bilobed wave, and the
+ Each wingbeat cycle produced this characteristic bilobed wave, and the
  height of the waveform was a proxy for the wing beat amplitude, and the
  frequency of this waveform was the wing beat frequency.
- Flies tended to gradually decrease their wing beat amplitude when the airstream
+ Flies tended to gradually decrease their wing beat frequency when the airstream
  was turned on (Fig.
  
 \begin_inset CommandInset ref
@@ -415,8 +455,8 @@ reference "fig:tfa-diff-odors"
 \end_inset
 
 b, right panel).
- Switching airstreams in the absence of odorant did not evoke any strong
- response, either with the control airstream (Fig.
+ Switching airstreams in the absence of odorant did not evoke a strong response,
+ either with the control airstream (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -445,7 +485,7 @@ b, red).
 \end_layout
 
 \begin_layout Standard
-Having estabilished that flies do not increase their WBF or WBA in the absence
+Having established that flies do not increase their WBF or WBA in the absence
  of odorant, I then delivered 3 s pulses of four different odors (Apple
  Cider Vinegar, ethyl butyrate, methyl salicylate and ethyl acetate).
  Flies' behavior to these odor pulses were measured interleaved with responses
@@ -581,7 +621,7 @@ acf{LED}
 
  (see top left for a picture).
  The wings of the fly cast a shadow on two photo detectors below the fly,
- whose signals can be used to measure the frequnecy and amplitude of the
+ whose signals can be used to measure the frequency and amplitude of the
  fly's wing beats.
  An odorant delivery system (labelled 
 \begin_inset Quotes eld
@@ -593,7 +633,7 @@ design #1
 
  can deliver either pulses of odorant or pulses of clean air to the fly.
  Valves switch between two symmetrical airstreams, one with odor (red) or
- one without, to deliver odorant to the fly with minimial changes in airflow.
+ one without, to deliver odorant to the fly with minimal changes in airflow.
  A 
 \begin_inset ERT
 status open
@@ -607,11 +647,11 @@ acf{PID}
 
 \end_inset
 
- sucks all the air and odorant delivered to the fly, allowing simultenous
+ sucks all the air and odorant delivered to the fly, allowing simultaneous
  monitoring of the behavior and the stimulus.
  Finally, genetic strategies can be used to delete or replace receptors
  in the fly.
- The timeseries at the bottom shows the typical experiemntal block, where
+ The time-series at the bottom shows the typical experimental block, where
  a control pulse (with no odorant) is presented first, followed by a test
  pulse with odorant.
  In time traces of 
@@ -654,12 +694,12 @@ Flight responses to pulses with different amplitudes
 How does fly behavior vary with the amplitude of odorant signal presented?
  One possibility is that flies execute the same motor program independent
  of the concentration of the odor detected, and that the concentration of
- odorant detected triggers a navigational behavior, but not the details
- of that behavior.
+ odorant detected triggers a navigational behavior, but does not affect
+ the details of that behavior.
  Another possibility is that flies modulate their behavioral response based
  on the amplitude of the stimulus they detect.
  To distinguish between the two, I delivered pulses of ethyl acetate with
- varying concnetrations to flies and recorded their flight behavior.
+ varying concentrations to flies and recorded their flight behavior.
  
 \end_layout
 
@@ -865,7 +905,7 @@ key "Tammero:2002wd"
 
 \end_inset
 
-and the relatively narrow width of odor plumes that they would likely encounter
+ and the relatively narrow width of odor plumes that they would likely encounter
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -873,7 +913,7 @@ key "Murlis:1981by,Murlis:1992kp,Murlis:2000kk,Justus:2002da"
 
 \end_inset
 
-, flies may experience contact and loss witha plume almost instatneously.
+, flies may experience contact and loss with a plume almost instantaneously
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -890,9 +930,10 @@ key "vanBreugel:2014is"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1201,7 +1242,7 @@ reference "fig:tfa-trial-to-trial"
 
 \begin_layout aEnumerate (ClassicThesis)
 Pre-stimulus WBF drops steadily from trial to trial.
- It is relaitvely high in the first trial (
+ It is relatively high in the first trial (
 \begin_inset Formula $\sim$
 \end_inset
 
@@ -1221,7 +1262,7 @@ Odor-evoked responses grow from trial to trial.
 \end_layout
 
 \begin_layout Standard
-One possibility for this behavior could be because laborotaroy reared flies
+One possibility for this behavior could be because laboratory reared flies
  (Canton S flies were used in this assay) tend to fly much closer to their
  maximum WBF at rest 
 \begin_inset CommandInset citation
@@ -1305,7 +1346,7 @@ acs{MFC}
 
 \end_inset
 
-s are used to create an odorised airstream by blowing air over a scintilation
+s are used to create an odorized airstream by blowing air over a scintillation
  vial containing pure odorant.
  The concentration of the odorant in the airstream is controlled by varying
  the ratio of the air flows through the odor vial and through the diluent
@@ -1352,10 +1393,10 @@ This odorized airstream feeds into a dual three way valve, which switches
  between two states.
  Normally, the valve diverts the odorized airstream to waste, and directs
  another clean airstream to the fly.
- When the valve is activated, the odorized airstream is directed to teh
+ When the valve is activated, the odorized airstream is directed to the
  fly, and the other airstream is directed to waste.
  This switch is done using a single valve, that is constructed to have equal
- resistances along all flow paths, minimising airspeed and pressure changes
+ resistances along all flow paths, minimizing airspeed and pressure changes
  on valve operation.
  A second three way valve switches between two other clean airstreams, which
  is used to deliver control pulses with no odorant.
@@ -1432,7 +1473,7 @@ A better olfactometer.
  (a) Schematic of the redesigned olfactometer.
  (b) Different pulse amplitudes generated by varying the ratio of airflows
  through the odor and diluent vial (ratio in boxes).
- Diffierent pulse kinetics can be generated by varying the position of the
+ Different pulse kinetics can be generated by varying the position of the
  teflon plug in the glass funnel.
  (c) Constancy of pulse amplitude over time.
  The odorant used here is ethyl acetate.
@@ -1514,8 +1555,8 @@ key "Martelli:2013it"
 
 .
  Finally, using pure odorants and gas phase dilutions ensures that the amplitude
- of the odorant pulse does not decay over time, since the concetration of
- the odorant in the vial does not change, as it would if it was diluted
+ of the odorant pulse does not decay over time, since the concentration
+ of the odorant in the vial does not change, as it would if it was diluted
  in Paraffin Oil.
  Fig.
  
@@ -1544,7 +1585,7 @@ How do flies respond to pulses of odorant delivered with this new olfactometer?
  and measured their WBA and WBF response.
  Odorant pulses still elicited increases in the WBF, but the amplitude of
  responses was much smaller compared to those elicited by pulses delivered
- using the earler design (Fig.
+ using the earlier design (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1566,13 +1607,13 @@ reference "fig:tfa-results-2"
 
 a).
  On examining the WBA responses more closely, I observed two peaks in the
- WBA response that occured 
+ WBA response that occurred 
 \begin_inset Formula $\sim40$
 \end_inset
 
 ms after valve opening and closing, in both the control and odorant pulse
  responses.
- The fact that these peaks occured so quickly after valve movement, and
+ The fact that these peaks occurred so quickly after valve movement, and
  the fact that they existed in both responses to control pulses and odorant
  pulses, suggested that these peaks corresponded to a mechanical artifact
  associated with the motion of the valve.
@@ -1709,12 +1750,12 @@ reference "fig:tfa-design-2"
 \end_layout
 
 \begin_layout Standard
-To eliminate these mechanical artifacts, I redeisnged the olfactometer once
+To eliminate these mechanical artifacts, I redesigned the olfactometer once
  more, taking care to balance airstreams flowing into the two inlets of
  the two valves, and mechanically isolating the valves to prevent shockwaves
  from valve closing and opening from propagating through the entire device.
- These alterations to the design succeeded in greatly attenutating the transient
-s in the WBA response following valve opening and closing (Fig.
+ These alterations to the design succeeded in greatly attenuating the transients
+ in the WBA response following valve opening and closing (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1734,7 +1775,7 @@ reference "fig:tfa-results-3"
 a).
  However, responses to pulses of Apple Cider Vinegar delivered by design
  #3 were smaller than those elicited by pulses delivered by design #2, which
- in turn were smaller than those elicited by deisng #1 (Fig.
+ in turn were smaller than those elicited by design #1 (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1820,9 +1861,9 @@ Flight responses to ethyl acetate pulses delivered by olfactometer design
 \end_inset
 
 40 ms after valve motion, suggesting a mechanical artifact.
- (b) Design #3 largely elimiantes this mechanical artifact.
- (c-e) Comprison of responses evoked by Apple Cider Vinegar by Designs #1,
- 2 and 3.
+ (b) Design #3 largely eliminates this mechanical artifact.
+ (c-e) Comparison of responses evoked by Apple Cider Vinegar by Designs
+ #1, 2 and 3.
  
 \end_layout
 
@@ -1879,7 +1920,7 @@ key "Maimon:2010jy,Muijres:2014km,Muijres:2015ku,Reiser:2013jt,Sherman:2003tg,Ta
 \end_inset
 
 .
- In order to study how olfactory cues modualted flight behavior, olfactory
+ In order to study how olfactory cues modulated flight behavior, olfactory
  cues had to be introduced without introducing other cues, which is a very
  hard problem.
  Since all olfactory cues need to be transported by moving airstreams, deliverin
@@ -1894,9 +1935,9 @@ key "Daly:2013ij"
 \end_inset
 
 .
- The ability of the fly to detect mechanical distrubances in airstreams
+ The ability of the fly to detect mechanical disturbances in airstreams
  exceeded that of instruments at my disposal, making it hard to know with
- certainity if responses observed here were not contamiated by mechanical
+ certainty if responses observed here were not contaminated by mechanical
  stimuli originating from valve switching.
  
 \end_layout
@@ -1915,7 +1956,7 @@ key "Bender:2006wl,Bhandawat:2010eu"
  Flies also tended to stop flying intermittently, making data collection
  arduous.
  The reasons for the poor flight ability of the flies tested here is not
- known, but it could be due to (i) the fact that these experiemtns were
+ known, but it could be due to (i) the fact that these experiments were
  conducted in the dark, which is an atypical flying environment for flies,
  and (ii) the genetic background of the flies tested in this study.
  

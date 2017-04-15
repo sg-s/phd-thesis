@@ -5,3 +5,5 @@
 *.jpg
 *.png
 *.eps
+*.lyx#
+*lyxformat*

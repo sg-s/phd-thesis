@@ -81,11 +81,8 @@ name "chap:Gain-control"
 
 \end_inset
 
-Gain control in 
-\emph on
-Drosophila
-\emph default
- ORNs
+Olfactory receptor neurons use gain control and complementary kinetics to
+ encode intermittent odorant stimuli 
 \end_layout
 
 \begin_layout Section
@@ -476,14 +473,30 @@ Adaptation and saturation modulate ORN responses to broadly distributed
  responses from a ab3A ORN.
  (b) (a) 2-butanone odorant (top) elicits LFP (middle) and firing rate (bottom)
  responses from a ab2A ORN.
- (c) ab2 LFP responses vs.
+ (c) ab2 LFP responses 
+\emph on
+vs
+\emph default
+.
  projected stimulus.
- (d) ab2A firing rate vs.
+ (d) ab2A firing rate 
+\emph on
+vs
+\emph default
+.
  projected stimulus.
  (c) and (d) show that ORN responses differ significantly from linearity.
- (e) ab2 LFP responses vs.
+ (e) ab2 LFP responses 
+\emph on
+vs.
+
+\emph default
  whiff amplitude.
- (f) ab2A firing rate vs.
+ (f) ab2A firing rate 
+\emph on
+vs.
+
+\emph default
  whiff amplitude.
  n = 15 trials from 2 ORNs.
  101 whiffs shown in (e-f).
@@ -608,7 +621,14 @@ reference "fig:nat-stim-1"
 a-b).
  Durations of whiffs and blanks were broadly distributed, with a power law
  of exponent -3/2 to match natural intermittent statistics of odor plumes
- {Celani:2014ea} (Fig.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea"
+
+\end_inset
+
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -722,7 +742,7 @@ key "Celani:2014ea"
 \begin_inset Formula $t_{b}$
 \end_inset
 
-are whiff and blank durations.
+ are whiff and blank durations.
  (d) Mean 
 \emph on
 vs.
@@ -893,24 +913,40 @@ Deviations from linearity persist even when filters extracted from Gaussian
 
 \end_inset
 
-
-\emph default
 Deviations from linearity persist even when filters extracted from Gaussian
  stimuli are used to project naturalistic stimulus.
+
+\emph default
  (a) LFP filters for ab2A ORNs responding to 2-butanone, extracted either
  form naturalistic stimuli (black) or from Gaussian stimuli (red).
- (b) LFP responses to naturalistic stimulus vs.
+ (b) LFP responses to naturalistic stimulus 
+\emph on
+vs.
+
+\emph default
  stimulus projected through filter computed from naturalistic stimulus (Black
  filter in (a)).
- (c) LFP responses to naturalistic stimulus vs.
+ (c) LFP responses to naturalistic stimulus 
+\emph on
+vs.
+
+\emph default
  stimulus projected through filter computed from Gaussian stimulus (red
  filter in (a)).
  (d) Firing rate filters for ab2A ORNs responding to 2-butanone, extracted
  either from naturalistic stimuli (black) or from Gaussian stimuli (red).
- (e) Firing rate responses vs.
+ (e) Firing rate responses 
+\emph on
+vs.
+
+\emph default
  stimulus projected through filter computed from naturalistic stimulus (black
  filter in (d)).
- (f) Firing rate responses vs.
+ (f) Firing rate responses 
+\emph on
+vs.
+
+\emph default
  stimulus projected through filter computed from Gaussian stimulus (red
  filter in (d)).
  
@@ -928,7 +964,7 @@ Deviations from linearity persist even when filters extracted from Gaussian
 
 \begin_layout Standard
 Variations in the gain clearly do not arise from a static output nonlinearity,
- such as one associated with a linear-nonlinear transformation 
+ such as one associated with a static linear-nonlinear transformation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Dayan:2001uy"
@@ -1075,25 +1111,46 @@ Adaptation and saturation modulate ORN responses to broadly distributed
  does not correlate with whiff amplitude, but correlates with the intensity
  of the preceding whiff.
  Deviations in LFP (c) and firing rate responses (d) from the median response
- vs.
+ 
+\emph on
+vs.
+
+\emph default
  mean stimulus in the preceding 300 ms.
  Deviations in LFP (c, inset) and firing rate responses (d, inset) from
- the median response vs.
- whiff amplitude.
+ the median response 
+\emph on
+vs.
+ 
+\emph default
+whiff amplitude.
  (e) LFP response deviations (positive: red, negative: blue) as a function
  of the amplitude of the previous whiff and the time since previous whiff.
  Positive and negative deviations are significantly different (
 \begin_inset Formula $p=0.01$
 \end_inset
 
-, 2-dimensional K-S test) (f) Firing rate response deviations (positive:
- red, negative: blue) as a function of the amplitude of the previous whiff
- and the time since previous whiff.
+, 2-dimensional 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{KS}
+\end_layout
+
+\end_inset
+
+ test) (f) Firing rate response deviations (positive: red, negative: blue)
+ as a function of the amplitude of the previous whiff and the time since
+ previous whiff.
  Positive and negative deviations are significantly different, (
 \begin_inset Formula $p=0.001$
 \end_inset
 
-, 2-dimensional K-S test on firing rate deviations).
+, 2-dimensional KS test on firing rate deviations).
 \end_layout
 
 \end_inset
@@ -1361,7 +1418,7 @@ key "Martelli:2013it,Nagel:2011jj,Kim:2010ds"
  Such a mechanism may partly account for context dependent variation in
  firing rates.
  However, stimulus to LFP filters, computed for this stimulus and others,
- are monolobed (Fig.
+ are mono-lobed (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1378,7 +1435,7 @@ key "Nagel:2011jj"
 
 , ruling out contributions to dynamic modulation of LFP responses by this
  mechanism.
- A model with a static front-end nonlinearity and a monolobed filter fit
+ A model with a static front-end nonlinearity and a mono-lobed filter fit
  to the LFP also cannot reproduce context-dependent adaptation observed
  in the LFP (Fig.
  
@@ -1517,7 +1574,11 @@ reference "fig:weber-law"
 \end_inset
 
 d), though the mean response remained at ~30 Hz.
- To estimate ORN input-output curves, we plotted ORN responses vs.
+ To estimate ORN input-output curves, we plotted ORN responses 
+\emph on
+vs
+\emph default
+.
  the stimulus projected through the normalized best-fit linear filter for
  each stimulus, estimated through least-squares fitting 
 \begin_inset CommandInset citation
@@ -1637,10 +1698,18 @@ acs{PID}
  (b) Corresponding stimulus distributions.
  (c) ab3A firing rate responses to these stimuli.
  (d) Corresponding response distributions.
- (e) ORN responses vs.
+ (e) ORN responses 
+\emph on
+vs
+\emph default
+.
  stimulus projected through linear filters.
  Colored numbers indicate r2 between linear projections and ORN response.
- (f) ORN gain vs.
+ (f) ORN gain 
+\emph on
+vs
+\emph default
+.
  mean stimulus for each trial.
  Red line is the Weber-Fechner prediction (g) After rescaling the projected
  stimulus by the gain predicted by the red curve in (f), and correcting
@@ -1959,7 +2028,7 @@ name "fig:weber-law-supp-2"
 
 
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Ability of NL models to reproduce observed change in input-output curves
@@ -1969,18 +2038,30 @@ Ability of NL models to reproduce observed change in input-output curves
 
 \end_inset
 
+Ability of NL models to reproduce observed change in input-output curves.
 
 \emph default
-Ability of NL models to reproduce observed change in input-output curves.
- (a-c) static NL model responses.
+ (a-c) 
+\emph on
+static
+\emph default
+ NL model responses.
  (a) The input nonlinearity of NL model is chosen to be a Hill function
  with n = 1.
  (b) Filter of NL model, measured directly from the data.
- (c) NL model responses vs.
+ (c) NL model responses 
+\emph on
+vs
+\emph default
+.
  projected stimulus.
  While these curves appear to change slope with increasing mean stimulus,
  mean responses also tend to increase (purple … yellow).
- (d-f) Varying NL model responses, where the 
+ (d-f) 
+\emph on
+Varying
+\emph default
+ NL model responses, where the 
 \begin_inset Formula $K_{D}$
 \end_inset
 
@@ -2526,7 +2607,7 @@ name "fig:modularity"
 
 
 \begin_inset Argument 1
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2760,22 +2841,33 @@ Mean and variance gain control at transduction and spiking.
 
 \end_inset
 
+Mean and variance gain control at transduction and spiking.
 
 \emph default
-Mean and variance gain control at transduction and spiking.
  (a-d) Gain due to changing the mean stimulus.
  Transduction gain as a function of mean stimulus for different odor-receptor
  combinations.
  Red lines are power laws with exponent -1 (Weber-Fechner prediction).
  (e-f) Comparison of gain changes at transduction and firing due to changes
  in stimulus variance.
- (e) Trial-wise overall gain fold change (otal = ORN gain at low variance/ORN
- gain at high variance) 
+ (e) Trial-wise overall gain fold change (
+\begin_inset Formula $\gamma_{\textrm{total}}$
+\end_inset
+
+ = ORN gain at low variance/ORN gain at high variance) 
 \emph on
 vs
 \emph default
 .
- trial-wise product of gain fold changes at transduction () and firing ().
+ trial-wise product of gain fold changes at transduction (
+\begin_inset Formula $\gamma_{L}$
+\end_inset
+
+) and firing (
+\begin_inset Formula $\gamma_{F}$
+\end_inset
+
+).
  (f) Comparison of average fold change in gain due to changing stimulus
  variance.
  Pie chart shows relative contribution (in percent) of transduction gain
@@ -2920,11 +3012,19 @@ Intracellular Calcium increases with odor concentration.
 \emph default
 Intracellular Calcium increases with odor concentration.
  (a) Fold change in fluorescence from regions of interests (ROIs) over ab3
- sensilla in w; 22a-GAL4/+; UAS-GCamp6/+ flies.
+ sensilla in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
  Colors indicate odorant concentration applied (purple…yellow).
  Gray trace is from a control application with no odorant.
- Odorant was applied for 5 second from t=5s to t=10s.
- (b) GCamp6 fluorescence fold change as a function of peak stimulus, for
+ Odorant was applied for 5 second from 
+\begin_inset Formula $t=5$
+\end_inset
+
+ s to 
+\begin_inset Formula $t=10$
+\end_inset
+
+ s.
+ (b) GCamp6f fluorescence fold change as a function of peak stimulus, for
  ROIs over ab3 sensilla (red) and for control ROIs (black).
  (c) Pre-stimulus fluorescence 
 \emph on
@@ -3027,10 +3127,10 @@ Intracellular Calcium does not change with stimulus variance.
 Intracellular Calcium does not change with stimulus variance.
  (a) Odorant stimulus applied, consisting of alternating 5 s epochs of low
  variance (0 - 5 s) and high variance (5 - 10 s).
- (b) Relative fold change of GCamp6 fluorescence from ROIs over ab3 sensilla
- in w; 22a-GAL4/+; UAS-GCamp6/+ flies.
+ (b) Relative fold change of GCamp6f fluorescence from ROIs over ab3 sensilla
+ in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
  (c) Relative fold change of GCamp6 fluorescence from ROIs over control
- regions outside sensilla in w; 22a-GAL4/+; UAS-GCamp6/+ flies.
+ regions outside sensilla in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
  (d) Mean stimulus 
 \emph on
 vs
@@ -3038,7 +3138,7 @@ vs
 .
  standard deviation of stimulus for low variance epochs (blue) and high
  variance epochs (red).
- (e) Relative fold change in GCamp6 fluorescence from ROIs over ab3 sensilla
+ (e) Relative fold change in GCamp6f fluorescence from ROIs over ab3 sensilla
  between high-variance epochs and low-variance epochs.
  No significant change was observed (
 \emph on
@@ -3049,7 +3149,7 @@ t
 \end_inset
 
 ).
- (f) Relative fold change in GCamp6 fluorescence from control ROIs between
+ (f) Relative fold change in GCamp6f fluorescence from control ROIs between
  high-variance epochs and low-variance epochs.
  No significant change was observed (
 \emph on
@@ -3769,6 +3869,12 @@ reference "fig:kinetics-variance"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:bacteria-model"
+
+\end_inset
+
 An adaptive two-state receptor-complex model reproduces Weber-Fechner scaling,
  slow down of LFP kinetics, and responses to intermittent and Gaussian stimuli.
  
@@ -3833,7 +3939,7 @@ a) .
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-da/dt=(1-a)w_{+}(S,ε)-aw_{\text{–}}(S,ε)\label{eq:lfp-model-a}
+da/dt=(1-a)w_{+}(S,ε)-aw_{\text{-}}(S,ε)\label{eq:lfp-model-a}
 \end{equation}
 
 \end_inset
@@ -3847,7 +3953,7 @@ where the rates of activation
 \end_inset
 
  and inactivation 
-\begin_inset Formula $w_{\text{–}}(S,ε)$
+\begin_inset Formula $w_{-}(S,ε)$
 \end_inset
 
  are nonlinear functions of the odor concentration 
@@ -3881,7 +3987,7 @@ reference "eq:lfp-model-a"
  reduces to 
 \begin_inset Formula 
 \begin{equation}
-a\text{̅}(S,ε)=1/(1+w_{\text{–}}(S,ε)/w_{+}(S,ε))\label{eq:lfp-model-steady-state}
+a\text{̅}(S,ε)=1/(1+w_{\text{-}}(S,ε)/w_{+}(S,ε))\label{eq:lfp-model-steady-state}
 \end{equation}
 
 \end_inset
@@ -3972,7 +4078,7 @@ reference "fig:weber-law"
 \begin_inset Formula $\varepsilon_{L}$
 \end_inset
 
-is reached for small values of 
+ is reached for small values of 
 \emph on
 S
 \emph default
@@ -4128,9 +4234,22 @@ An important intrinsic property of this model is that adaptation to increasing
 
 \begin_layout Standard
 The resulting model (Eqs.
- 1-2, and Eqs.
- 3-5 in Methods) contains six parameters plus another 3 for converting the
- signal from activity to LFP.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-a"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-epsilon-dot"
+
+\end_inset
+
+) contains six parameters plus another 3 for converting the signal from
+ activity to LFP.
  We fit this model to LFP responses to the Gaussian and naturalistic stimuli.
  The model decreased gain with the mean stimulus background, consistent
  with Weber-Fechner Law (Fig.
@@ -4283,12 +4402,28 @@ A modified two state receptor model reproduces Weber’s Law and adaptive
  3,5) and naturalistic data (Fig.
  1-2).
  In these fits, and .
- (c) Model gain vs.
+ (c) Model gain 
+\emph on
+vs.
+
+\emph default
  mean stimulus.
- Red line is the Weber-Fechner prediction ().
- (c) LFP gain vs.
+ Red line is the Weber-Fechner prediction (
+\begin_inset Formula $\Delta R/\Delta S\sim1/S$
+\end_inset
+
+).
+ (c) LFP gain 
+\emph on
+vs
+\emph default
+.
  model gain.
- (e) Model response lag with respect to stimulus vs.
+ (e) Model response lag with respect to stimulus 
+\emph on
+vs.
+
+\emph default
  mean stimulus.
  (f) LFP and model responses to naturalistic stimulus.
  (g) The model reproduces LFP responses to similar-sized whiffs that vary
@@ -4317,33 +4452,113 @@ vs.
 Since the spiking machinery compensates for the slowdown in LFP responses
  to preserve the timing of odorant encounters, we wondered if a simplification
  of this model that ignores the slowdown of the LFP kinetics upon adaptation
- could be used to predict firing rate: where N is a static nonlinearity,
- a partially derivative taking linear filter ( indicates convolution), and
- the steady state solution of Eq.
- (1) with obeying Eq.
- 2.
+ could be used to predict firing rate: 
+\begin_inset Formula $R_{F}=N(K_{F}\otimes\bar{a}(S,\varepsilon))$
+\end_inset
+
+ where 
+\begin_inset Formula $N$
+\end_inset
+
+ is a static nonlinearity, 
+\begin_inset Formula $K_{F}$
+\end_inset
+
+ a partially derivative taking linear filter (
+\begin_inset Formula $\otimes$
+\end_inset
+
+ indicates convolution), and 
+\begin_inset Formula $\bar{a}(S,\varepsilon)$
+\end_inset
+
+ is the steady state solution (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-steady-state"
+
+\end_inset
+
+) with 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ obeying eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-epsilon-dot"
+
+\end_inset
+
+.
  This simplification reduces this model to a type of adaptive nonlinear
  linear-nonlinear (NLN) model, which preserves Weber-Fechner Law and reproduces
  the firing rates of ORN in response to both naturalistic and Gaussian Stimuli
  (Fig.
- 8 – figure supplement 2).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:model-firing"
+
+\end_inset
+
+).
  Thus it could be a useful tool in modeling ORN responses received by PNs,
- or in constructing computational models of the antennal lobe (Assisi et
- al., 2011; Bazhenov et al., 2001; Berck et al., 2016; Capurro et al., 2012;
- Chong et al., 2012; Hopfield, 1991; Kee et al., 2015; Koulakov et al., 2007;
- Luo et al., 2010; Sanda et al., 2016; Satoh et al., 2010; C.
- F.
- Stevens, 2015).
+ or in constructing computational models of the antennal lobe 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Assisi:2011cq,Bazhenov:2001ky,Berck:2016cx,Capurro:2012ic,Chong:2012vd,Hopfield:1991kw,Kee:2015er,Koulakov:2007jv,Sanda:2016hf,Satoh:2010wj,Stevens:2016ch"
+
+\end_inset
+
+.
  The model reproduced the change in the input-output curves on increasing
  the mean stimulus (Fig.
- 8 – figure supplement 2a, cf.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:model-firing"
+
+\end_inset
+
+a, cf.
  Fig.
- 3e) and decreased gain inversely with the mean stimulus, consistent with
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law"
+
+\end_inset
+
+e) and decreased gain inversely with the mean stimulus, consistent with
  the Weber-Fechner Law (Fig.
- 8 – figure supplement 2b).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:model-firing"
+
+\end_inset
+
+b).
  The model reproduced the observed decrease in the ORN gains (Fig.
- 8 – figure supplement 2c, ), and responses to naturalistic stimuli (Fig.
- 8 – figure supplement 2d-f).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:model-firing"
+
+\end_inset
+
+c, ), and responses to naturalistic stimuli (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:model-firing"
+
+\end_inset
+
+d-f).
  
 \end_layout
 
@@ -4488,8 +4703,8 @@ Discussion
 The goal of this work was to study how ORNs encode naturalistic odor signals,
  characterizing how gain control in ORNs is modulated dynamically in response
  to stimuli.
- By using precisely controlled, repeatable odorant stimuli, and linear modelling
-, we found that: 
+ By using precisely controlled, repeatable odorant stimuli, and linear modeling,
+ we found that: 
 \end_layout
 
 \begin_layout aEnumerate (ClassicThesis)
@@ -4930,7 +5145,7 @@ reference "fig:calcium-mean"
 
 ).
  Other mechanisms have also been implicated in adaptation of ORNs, like
- autoregulation of 
+ auto-regulation of 
 \begin_inset ERT
 status open
 
@@ -5068,8 +5283,8 @@ to decrease.
 \end_layout
 
 \begin_layout Standard
-Earlier work modelled the transformation from LFP to firing rates using
- a derivative-taking kernel 
+Earlier work modeled the transformation from LFP to firing rates using a
+ derivative-taking kernel 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nagel:2011jj"
@@ -5463,6 +5678,1310 @@ key "Murlis:1992kp"
  Receptors capable of fast adaptation may allow flying insects to detect
  brief whiffs of airborne odors.
  
+\end_layout
+
+\begin_layout Section
+Methods
+\end_layout
+
+\begin_layout Subsection
+Electrophysiology 
+\end_layout
+
+\begin_layout Subsubsection
+Single sensillum recordings.
+ 
+\end_layout
+
+\begin_layout Standard
+Single sensillum recordings from Drosophila antennae were performed as described
+ previously 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:2001ur,Martelli:2013it"
+
+\end_inset
+
+.
+ The recording electrode was inserted into a sensillum on the antenna of
+ an immobilized 
+\emph on
+Drosophila
+\emph default
+ 
+\emph on
+melanogaster
+\emph default
+ and a reference electrode was placed in the eye.
+ Electrical signals were amplified using an Iso-DAM amplifier (World Precision
+ Instruments).
+ The ab3 sensillum was identified by 1) its size and location on the antenna
+ 2) test pulses of 2-heptanone, to which the B neuron is very sensitive,
+ 3) spike shapes (A spikes are larger than B spikes) and 4) spontaneous
+ firing (ab3B fires at a higher rate than ab3A).
+ Other sensilla were identified using test odors to which either the A or
+ B neuron strongly responded to.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Spike sorting.
+ 
+\end_layout
+
+\begin_layout Standard
+All sensilla recorded from in this study contained two neurons
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:2001ur,Song:2012gp"
+
+\end_inset
+
+.
+ Generally, spikes from the “A” neuron are larger than spikes from the “B”
+ neuron.
+ However, spike amplitude and spike shape changed in our experiments with
+ strong odor or light drive, due to a phenomenon called “pinching” 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Olsson:2006bf"
+
+\end_inset
+
+, and due to small movements of the recording electrode relative to the
+ sensillum.
+ To identify spikes from the A neuron under these challenging conditions,
+ we developed a spike-sorting software package written in MATLAB (Mathworks,
+ Inc.), available at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/emonetlab/spikesort
+\end_layout
+
+\end_inset
+
+.
+ This package uses the full spike shape, with various dimensionality reduction
+ and clustering methods to reliably identify spikes from noise, and to sort
+ identified spikes.
+ This spike-sorting package performed with 99.5% accuracy compared to manually
+ sorted data on a test dataset.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Local Field Potentials.
+ 
+\end_layout
+
+\begin_layout Standard
+The local field potential was recorded by lowering the gain of the amplifier
+ and switching to DC mode, where we recorded the sensillar potential without
+ any low frequency cutoff.
+ Spike detection and sorting was reliable in either mode.
+ Since we were only interested in the deflections of LFP in response to
+ a fluctuating odor stimulus, we band-passed the raw voltage in software
+ to remove spikes and slow fluctuations.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fly stocks and genetic strategies
+\end_layout
+
+\begin_layout Standard
+Flies were reared at 25°C on conventional fly medium 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Helfand:1989wu"
+
+\end_inset
+
+.
+ All experiments were performed on adult female flies 3-5 days post-eclosion.
+ Unless otherwise mentioned, recordings were from ab3A neurons in Canton-S
+ flies.
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:chrimson"
+
+\end_inset
+
+ and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kinetics"
+
+\end_inset
+
+h, we recorded from ab3A ORNs in w; Or22a-GAL4/+; UAS-Chrimson/+ flies.
+ In these flies, only ab3A ORNs were sensitive to light, while ab3B neurons
+ and nearby ab2 sensilla were not.
+ In Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:calcium-mean"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:calcium-variance"
+
+\end_inset
+
+, we recorded from w; Or22a-GAL4/+; UAS-GCaMP6f/+ flies.
+ 
+\end_layout
+
+\begin_layout Subsection
+Stimulus measurement 
+\end_layout
+
+\begin_layout Standard
+We used a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{PID}
+\end_layout
+
+\end_inset
+
+ (200B, Aurora Scientific) to measure the odor stimulus during every experiment.
+ Stimulus measurements occurred simultaneously with all electrophysiology,
+ and the tip of the PID probe was 
+\begin_inset Formula $<1$
+\end_inset
+
+ cm of the odor delivery tube and the fly.
+ The PID was calibrated by depleting known volumes of pure odorants, and
+ the response of the PID was found to be approximately linear with odorant
+ flux (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods_calibration"
+
+\end_inset
+
+).
+ However, due to gradual changes in the sensitivity of the PID detector,
+ odor intensity measurements are not comparable across experiments.
+ For more details on how the stimulus was measured, and for details on PID
+ calibration, see Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We measured the intensity of red light that we used to activate Chrimson
+ at the location of the fly using a PM160 light power meter (Thorlabs).
+ We used this to construct a function mapping control signals to our LED
+ to light power in 
+\begin_inset Formula $\textrm{\mu W}$
+\end_inset
+
+, and transformed control signals into light power using this function.
+ 
+\end_layout
+
+\begin_layout Subsection
+Odor stimulus generation 
+\end_layout
+
+\begin_layout Standard
+Details on the odoroant stimulus delivery are found in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+General principle.
+ 
+\end_layout
+
+\begin_layout Standard
+Odorants in gas phase were delivered to the antenna by blowing air over
+ pure monomolecular odorants in liquid phase.
+ The flow rate of air over the liquid odorant determined the gas phase concentra
+tion.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Controlling air flows.
+ 
+\end_layout
+
+\begin_layout Standard
+Mass Flow Controllers (MFCs) (Aalborg instruments & Controls, Inc.
+ and Alicat Scientific) were used to regulate airflows.
+ Dynamic response parameters of Alicat MFCs were chosen either for high
+ speed, and driven with switching times of up to 20 ms (at the cost of reproduci
+bility) or were chosen for high precision, and driven with switching times
+ of 100 ms (at the cost of very fast stimulus control).
+ An odorized airstream (0-200 mL/min) was fed into a main airstream (2 L/min)
+ that was delivered through a glass tube positioned within 10mm of the fly’s
+ antenna.
+ The secondary airstream passed through a scintillation vial with a machined
+ plastic screw-top lid containing pure odorant.
+ Using pure odorant and gas phase dilution permitted excellent reproducibility
+ of the odor stimulus.
+ All tubing was made of chemical-resistant PTFE tubing (McMaster Carr, stock
+ #5239K24).
+ By varying the control signals to the MFC bank, steps, pulses, and frozen
+ noise waveforms with arbitrary distributions could be reliably delivered.
+ We wrote a general-purpose acquisition and control system called kontroller
+ (available at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/emonetlab/kontroller
+\end_layout
+
+\end_inset
+
+) in MATLAB (Mathworks, Inc.) to control MFCs, valves and LEDs and to collect
+ data from electrophysiology and the stimulus measurement.
+\end_layout
+
+\begin_layout Paragraph
+Naturalistic Stimulus (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-1"
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+To generate naturalistic odor stimuli, we randomly varied flow rates over
+ 0-200 mL/min, and used a small solenoid valve (Lee Co.) to deliver 50 ms
+ whiffs of odorant.
+ We used the same frozen random sequence in subsequent trials.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Stimulus with changing mean (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+To generate approximately Gaussian-distributed stimuli that differed in
+ their mean, but with similar variances, we started with the ansatz that
+ air flow rates were proportional to measured gas-phase stimulus.
+ We then defined target Gaussian distributions that differed only in their
+ mean, and a parametric distribution from which we drew control signals
+ to the MFC.
+ Using kontroller to automate the process, we performed a direct search
+ on hardware to find the best distribution of control signals that was closest
+ to the desired Gaussian distribution.
+ Further rounds of off-line numerical optimization using nonparametric models
+ of the delivery system ensured that the resultant stimulus distributions
+ were as close to Gaussians and with variances as similar to one another
+ as possible.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Stimulus with changing variance.
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+We used two MFCs driven by control signals with different variances to generate
+ two Gaussian-distributed stimuli with differing variances.
+ Solenoid valves (Lee Co.) were used to switch from one airstream to the
+ other every 5 seconds.
+ Control signals were iteratively optimized using simulations and kontroller
+ till the mean stimulus intensity from the two odor lines was indistinguishable.
+ 
+\end_layout
+
+\begin_layout Subsection
+Numerical Methods 
+\end_layout
+
+\begin_layout Subsubsection
+Statistics of Naturalistic Odor.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the intensity distribution in our naturalistic odor stimulus was very
+ broad, we defined whiffs of odor as short excursions of the odorant signal
+ above the noise floor.
+ Blanks were defined as the periods of time between whiffs.
+ Whiff intensities were broadly distributed, and were fit with a functional
+ form proposed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea"
+
+\end_inset
+
+.
+ Both whiff and blank duration distributions were fit with a power law with
+ exponent -3/2, following theoretical calculations for a jet flow 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea"
+
+\end_inset
+
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-statistics"
+
+\end_inset
+
+).
+ Mean and variance of naturalistic odor stimuli were computed in non-overlapping
+ windows of length (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-statistics"
+
+\end_inset
+
+e, 
+\begin_inset Formula $\tau=$
+\end_inset
+
+ 400 ms).
+ Window lengths were varied from 
+\begin_inset Formula $\tau=$
+\end_inset
+
+ 10 ms to 
+\begin_inset Formula $\tau=$
+\end_inset
+
+10 s (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-statistics"
+
+\end_inset
+
+f).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Estimating deviations in response to naturalistic stimulus.
+ 
+\end_layout
+
+\begin_layout Standard
+For every whiff shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-1"
+
+\end_inset
+
+e-f, we computed the median response for all whiffs in a bin centered around
+ that whiff’s stimulus amplitude, that encompassed other whiffs if their
+ amplitude was within 10%.
+ The fractional deviation in response to a given whiff 
+\begin_inset Formula $i$
+\end_inset
+
+ is defined as 
+\begin_inset Formula $D_{i}=(R_{i}-\tilde{R})/\tilde{R}$
+\end_inset
+
+, and is a dimensionless number that is negative when responses are smaller
+ than the median.
+ To determine if the time to the previous whiff and the amplitude of the
+ previous whiff of negative deviations and positive deviations were different,
+ we used a 2-sample two-dimensional Kolmogorov-Smirnoff test, based on the
+ method proposed by Peacock 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peacock:1983wd"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Filter extraction.
+ 
+\end_layout
+
+\begin_layout Standard
+Details of filter extraction are found in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Linear-kernel-extraction"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Linear filters extracted from naturalistic stimuli (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-stim-1"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nat-gaussian-filters"
+
+\end_inset
+
+) are not unbiased estimates of the true filter, since the stimulus is not
+ Gaussian.
+ Similarly, if a front-end nonlinearity precedes a linear filtering step
+ in a system, this fitting procedure will not yield an unbiased estimate
+ of the true filter.
+ Nonetheless, linear filters computed by least squares fitting are the filters
+ that best predict 
+\emph on
+R
+\emph default
+ given
+\emph on
+ S
+\emph default
+, in the least-squares sense.
+ 
+\end_layout
+
+\begin_layout Paragraph
+ORN Input Output Curves.
+\end_layout
+
+\begin_layout Standard
+(solid lines in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law"
+
+\end_inset
+
+e, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+e etc.) We defined ORN input-output curves to be the output nonlinearity
+ of a LN model, which were estimated by plotting ORN response 
+\emph on
+vs.
+
+\emph default
+ the projected stimulus, and then computing a piecewise linear function
+ using 50 bins along the horizontal axis.
+ Computing piecewise linear functions allowed us to visualize the output
+ nonlinearity without making explicit assumptions of the functional form
+ of the nonlinearity.
+ Dashed lines in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+e are the cumulative distributions of the stimulus, computed over all the
+ data.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Estimation of gain.
+ 
+\end_layout
+
+\begin_layout Standard
+In general, for any system with a single stimulus and response, we define
+ the gain of the system by measuring the slope of the nonlinearity in the
+ best fit LN model, normalizing the filters to preserve the scale of the
+ stimulus as in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baccus:2002fy"
+
+\end_inset
+
+.
+ With Gaussian stimuli that only gently perturb the system, the nonlinearity
+ is simply a straight line, and the gain is computed by the average slope
+ of a linear fit to the output nonlinearity (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:weber-law"
+
+\end_inset
+
+).
+ When output nonlinearities are strong, we estimated gain by the slope at
+ the midpoint of the nonlinearity (Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:modularity"
+
+\end_inset
+
+).
+ We measured three different gains: 1) transduction gains, from the stimulus
+ to the LFP, 2) firing gains, from the LFP to the firing rate, and 3) overall
+ ORN gains, from the stimulus to the firing rate.
+ Transduction gain had units of (mV/V) since deflections in LFP are measured
+ in mV and the stimulus is measured in V.
+ Similarly, firing gain had units of Hz/mV.
+ Overall ORN gain had units of Hz/V when stimulating ORNs with fluctuating
+ odor, and had units of Hz/
+\begin_inset Formula $\textrm{\mu W}$
+\end_inset
+
+ when stimulating with light.
+ In experiments where we changed the variance (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+), low-variance epochs tended to have a mean stimulus ~8% higher than high-varia
+nce epochs (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance-supp"
+
+\end_inset
+
+), despite our best efforts to keep the stimulus mean the same.
+ To estimate gain changes solely due to the change in stimulus variance,
+ we divided the projected stimulus by the mean stimulus in each epoch in
+ each trial (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+e).
+ Differences in gain between high- and low-variance epochs remain significant
+ even without this correction (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance-supp"
+
+\end_inset
+
+b-c).
+ A single filter was used to project stimuli in both low- and high-variance
+ epochs; changes in gain from low- to high-variance stimuli thus appear
+ solely in the nonlinearity (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance-supp"
+
+\end_inset
+
+d).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Measuring lags.
+ 
+\end_layout
+
+\begin_layout Standard
+In all our data, we measured the stimulus together with the response of
+ ORNs.
+ This allowed us to estimate transduction and firing lags with respect to
+ the stimulus.
+ In general, we estimated response lags by computing cross-correlation functions
+ from the stimulus to the response.
+ Lag was defined to be the location of the peak of the cross-correlation
+ function.
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:kinetics"
+
+\end_inset
+
+a-b).
+ 
+\end_layout
+
+\begin_layout Paragraph
+Estimation of variance gain control timescale.
+ 
+\end_layout
+
+\begin_layout Standard
+To estimate the timescale of variance gain control (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+), we computed input-output curves from the projected stimulus to the firing
+ rate in 50 ms bins, pooling all trials together.
+ This allowed us to estimate gain in 50 ms bins, together with the stimulus
+ contrast (standard deviation/mean).
+ We plotted time series of instantaneous gain and stimulus contrast (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+h), and observed that while the stimulus contrast changed rapidly after
+ the switch from high to low variance (at 
+\begin_inset Formula $t=5$
+\end_inset
+
+ s), the instantaneous gain changed more slowly, but still changed in 
+\begin_inset Formula $\sim130$
+\end_inset
+
+ ms, suggesting that timescale of variance gain control is relatively rapid.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Statistical tests.
+ 
+\end_layout
+
+\begin_layout Standard
+To determine if ab3A transduction-to-firing gain varied with the mean stimulus
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:modularity"
+
+\end_inset
+
+d), we used a Spearman rank correlation test.
+ To determine if gains varied significantly from low to high variance epochs
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:modularity"
+
+\end_inset
+
+), we first reshaped the raw data into trials 10 s long.
+ Each trial consisted of a high variance epoch followed by a low variance
+ epoch.
+ Each trial was fit with three linear models, and yielded three pairs of
+ gains, for transduction gain, firing gain, and total ORN gain.
+ We discarded all trials where any linear model fit was poorly correlated
+ with data, retaining only trials where all fits had high correlations with
+ data (
+\begin_inset Formula $r^{2}>0.8$
+\end_inset
+
+, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:variance-supp"
+
+\end_inset
+
+f-g).
+ We used the Wilcoxon signed rank test on these tuples to determine if the
+ difference in gains in the low and high variance epochs was statistically
+ significant.
+ 
+\end_layout
+
+\begin_layout Subsection
+Modelling
+\end_layout
+
+\begin_layout Subsubsection
+Stimulus binding and the activity of the Or-Orco complexes.
+ 
+\end_layout
+
+\begin_layout Standard
+We assume that Or and Orco form a complex that can exist in two conformations
+ that can bind ligand.
+ The concentration of unbound active complexes is C* and that of unbound
+ inactive one is C.
+ The corresponding concentrations for the bound complexes are C*S and CS
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lfp-model"
+
+\end_inset
+
+a).
+ The fraction of active Or-Orco complexes is therefore:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\frac{C*+C*S}{C+CS+C*+C*S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Un)binding of odorant is taken to be much faster than the (in)activation.
+ Thus, the probability to be bound in the active and inactive cases are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign*}
+{} & P_{b}=\frac{S}{S+K_{\textrm{off}}}\\
+{} & P_{b}*=\frac{S}{S+K_{\textrm{on}}}
+\end{flalign*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here 
+\begin_inset Formula $K_{\textrm{on}}<K_{\textrm{off}}$
+\end_inset
+
+ are the dissociation constants for each state.
+ Let the free energy difference in units of 
+\begin_inset Formula $k_{B}T$
+\end_inset
+
+ between the active and inactive states be 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon^{b}$
+\end_inset
+
+ when unbound and when bound, respectively.
+ For simplicity, we assume detailed balance (this can easily be relaxed
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Skoge:2013fq"
+
+\end_inset
+
+), which constrains the free energy difference between 
+\emph on
+C*S
+\emph default
+ and 
+\emph on
+CS
+\emph default
+ to be 
+\begin_inset Formula $\varepsilon^{b}=\varepsilon+\log(K_{\textrm{on}}/K_{\textrm{off}})$
+\end_inset
+
+.
+ The activation kinetics can then be described by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dC*}{dt}=w_{+}^{u}C-w_{-}^{u}C*
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the rates are 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{\pm}^{u}=\frac{\alpha}{1+e^{\pm\varepsilon}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{\pm}^{b}=\frac{\alpha}{1+e^{\pm\varepsilon^{b}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We constrained the energy barrier between the active and inactive conformations
+ by making the simplifying assumption that 
+\begin_inset Formula $w_{+}^{u}+w_{-}^{u}=\alpha=w_{-}^{b}+w_{-}^{b}$
+\end_inset
+
+, where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is an intrinsic switching rate (see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Skoge:2013fq"
+
+\end_inset
+
+).
+ From these considerations we can then derive Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-a"
+
+\end_inset
+
+ from the main text, which describes the dynamics of the activity: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{da}{dt}=(1-a)w_{+}(S,ε)-aw_{-}(S,ε)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the rates
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{+}(S,ε)=P_{b}w_{+}^{b}+(1-P_{b})w_{+}^{u}=\frac{S}{S+K_{\textrm{off}}}\frac{α}{1+e^{\varepsilon+\log(\frac{K_{\textrm{on}}}{K_{\textrm{off}}})}}+\frac{K_{\textrm{off}}}{S+K_{\textrm{off}}}\frac{α}{1+e^{\varepsilon}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w_{-}(S,ε)=P_{b}^{*}w_{-}^{b}+(1-P_{b}^{*})w_{-}^{u}=\frac{S}{S+K_{\textrm{on}}}\frac{α}{1+e^{-\varepsilon-\log(\frac{K_{\textrm{on}}}{K_{\textrm{off}}})}}+\frac{K_{\textrm{on}}}{S+K_{\textrm{on}}}\frac{α}{1+e^{-\varepsilon}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given a steady state signal 
+\begin_inset Formula $S$
+\end_inset
+
+, the activity relaxes towards
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{a}(S,\varepsilon)=\frac{1}{1+\frac{w_{-}}{w_{+}}}=\frac{1}{1+e^{\varepsilon(\frac{1+S/K_{\textrm{off}}}{1+S/K_{\textrm{on}}})}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where the overbar indicates that equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lfp-model-a"
+
+\end_inset
+
+ is solved at steady state.
+ We model adaptation assuming that the activity feeds back onto the free
+ energy difference with rates that depend only on the activity (the effective
+ switching rate is constant): 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dε/dt=β(a-a_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is the rate of adaptation.
+ Note that the free energy is bounded both from below and from above.
+ In practice, we only need the lower bound 
+\begin_inset Formula $\varepsilon_{L}<\varepsilon$
+\end_inset
+
+.
+ At steady state (for values of 
+\begin_inset Formula $S$
+\end_inset
+
+ high enough that 
+\begin_inset Formula $\varepsilon_{L}<\varepsilon$
+\end_inset
+
+) we have 
+\begin_inset Formula $\bar{a}=a_{0}$
+\end_inset
+
+which implies that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{\varepsilon}(S)=\log(\frac{1-a_{0}}{a_{0}}\frac{1+S/K_{\textrm{on}}}{1+S/K_{\textrm{off}}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, at steady state, adaptation causes the free energy difference of the
+ complex to increase with the logarithm of the background signal intensity.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Kinetic slowdown upon adaptation.
+\end_layout
+
+\begin_layout Standard
+Substituting 
+\begin_inset Formula $\bar{\varepsilon}(S)$
+\end_inset
+
+ into the definitions of the (in)activation rates, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{w_{+}}(S)=\frac{S}{S+K_{\textrm{off}}}\frac{\alpha}{1+\frac{K_{\textrm{on}}}{K_{\textrm{off}}}\frac{1-a_{0}}{a_{0}}\frac{1+S/K_{\textrm{on}}}{1+S/K_{\textrm{off}}}}+\frac{K_{\textrm{on}}}{S+K_{\textrm{off}}}\frac{\alpha}{1+\frac{1-a_{0}}{a_{0}}\frac{1+S/K_{\textrm{on}}}{1+S/K_{\textrm{off}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{w_{-}}(S)=\bar{w_{+}}(S)\frac{1-a_{0}}{a_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $K_{\textrm{on}}<K_{\textrm{off}}$
+\end_inset
+
+, the rates and are decreasing functions of 
+\begin_inset Formula $S$
+\end_inset
+
+ in the range 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0\leq S\leq\sqrt{\frac{1-a_{0}}{a_{0}}K_{\textrm{on}}K_{\textrm{off}}}
+\]
+
+\end_inset
+
+In our case this bound is large (~40 V) and in our experiments the rates
+ are decreasing functions of 
+\begin_inset Formula $S$
+\end_inset
+
+ over the entire range.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Receptor activity to LFP.
+ 
+\end_layout
+
+\begin_layout Standard
+The output of the model described above is a time series of the fraction
+ of receptors that are active, .
+ Receptor activation can lead to the opening of other channels, which results
+ in a transduction current that we measure as changes in the LFP.
+ To generate LFP responses from this, we use 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{LFP}=C_{0}(K_{LFP}\text{\otimes}a(t))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\otimes$
+\end_inset
+
+ represents a convolution and 
+\begin_inset Formula $K_{LFP}$
+\end_inset
+
+ is a linear time-invariant monolobed filter that is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{LFP}=\frac{t^{m}e^{\nicefrac{-t}{\tau}}}{m!\tau^{m+1}}\theta(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Receptor activation to firing rates.
+ 
+\end_layout
+
+\begin_layout Standard
+Since firing rates cannot be negative, and since the LFP to spiking transformati
+on has been shown the partly differentiating 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj"
+
+\end_inset
+
+, we generated firing rate responses from the receptor activity using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{F}=N(K_{F}\otimes a(t))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $N$
+\end_inset
+
+ is an output nonlinearity which is a simple threshold linear function (
+\begin_inset Formula $N(x<0)=0$
+\end_inset
+
+; 
+\begin_inset Formula $N(x>0)=Cx$
+\end_inset
+
+).
+ 
+\begin_inset Formula $\otimes$
+\end_inset
+
+ represents a convolution and 
+\begin_inset Formula $K_{F}$
+\end_inset
+
+ is a linear time-invariant filter that is given by the sum of two other
+ kernels: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+K_{F}=K_{1}+\alpha K_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where each kernel is parameterized by a Gamma function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+K_{i}=\frac{t^{m}e^{\nicefrac{-t}{\tau_{i}}}}{m!\tau_{i}^{m+1}}\theta(t) & i\in\{1,2\}\end{array}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

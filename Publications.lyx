@@ -97,16 +97,22 @@ This dissertation was written in partial fulfillment of the requirements
 \end_layout
 
 \begin_layout Itemize
-All of Part 
+All of Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Gain-control"
 
 \end_inset
 
-, as well as parts of Part 2, has been closely reproduced from a manuscript
- that is currently being revised for publication [cite gain control paper
- here]
+, as well as parts of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+, has been closely reproduced from a manuscript that is currently being
+ revised for publication [cite gain control paper here]
 \end_layout
 
 \begin_layout Itemize
@@ -118,13 +124,56 @@ reference "chap:Gain-control"
 \end_inset
 
  was performed by Mahmut Demir.
- Some data in Part 2 was originally collected by Carlotta Martelli 
+ Some data in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+ was originally collected by Carlotta Martelli, and was published in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-The research in Part 2 is being prepared as a manuscript for publication
- (Gorur-Shandilya, Demir, Emonet, in preparation).
+The work shown in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+ is being prepared as a manuscript for publication (Gorur-Shandilya, Demir,
+ Emonet, in preparation).
  
+\end_layout
+
+\begin_layout Itemize
+The model shown in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:bacteria-model"
+
+\end_inset
+
+ was developed by Junjiajia Long and Thierry Emonet 
+\end_layout
+
+\begin_layout Itemize
+The model shown in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:puff-model"
+
+\end_inset
+
+ was developed by Thierry Emonet 
 \end_layout
 
 \begin_layout Standard
