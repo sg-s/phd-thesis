@@ -150,12 +150,12 @@ status open
 
 
 \backslash
-s
+S
 \end_layout
 
 \end_inset
 
-
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:methods-gas-phase-dilution"
@@ -170,12 +170,12 @@ status open
 
 
 \backslash
-s
+S
 \end_layout
 
 \end_inset
 
-
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:methods-gaussians-mu-sigma"
@@ -192,12 +192,12 @@ status open
 
 
 \backslash
-s
+S
 \end_layout
 
 \end_inset
 
-
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:calibrating-pid"
@@ -742,6 +742,19 @@ Measuring odorants
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+[LOOK AT RIFFELL 2008 REVIEW FOR OTHER METHODS OF DETECTION ]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Light can be measured by cameras and sound by microphones, and the sensitivity
  and range of these electronic sensors can exceed that of the human eye
  or ear.
@@ -880,7 +893,11 @@ Relying on liquid phase concentrations can bias estimates of neuron response
 
 \end_inset
 
+
+\emph on
 Relying on liquid phase concentrations can bias estimates of neuron response.
+
+\emph default
  (a) Dose-response curve of ab3A responding to pulses of ethyl acetate stimulus,
  plotted as a function of the concentration in liquid phase.
  Red line is best fit Hill function, and text shows the parameters of the
@@ -2140,7 +2157,7 @@ Here, we propose a simple method to calibrate the PID to any odorant that
 
 \begin_layout Standard
 To calibrate our PID to ethyl acetate odorant, we placed 100 
-\begin_inset Formula $\mathrm{\mu L}$
+\begin_inset Formula $\textrm{\mu L}$
 \end_inset
 
  of pure odorant in a 30 mL scintillation vial with a screw top lid with
@@ -2434,10 +2451,13 @@ How to reproducibly deliver pulses of odorant with different intensities.
 
 \end_inset
 
-How to reproducibly deliver pulses of odorant with different intensities
- (top row).
- Pulses delivered using a cartridge made of a Pasteur pipette with a filter
- paper spotted with odorant diluted in Paraffin Oil.
+
+\emph on
+How to reproducibly deliver pulses of odorant with different intensities.
+ 
+\emph default
+(top row) Pulses delivered using a cartridge made of a Pasteur pipette with
+ a filter paper spotted with odorant diluted in Paraffin Oil.
  Pulse amplitude is controlled by varying the liquid phase concentrtration.
  (bottom row) Pulses delivered using pure odorant in a scintillation vial.
  Pulse amplitude is controlled by varying the flow through the vial.
@@ -2565,7 +2585,7 @@ status open
 
 
 \backslash
-s
+S
 \end_layout
 
 \end_inset
@@ -2600,7 +2620,7 @@ status open
 
 
 \backslash
-s
+S
 \end_layout
 
 \end_inset
@@ -2715,6 +2735,7 @@ e-h).
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
 status open
@@ -3076,22 +3097,139 @@ h).
 Discussion
 \end_layout
 
+\begin_layout Standard
+The goal of this work was to describe how a wide variety of olfactroy stimuli
+ can be generated reliably, using only two off-the-shelf components.
+ In this study we:
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+proposed a simple model derived from the physical interactions odorants
+ have with surfaces to reproduce, with only 4 parameters, the wide varierty
+ of stimulus kinetics that arise from the intrinsic chemical identity of
+ odorants under identical conditions of delivery (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:puff-model"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+developed a simple method to calibrate PIDs to any odorant that it can detect,
+ using no additional equipment (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods_calibration"
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+proposed methods to deliver pulses, intermittent stimuli and Gaussian stimuli
+ with controlled means and variances with a high degree of reproducability
+ (Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-pulse-variability"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:methods-intermittent-stimuli"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-gaussians"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+)
+\end_layout
+
 \begin_layout Subsection
 Flux or concentration detectors?
 \end_layout
 
 \begin_layout Standard
-Are PIDs flux or conc.
- detectors? What about neurons? refer to kaissling papers.
+Olfactory neurons are considered to be either concentration detectors, where
+ receptors are directly exposed to the external stimulus concentration,
+ or flux detectors, where stimulus molecules are accumulated in a peri-receptor
+ compartment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kaissling:1998wo"
+
+\end_inset
+
+.
+ Are PIDs flux or concentration detectors? The calibration technique we
+ proposed converts PID values into a flux, since (i) in the conditions described
+ here, a constant flux of odorant molecules is maintained at the outlet
+ of the delivery tube; and (ii) the PID sucks in air at a constant rate,
+ and constantly removes air from the detection chamber at the same rate.
+ Previous studies that have calibrated PIDs have reported PID values converted
+ into a instatenous gas phase concentration 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2010ds,Kim:2015dm,Schulze:2015bt"
+
+\end_inset
+
+.
+ While a constant flux of odorant molecules emerging from the delivery tube
+ may lead to a constant concentration of odorant at a fixed point from the
+ outlet (assuming steady state), the translation from flux to concnetration
+ is not without assumptions, and probably varies with the geometry of the
+ setup, and other factors.
+ Moreover, since conservation of odorant implies that the invariant physical
+ quantitity of interest is the flux, our calibration procedure naturally
+ converts PID readouts into units of flux.
  
 \end_layout
 
 \begin_layout Subsection
-Delivering odors and mixtures of odorants
+Delivering and measuring mixtures of odorants
 \end_layout
 
 \begin_layout Standard
-challenges in measurering differnet components individually 
+Odorants do not typically exist in isolation in nature.
+ Odors consist of mixtures of odorants, and the specific fractional composition
+ of different odorants in an odor mixture can carry important information.
+ The measurement and delivery of mixtures of odorants is beyond the scope
+ of this study, primarily because there is no unambiguous method to indepdnelty
+ measure the amount of different compoennts of an odor mixture using a PID.
+ Since the PID sucks in all molecules in the airstream, and sums across
+ all the ions in the detection chamber, it is incapable of distinguishing
+ between varyiong amounts of different odorants.
+ Recent work, however, attempts to work around these challenges and presents
+ techniques to deliver mixtures of odorants 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gupta:2016km"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

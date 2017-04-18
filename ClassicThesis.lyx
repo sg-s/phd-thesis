@@ -360,11 +360,13 @@ filename "Chapter01_introduction.lyx"
 
 \end_layout
 
-\begin_layout Part Introduction (ClassicThesis)
-
-\end_layout
-
 \begin_layout Part
+\begin_inset CommandInset label
+LatexCommand label
+name "part:Methods"
+
+\end_inset
+
 Methods
 \end_layout
 
@@ -381,7 +383,7 @@ filename "Chapter02_olfactometers.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter03_recording_from_orns.lyx"
+filename "Chapter04_ln_modelling.lyx"
 
 \end_inset
 
@@ -389,17 +391,13 @@ filename "Chapter03_recording_from_orns.lyx"
 \end_layout
 
 \begin_layout Part
-Response and adaptation in Olfactory Receptor Neurons
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter04_ln_modelling.lyx"
+\begin_inset CommandInset label
+LatexCommand label
+name "part:Experiments"
 
 \end_inset
 
-
+Experiments
 \end_layout
 
 \begin_layout Standard
@@ -412,37 +410,28 @@ filename "Chapter05_gain_control.lyx"
 
 \end_layout
 
-\begin_layout Part
-Software
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Chapter06_kontroller.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
-\start_of_appendix
-Appendix
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter0A.lyx"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+\begin_inset CommandInset label
+LatexCommand label
+name "part:Conclusion"
+
+\end_inset
+
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
 \end_inset
 
 

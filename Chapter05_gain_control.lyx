@@ -361,6 +361,12 @@ Results
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:nat-stim"
+
+\end_inset
+
 ORN responses to broadly distributed naturalistic stimuli.
  
 \end_layout
@@ -401,9 +407,10 @@ key "Cao:2016jl"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -421,7 +428,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig1_main_nat_stim.eps
+	filename gfx/gain-control-fig1.pdf
 	lyxscale 30
 	width 80page%
 
@@ -1101,8 +1108,12 @@ Adaptation and saturation modulate ORN responses to broadly distributed
 
 
 \emph default
- Adaptation and saturation modulate ORN responses to broadly distributed
+ 
+\emph on
+Adaptation and saturation modulate ORN responses to broadly distributed
  naturalistic stimuli.
+
+\emph default
  (a) Ethyl acetate whiffs of similar size (top) elicit ab3 LFP responses
  (middle) and ab3A firing rate responses (bottom) with different amplitudes.
  (b) 2-butanone whiffs of similar size (top) elicit ab2 LFP responses (middle)
@@ -1332,8 +1343,25 @@ d whiffs
 
 
 \emph default
- An NL model (static input nonlinearity followed by a linear filter) cannot
- reproduce context-dependence of LFP responses to similar-sized whiffs.
+ 
+\emph on
+An 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{NL}
+\end_layout
+
+\end_inset
+
+ model (static input nonlinearity followed by a linear filter) cannot reproduce
+ context-dependence of LFP responses to similar-sized whiffs.
+
+\emph default
  Input nonlinearity (a) and filter (b) fit to ab2 LFP responses to 2-butanone
  naturalistic stimulus.
  The input nonlinearity is a Hill function (
@@ -2239,9 +2267,9 @@ ORNs decrease gain with stimulus variance
 
 \end_inset
 
+ORNs decrease gain with stimulus variance.
 
 \emph default
-ORNs decrease gain with stimulus variance.
  (a) Stimulus intensity of a fluctuating ethyl acetate stimulus with nearly
  constant mean but a variance that switches between high and low every 5
  seconds.
@@ -2403,9 +2431,9 @@ Variance gain control in Gaussian stimuli
 
 \end_inset
 
+Variance gain control in Gaussian stimuli.
 
 \emph default
-Variance gain control in Gaussian stimuli.
  (a) While the dominant change between the two epochs is the change in variance
  (by construction), the low variance trials also tend to have slightly higher
  means.
@@ -3008,9 +3036,9 @@ Intracellular Calcium increases with odor concentration.
 
 \end_inset
 
+Intracellular Calcium increases with odor concentration.
 
 \emph default
-Intracellular Calcium increases with odor concentration.
  (a) Fold change in fluorescence from regions of interests (ROIs) over ab3
  sensilla in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
  Colors indicate odorant concentration applied (purple…yellow).
@@ -3122,9 +3150,9 @@ Intracellular Calcium does not change with stimulus variance.
 
 \end_inset
 
+Intracellular Calcium does not change with stimulus variance.
 
 \emph default
-Intracellular Calcium does not change with stimulus variance.
  (a) Odorant stimulus applied, consisting of alternating 5 s epochs of low
  variance (0 - 5 s) and high variance (5 - 10 s).
  (b) Relative fold change of GCamp6f fluorescence from ROIs over ab3 sensilla
@@ -3345,7 +3373,11 @@ Modularity of gain control revealed by optogenetic stimulation.
 
 
 \emph default
- Modularity of gain control revealed by optogenetic stimulation.
+ 
+\emph on
+Modularity of gain control revealed by optogenetic stimulation.
+
+\emph default
  ab3A ORNs in w; 22a-GAL4/+; UAS-Chrimson/+ flies can be activated by ethyl
  acetate odorant or by red light.
  (a-b) Fluctuating odor foreground and constant light background.
@@ -3493,6 +3525,7 @@ t slowdown in the LFP.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
 status open
@@ -3623,7 +3656,7 @@ reference "fig:kinetics"
 a), consistent with 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Cao:2016jl,Nagel:2011jj,Kaissling:1987gv"
+key "Cao:2016jl,Nagel:2011jj,Kaissling:1987gva"
 
 \end_inset
 
@@ -3759,6 +3792,8 @@ name "fig:kinetics-variance"
 \end_inset
 
 
+\emph default
+
 \begin_inset Argument 1
 status open
 
@@ -3770,8 +3805,10 @@ Variance gain control does not change response kinetics.
 \end_inset
 
 
+\emph on
+Variance gain control does not change response kinetics.
+
 \emph default
- Variance gain control does not change response kinetics.
  (a) Stimulus autocorrelation functions, computed during high variance epochs
  (red) and during low variance epochs (blue).
  (b) Autocorrelation time (defined as the time the autocorrelation function
@@ -3987,14 +4024,14 @@ reference "eq:lfp-model-a"
  reduces to 
 \begin_inset Formula 
 \begin{equation}
-a\text{̅}(S,ε)=1/(1+w_{\text{-}}(S,ε)/w_{+}(S,ε))\label{eq:lfp-model-steady-state}
+\bar{a}(S,ε)=1/(1+w_{\text{-}}(S,ε)/w_{+}(S,ε))\label{eq:lfp-model-steady-state}
 \end{equation}
 
 \end_inset
 
 where the bar indicates steady state.
  
-\begin_inset Formula $a\text{̅}(S,ε)$
+\begin_inset Formula $\bar{a}(S,ε)$
 \end_inset
 
  is a monotonically increasing function of the odor concentration 
@@ -4145,7 +4182,7 @@ centerline{
 \begin_inset Graphics
 	filename gfx/fig8_s2.png
 	lyxscale 30
-	width 80page%
+	width 50page%
 
 \end_inset
 
@@ -4186,9 +4223,9 @@ Steady state activity of the two-state receptor model as a function of the
 
 \end_inset
 
+Steady state activity as a function of the stimulus background.
 
 \emph default
- Steady state activity as a function of the stimulus background.
  At high stimulus background, the steady state activity of the receptor
  complex is (here, 
 \begin_inset Formula $a_{0}=0.5$
@@ -4388,8 +4425,12 @@ A modified two state receptor model reproduces Weber’s Law and adaptive
 
 
 \emph default
- A modified two state receptor model reproduces Weber’s Law and adaptive
+ 
+\emph on
+A modified two state receptor model reproduces Weber’s Law and adaptive
  slowdown in LFP responses.
+
+\emph default
  (a) Or-Orco complexes (C) can be bound or unbound and active or inactive.
  We assume (un)binding rates are much faster than (in)activation rates.
  Activity of the complex feeds back onto the free energy difference between
@@ -4629,8 +4670,12 @@ Front-end adaptation followed by a LN model reproduces firing rate responses
 
 
 \emph default
- Front-end adaptation followed by a LN model reproduces firing rate responses
+ 
+\emph on
+Front-end adaptation followed by a LN model reproduces firing rate responses
  to Gaussian and naturalistic stimuli.
+
+\emph default
  (a-f) Model from stimulus to firing rate (see Methods) fit to Gaussian
  and naturalistic stimuli.
  (a) Model responses 
@@ -5688,12 +5733,17 @@ Methods
 Electrophysiology 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
 Single sensillum recordings.
  
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 Single sensillum recordings from Drosophila antennae were performed as described
  previously 
 \begin_inset CommandInset citation
@@ -5724,13 +5774,17 @@ melanogaster
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
 Spike sorting.
- 
 \end_layout
 
-\begin_layout Standard
-All sensilla recorded from in this study contained two neurons
+\end_inset
+
+ All sensilla recorded from in this study contained two neurons
 \begin_inset CommandInset citation
 LatexCommand citep
 key "deBruyne:2001ur,Song:2012gp"
@@ -5772,13 +5826,17 @@ https://github.com/emonetlab/spikesort
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
 Local Field Potentials.
- 
 \end_layout
 
-\begin_layout Standard
-The local field potential was recorded by lowering the gain of the amplifier
+\end_inset
+
+ The local field potential was recorded by lowering the gain of the amplifier
  and switching to DC mode, where we recorded the sensillar potential without
  any low frequency cutoff.
  Spike detection and sorting was reliable in either mode.
@@ -5972,7 +6030,11 @@ https://github.com/emonetlab/kontroller
  data from electrophysiology and the stimulus measurement.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
 Naturalistic Stimulus (Fig.
  
 \begin_inset CommandInset ref
@@ -5984,7 +6046,8 @@ reference "fig:nat-stim-1"
 ) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 To generate naturalistic odor stimuli, we randomly varied flow rates over
  0-200 mL/min, and used a small solenoid valve (Lee Co.) to deliver 50 ms
  whiffs of odorant.
@@ -5992,7 +6055,11 @@ To generate naturalistic odor stimuli, we randomly varied flow rates over
  
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
 Stimulus with changing mean (Fig.
  
 \begin_inset CommandInset ref
@@ -6001,11 +6068,11 @@ reference "fig:weber-law"
 
 \end_inset
 
-).
- 
+)
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 To generate approximately Gaussian-distributed stimuli that differed in
  their mean, but with similar variances, we started with the ansatz that
  air flow rates were proportional to measured gas-phase stimulus.
@@ -6022,9 +6089,12 @@ To generate approximately Gaussian-distributed stimuli that differed in
  
 \end_layout
 
-\begin_layout Paragraph
-Stimulus with changing variance.
- (Fig.
+\begin_layout Standard
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
+Stimulus with changing variance (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6035,7 +6105,8 @@ reference "fig:variance"
 ) 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 We used two MFCs driven by control signals with different variances to generate
  two Gaussian-distributed stimuli with differing variances.
  Solenoid valves (Lee Co.) were used to switch from one airstream to the
@@ -6197,7 +6268,7 @@ reference "fig:nat-stim-1"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:nat-gaussian-filters"
@@ -6858,7 +6929,6 @@ In our case this bound is large (~40 V) and in our experiments the rates
 
 \begin_layout Subsubsection
 Receptor activity to LFP.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6905,7 +6975,6 @@ K_{LFP}=\frac{t^{m}e^{\nicefrac{-t}{\tau}}}{m!\tau^{m+1}}\theta(t)
 
 \begin_layout Subsubsection
 Receptor activation to firing rates.
- 
 \end_layout
 
 \begin_layout Standard

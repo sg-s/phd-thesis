@@ -76,45 +76,28 @@ Black Box Analysis of ORN Responses
 \end_layout
 
 \begin_layout Standard
-In this chapter, I describe numerical methods I used to analyse the spontaenous
- and evoked activity of olfactory receptor neurons.
+In this chapter, I describe numerical methods I used to analyse the responses
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acfp{ORN}
+\end_layout
+
+\end_inset
+
+ to odorant stimuli.
+ These analysis methods treat the ORN as a black box, and do not explicitly
+ model the internal states of the ORN.
+ Instead, these methods parametrise the transformation of the time series
+ of the stimulus (the odorant) into the time series of the output using
+ a set of linear filters and nonlinear blocks.
+ The goal of this approach is to build phenomonological models that can
+ describe the rules that ORNs use to transform inputs into outputs, and
+ to quantify features of ORN responses.
  
-\end_layout
-
-\begin_layout Standard
-what is black box – why black box.
- inputs and output time series 
-\end_layout
-
-\begin_layout Standard
-no need for explicit mechanism.
- 
-\end_layout
-
-\begin_layout Standard
-minimal parameters 
-\end_layout
-
-\begin_layout Standard
-phenomonolgical models 
-\end_layout
-
-\begin_layout Standard
-the only thing we care about is the rule it uses to transform inputs into
- outputs 
-\end_layout
-
-\begin_layout Section
-Baseline activity of ORNs
-\end_layout
-
-\begin_layout Standard
-neurons spike spontaneously.
- 
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Section
@@ -213,12 +196,11 @@ name "fig:filter-extraction"
 status open
 
 \begin_layout Plain Layout
-Extracing linear filters from input and output time series data
+Extracing linear filters from input and output time series data.
 \end_layout
 
 \end_inset
 
-.
  
 \emph on
 Extracing linear filters from input and output time series data

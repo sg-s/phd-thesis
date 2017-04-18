@@ -72,10 +72,22 @@
 \begin_body
 
 \begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Introduction"
+
+\end_inset
+
 Introduction
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-olfactory-world-of-insects"
+
+\end_inset
+
 The olfactory world of insects
 \end_layout
 
@@ -83,9 +95,16 @@ The olfactory world of insects
 Olfaction — the sense of smell — is a key sensory modality in animals.
  Airborne chemicals can be transported through the air over long distances,
  and their detection can help insects navigate plumes of odors to their
- source, helping them find food and mates.
- For example, mosquitoes use thier sense of smell to detect a variety of
- volatiale molecules produced by humans and animals, especially carbon dioxide,
+ source, helping them find food and mates 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Murlis:1992kp,Riffell:2008hp,Gaudry:2012hk"
+
+\end_inset
+
+.
+ For example, mosquitoes use their sense of smell to detect a variety of
+ volatile molecules produced by humans and animals, especially carbon dioxide,
  to find hosts to feed on
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -94,12 +113,12 @@ key "Takken:1999ez,Verhulst:2011ko,Qiu:2006ei"
 \end_inset
 
 .
- Male moths use specialised, equisitely sensitive neurons on their antenna
- to detect trace amounts of phereonome realeased by female moths up to 200
+ Male moths use specialized, exquisitely sensitive neurons on their antenna
+ to detect trace amounts of pheromone released by female moths up to 200
  m away and reach them in a few minutes 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Wall:1987hb,Kennedy:1974tx"
+key "Wall:1987hb"
 
 \end_inset
 
@@ -110,8 +129,8 @@ key "Wall:1987hb,Kennedy:1974tx"
 \end_layout
 
 \begin_layout Standard
-The study of insect olfaction spans a number of broad questions spanning
- many discplines.
+The study of insect olfaction spans a number of broad questions across many
+ disciplines.
  What are the possible chemical signals that can be detected in the environment
  that insects inhabit? What are the molecules and cells that insects use
  to sense these signals? What are the challenges in signal detection and
@@ -123,39 +142,46 @@ Features of olfactory stimuli
 \end_layout
 
 \begin_layout Standard
-An odor stimulus consists of one or more voltalized chemicals (or odorants)
- that is typically of low molecular weight (< 300 Da 
+An odor stimulus consists of one or more volatilized chemicals (odorants)
+ that are typically of low molecular weight (< 300 Da 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Riffell:2016ce"
 
 \end_inset
 
-) transported from a source through the air to the olfactory organ.
- Since odor stimuli, unlike light or sound stimuli, consists of physical
- movement of molcules, the dominant feature of an odor stimulus is the the
- identity of the molecules percieved.
- The number of unique odorants is very large, and different molecules are
- produced by different sources, have different valence, are percieved by
- different insects.
- However, the fact that all these molucles have to be transported by the
- air and have to be detected by insects means that many olfactory stimuli
- share commonalities regardless of their chemical compositions.
+) transported from a source through the air to the olfactory organ on an
+ animal.
+ Since odor stimuli, unlike light or sound stimuli, necessitate physical
+ movement of molecules, the dominant feature of an odor stimulus is the
+ identity of the molecules being transported.
+ The number of possible odors is very large, because there exists a large
+ number of odorants that can be voltalized and that can, individually, act
+ as ligands for the olfactory system; and because these odorants can be
+ mixed together combinatoraially to create an even greater number of odors
+ that may be percieved differently and convey a different message.
+ However, the fact that all these molecules have to be transported by the
+ air and are detected by insects means that many olfactory stimuli share
+ commonalities regardless of their chemical compositions.
+ A useful approach to describe the diversity of olfactory stimuli is therefore
+ to consider the physical interactions that produce, transport and modify
+ olfactory stimuli.
  
 \end_layout
 
 \begin_layout Subsubsection
-The Physics of the odor environment
+The physics of the odor environment
 \end_layout
 
 \begin_layout Standard
-All olfactory stimuli begin by odorant molecules evaporating from some source.
- These voltalized molecules move with the air that surrounds them, and their
- temporal evolution and statistics depends therefore on the movement of
- the air that they are carried by.
+All olfactory stimuli begin by odorant molecules evaporating from some source,
+ like a pollinating flower, or an insect releasing a pheromone.
+ The volatilized molecules that constitute the odor move with the air that
+ surrounds them, and the temporal evolution and statistics of odor signals
+ depends therefore on the movement of the air that they are carried by.
  Two non-dimensional numbers, the Péclet number and the Reynolds number,
- are useful descriptors of moving airstreams and thus can determine the
- statistics of the odor signals within them.
+ are useful descriptors of moving airstreams that can predict the statistics
+ of the odor signals within them.
  
 \end_layout
 
@@ -164,9 +190,9 @@ The Péclet number is defined as the ratio of the advective and diffusive
  transport rates of a species in a flow.
  These two rates are determined by the ambient motion of the air and molecular
  diffusion that occurs by Brownian motion.
- For most insects navigate airborne odor stimuli, these two processes occur
- at very different scales: diffusion is slow and local, and advection is
- fast and extensive.
+ For most insects that navigate airborne odor stimuli, these two processes
+ occur at very different scales: diffusion is slow and local, and advection
+ is fast and extensive.
  Thus, Péclet number are typically large and odorant motion is dominated
  by advection 
 \begin_inset CommandInset citation
@@ -178,21 +204,42 @@ key "Riffell:2008hp"
 .
  This means that the motion of the air cannot be neglected when considering
  odor signals, and that in many cases, fluctuations in odor signals are
- correlated with fluctuations in instantenous flows.
+ correlated with fluctuations in instantaneous flows, a fact that has important
+ consequences for insects whose primary organ of olfaction is co-located
+ with their primary organ of mechanosensation in their antennae.
+ The domination of advection also influences how odor stimuli are delivered
+ to insects in the lab, with most odor delivery systems using moving airstreams
+ to deliver odors.
+ Some of these are discussed in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-The Reynolds number is the ratio of the intertial forces to viscous forces
+The Reynolds number is the ratio of the inertial forces to viscous forces
  within a fluid.
  It can be used to predict the transition from laminar to turbulent flow,
  and since the temporal statistics of odor signals are expected to be very
  different in the two cases, the Reynolds number is an important determinant
  of the olfactory environment.
- Insects navigating to an odor source in large Reynolds nuymber environments
- will experience intermittent, filamentous odor stimuli, while insects navigatin
-g low Reynolds environments will experience door signals that can resemble
- more smooth gradients 
+ Insects navigating to an odor source in large Reynolds number environments
+ will experience intermittent, filamentous odor stimuli, as is the case
+ for insects on the wing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea"
+
+\end_inset
+
+.
+ Insects navigating low Reynolds environments will experience odor signals
+ that can be closer to smooth gradients 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Riffell:2008hp"
@@ -200,6 +247,55 @@ key "Riffell:2008hp"
 \end_inset
 
 , which can occur during periods of still air.
+ The temporal statistics of odors many environments may therefore be very
+ skewed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Celani:2014ea"
+
+\end_inset
+
+.
+ While a large number of studies have used simple odor stimuli to characterize
+ the behavioral and sensory responses as a function of the identity and
+ intensity of odor stimuli 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:1999uh,deBruyne:2001ur,Hallem:2004ht"
+
+\end_inset
+
+, fewer studies have studied how intermittent odor stimuli are encoded by
+ sensory neurons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj,Martelli:2013it"
+
+\end_inset
+
+, and how they modulate olfactory behavior.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:nat-stim"
+
+\end_inset
+
+ uses reproducible intermittent stimuli created to mimic the statistics
+ of odors in the conditions described above.
  
 \end_layout
 
@@ -211,9 +307,9 @@ Odor plumes
 Odor plumes are columns of air that contain a higher concentration of odors
  created by evaporation of odors from small sources.
  Due to the large Péclet numbers of flows in ecologically relevant contexts,
- the chemical nature of the odor does not dominate the statistcs of plumes,
+ the chemical nature of the odor does not dominate the statistics of plumes,
  and plume structure can be considered to be largely independent of its
- constitutens 
+ components 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Murlis:1992kp"
@@ -222,7 +318,7 @@ key "Murlis:1992kp"
 
 .
  Insects can find the source of odor plumes, such as flowering plant, by
- flying up odor plumes.
+ navigating up odor plumes, often by flight.
  Odor plumes are 
 \begin_inset Quotes eld
 \end_inset
@@ -231,8 +327,8 @@ patchy
 \begin_inset Quotes erd
 \end_inset
 
- or intermittent at scales < 1 s, and > 1 mm, and are composed of narrow
- 
+ or intermittent at short temporal scales and large spatial scales (< 1
+ s and > 1 mm), and are composed of narrow 
 \begin_inset Quotes eld
 \end_inset
 
@@ -256,7 +352,7 @@ clumps
 \begin_inset Quotes erd
 \end_inset
 
-, and the time between subsequent whiffs, and between subsewueny blanks
+, and the time between subsequent whiffs, and between subsequent blanks
  is distributed according to a power law 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -270,10 +366,10 @@ key "Celani:2014ea"
 \begin_layout Standard
 At a given location, odor plumes are intermittent, and characterized by
  the absence of a continuous signal at a given intensity.
- The intermittenacy of odor plumes is a direct sonsequence of the motion
+ The intermittency of odor plumes is a direct consequence of the motion
  of the air carrying the odor.
  Turbulence can cause filaments in odor plumes to become thinner, increase
- intermittancy, and decrease the effective intensity of odor signals in
+ intermittency, and decrease the effective intensity of odor signals in
  filaments 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -296,12 +392,19 @@ key "Murlis:1992kp"
 \end_layout
 
 \begin_layout Standard
-The location of the odor source can also determine intermittencay and temporal
+The location of the odor source can also determine intermittency and temporal
  structure of an odor plume.
- Agave palmeri, the largest Agave species in the United States, produces
- flowers on stalks that can be as high as 5 m tall, and thus experience
- large wind speeds; while flowers of the jimsonweed plant, Datura wrightii,
- are close to the ground and experience lower wind velocities 
+ 
+\emph on
+Agave palmeri
+\emph default
+, the largest agave species in the United States, produces flowers on stalks
+ that can be as high as 5 m tall, and thus experience large wind speeds;
+ while flowers of the jimsonweed plant, 
+\emph on
+Datura wrightii
+\emph default
+, are close to the ground and experience lower wind velocities 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Riffell:2008hp"
@@ -312,15 +415,11 @@ key "Riffell:2008hp"
  The Reynolds and Péclet numbers are thus very different for odor plumes
  from these two flowers, posing different challenges to the insects that
  must find them using olfaction.
- 
-\end_layout
-
-\begin_layout Standard
-Wind speed, an important determinant of the temporal structure of odor plumes,
- can vary signficanlty over time.
- Most importantly, the daily rhythym of the sun can change wind speed and
- atmospheric turbulence dramatially from day to night, offering windows
- of opporunity to insects like hawkmoths that use periods of low turbulence
+ In addition, wind speed, an important determinant of the temporal structure
+ of odor plumes, can vary significantly over time.
+ Most importantly, the daily rhythm of the sun can change wind speed and
+ atmospheric turbulence dramatically from day to night, offering windows
+ of opportunity to insects like hawkmoths that use periods of low turbulence
  following sunset to find sources of food 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -333,11 +432,11 @@ key "Riffell:2008hp"
 \end_layout
 
 \begin_layout Subsection
-Olfactory behaviour
+Olfactory behavior
 \end_layout
 
 \begin_layout Standard
-Olfactroy behaviors benefit insects when they lead to a source of food or
+Olfactory behaviors benefit insects when they lead to a source of food or
  mates.
  However, search strategies vary across insects, based on the size of the
  insect, the quality, reliability and volume of the olfactory signal, the
@@ -347,53 +446,229 @@ Olfactroy behaviors benefit insects when they lead to a source of food or
 
 \begin_layout Standard
 An optimal strategy for small insects (whose body size is smaller than the
- length scale fo the plume) has been suggested to be to fly crosswind; and
+ length scale of the plume) has been suggested to be to fly crosswind; and
  for large insects to fly up and downwind; till contact is made with an
- odor plumes.
- (Carde, R.
- T.
- 1981.
- Precopulatory sexual behavior of the adult gypsy moth.) Phermones produced
- by female moths are an unambiguous and loud signal for male moths, given
- specificty of the pheronomone to moths and the sensitivity of antennae
- of male moths that phermonone.
- Mosquitoes that sense carbon dioxide and use it to find hosts must do so
- despite ambient carbon dioxide in the atmosphere, and carbon dioxide released
- from non-host sources.
+ odor plumes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carde:1981vr"
+
+\end_inset
+
+.
+ Pheromones produced by female moths are an unambiguous and loud signal
+ for male moths, given the specificity of the pheromone to moths and the
+ sensitivity of antennae of male moths to that pheromone 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kaissling:1996tg"
+
+\end_inset
+
+.
+ Mosquitoes that sense carbon dioxide to find hosts must do so despite ambient
+ carbon dioxide in the atmosphere, and carbon dioxide released from non-host
+ sources 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Takken:1999ez"
+
+\end_inset
+
+.
  Search strategies in these two cases are likely different.
  
 \end_layout
 
 \begin_layout Standard
-sensory fusion 1 – olfaction and anemotaxis – because odors always carried
- by air – ngelect diffusion – flight and the problems it brings with it
- – flight is aresome because you can sample the odor plumes up in the air,
- and you can fly fast, but it brings its own probelms:–upwind flight harder
- than upwind walking: upwind walking only needs mechanosensation, but upwind
- flight needs integration of visual and mechanosensory cues so insects can
- estimate airpseed independent of self motion–heading upwind isn't enough:
- you can miss the odorant source (because the plume becomes narrow upstream)
- – casting Casting, a reiterative zigzag that may progressively widen but
- does not progress upwind, enhances the likelihood of directly recontacting
- the plume as the cast widens or provides a station-keeping maneuver until
- the plume shifts back to the insect's position (35).
+Because odor stimuli are carried by the air, and because Péclet numbers
+ are typically large, odorant stimuli may be correlated with changes in
+ airspeed.
+ In fact, in insects, the antennae are both olfactory and mechanosensory
+ organs, and are actively positioned during flight 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mamiya:2011bh"
+
+\end_inset
+
+.
+ Flight is advantageous in navigating olfactory landscapes, as it allows
+ insects to sample odor plumes in the air, far from surfaces, and flight
+ is fast 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Tammero:2002wd"
+
+\end_inset
+
+, allowing for rapid movement towards the source of odor 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Duistermars:2010bb"
+
+\end_inset
+
+.
+ However, flight brings its own challenges: while walking, it is easy to
+ determine airspeed and walk upwind, as relative motion of air is likely
+ due to wind.
+ Walking up airstreams to sources of odor can therefore be realized using
+ just mechanosensation.
+ However, upwind flight is more complicated, as wind speed and direction
+ have to be deconvolved from the self motion of the insect.
+ Typically, insects use multisensory fusion to solve this problem, pooling
+ information from visual cues and other mechanosensory organs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Duistermars:2010bb,Frye:2001ev,GomezMarin:2010bw"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-sensory fusion 2 – also vision.
- frey and dickinson – multisensory fusion: flies don't just chemotax, but
- need mechanosensory and visual feedback to navigate and orinet to olfactory
- cues (Duistermars, Frye 2010) 
+Heading upwind is not sufficient to reliably find sources of odor, since
+ plumes typically become narrower closer to the source 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Murlis:1992kp,Murlis:2000kk"
+
+\end_inset
+
+.
+ This means that the same error in positioning is more likely to move an
+ insect outside the plume closer to the source than farther away from it.
+ Casting, an iterative zigzag flight pattern that progressively widens crosswind
+ at the expense of upwind progress, is a behavior used by many insects to
+ navigate to odor sources, as it enhances the likelihood of directly making
+ contanct with the plume as the cast widens 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Budick:2006ea"
+
+\end_inset
+
+.
+ It can also act to maintain the position of the insect relatively constant
+ crosswind till the plume shifts back to the insects position 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "David:1983fm"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-do flies use mulitple sensors to guide behaviour? left-right information?
- (Gomez Marin) (Borst & Heisenberg 1982) 
+The set of sensors available to an insect allows it to use a variety of
+ strategies to find sources of odor.
+ Insects have a pair of antennae, and can measure the difference in odor
+ concentrations across left and right antennae 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gaudry:2012ej"
+
+\end_inset
+
+.
+ Insects can use osmotropotaxis, a behavior where insects turn towards the
+ side that has higher concentration, during walking 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Borst:1982cy"
+
+\end_inset
+
+ and flight 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Duistermars:2009du"
+
+\end_inset
+
+.
+ Olfactory behavior is likely high multimodal, integrating information from
+ olfactory, visual and mechanosensroy stystems.
+ Odor localization by 
+\emph on
+Drosophila
+\emph default
+ has been shown the require visual feedback 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2003da"
+
+\end_inset
+
+, and the behavioral response of flies is a linear superposition of both
+ visual and olfactroy inputs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2004gj"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
-vision? mechnoesensation? cf.
- pure chemotaxis in bacteria.
+The primary challenge in studying olfactory behavior is measuring the behavior
+ of the insect together with the stimulus that it detects.
+ One technique is to let insects fly freely in wind tunnels, where well-controll
+ed flows constrain odors to a known volume of the wind tunnel, and the position
+ of the insect can be used to estimate the stimulus it encounters.
+ Such an approach, combined with 3-D tracking of the insect, has been used
+ with moths 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vickers:2001gk,Riffell:2009fa"
+
+\end_inset
+
+ and 
+\emph on
+Drosophila 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Frye:2003da"
+
+\end_inset
+
+.
+ 
+\emph default
+An alternative approach is to tether the insect, either to a rotatable or
+ fixed pin, and present controlled odor stimuli to the insect.
+ Such an approach has identified behavioral responses to a variety of monomolecu
+lar and complex odors, either combined with visual stimuli 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chow:2008im,Chow:2011in,Duistermars:2009du,Frye:2004gj,Krishnan:2011eb"
+
+\end_inset
+
+, or in darkness 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bhandawat:2010eu"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:The-tethered-fly-assay-tfa"
+
+\end_inset
+
+ describes attempts at using a tethered fly assay to determine how olfactory
+ stimuli modulate flight behavior.
  
 \end_layout
 
@@ -418,29 +693,78 @@ stems from several reasons: (i) it is easy to grow and maintain in laboratories,
 Drosophila
 \emph default
 ; (iii) its olfactory system is similar to other insects, and even to vertebrate
-s in gross organisation, though numerically simpler.
- While the anatomy of Drosophila is described in the following section,
- many features are common to the olfactroy system of other insects.
+s in rough organisation, though numerically simpler.
+ The olfactory anatomy of 
+\emph on
+Drosophila
+\emph default
+ also loosely resembles the circuitry of visual processing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2013fi"
+
+\end_inset
+
+.
+  While the olfactory anatomy of 
+\emph on
+Drosophila
+\emph default
+ is described in the following section, many features are common to the
+ olfactroy system of other insects.
 \end_layout
 
 \begin_layout Standard
-The primary olfactory organs in Drosophila are the antennae and the maxillary
- palps.
+The primary olfactory organs in 
+\emph on
+Drosophila
+\emph default
+ are the antennae and the maxillary palps.
  The antennae are not just olfactory organs but are also organs of audition
  and mechanosensation.
- The olfactroy functions of the antennae are localized to its third segment,
+ The olfactory functions of the antenna are localized to its third segment,
  which are covered in fine sensory hairs called sensilla.
  Sensilla are also present on the maxillary palp.
  Based on their morphology, sensilla can be divided into three types: basiconic
- (10 functional types), coeloconic (4 types) and trichoid (4 types).
- Based on identified ligans, basiconic sensilla largely respond to voltaile
- food odors; coeloconic sensilla largely redpong to amines, humidity and
+ (10 functional types), coeloconic (4 types) and trichoid (4 types) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shanbhag:1999wg"
+
+\end_inset
+
+.
+ Based on identified ligands, basiconic sensilla largely respond to volatile
+ food odors; coeloconic sensilla largely respond to amines, humidity and
  a few food odors; and trichoid sensilla respond to volatile compounds and
- pheromones from other flies, like cis-vaccenyl acetate.
+ pheromones from other flies, like cis-vaccenyl acetate 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Clyne:1997eh"
+
+\end_inset
+
+.
  The antenna has all three types of sensilla, that exhibit some degree of
- grouping on the surface, while the maxilalry palp only has basiconic sensilla.
+ grouping on the surface 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shanbhag:2000kw"
+
+\end_inset
+
+, while the maxilalry palp only has basiconic sensilla.
  The structural and functional organisation of sensilla into these groups
- is similar in other insects (de Bruyne and Baker 2008).
+ is similar in other insects 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+(de Bruyne and Baker 2008).
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
@@ -460,15 +784,47 @@ acfp{ORN}
 \end_inset
 
 .
- In Drosophila, there are ~1320 ORNs in each antenna (Hallem 2004) .
+ In 
+\emph on
+Drosophila
+\emph default
+, there are ~1320 ORNs in each antenna 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ds"
+
+\end_inset
+
+.
  The sensillum also contains a lymph that the dendrites of ORNs are surrounded
  by, and contains pores, grooves or other opening based on the type of sensilla
  through which odor moleculres enter the sensillum, diffuse through the
- lymph, and reach the neuron.
+ lymph, and reach the neuron 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shanbhag:2000kw,Shanbhag:1999wg"
+
+\end_inset
+
+.
  ORNs appear to be generic, with little functional specisliastion between
- ORNs.
+ ORNs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2013fi"
+
+\end_inset
+
+.
  What gives a ORN a particular response profile, and connectivity appears
- to be the specialised receptor that it expresses.
+ to be the specialized receptor that it expresses 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ht"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -477,19 +833,26 @@ Receptors in ORNs can belong to one of three families: the
 \emph on
 olfactory receptors 
 \emph default
-(Ors), of which there are around 60 types; the 
+(ORs), of which there are around 60 types; the 
 \emph on
 gustatory receptors 
 \emph default
-(Grs), and the 
+(GRs), and the 
 \emph on
-inotropci receptors 
+ionotropic receptors 
 \emph default
-(Irs).
+(IRs).
  ORNs in basiconic sensilla mostly express one Or, together with the olfactoy
- co-receptor Orco that together make a ligand-gated ion channel.
- Some ORNs in basiconic sensilla express the Grs Gr21a and Gr63a, that are
- unusual among Grs in its expression on the antenna, and mediate responses
+ co-receptor Orco that together make a ligand-gated ion channel 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wicher:2009ky,Larsson:2004bx"
+
+\end_inset
+
+.
+ Some ORNs in basiconic sensilla express the GRs GR21a and GR63a, that are
+ unusual among GRs in their expression on the antenna, and mediate responses
  to carbon dioxide.
  Most coeloconic sensilla express IRs.
  
@@ -499,14 +862,29 @@ inotropci receptors
 While ORNs that express the same OR can be housed in sensilla that may be
  distributed across the antenna, their output is pooled in a remarkable
  structure that organises the axon terminals of ORNs by the receptor their
- express called the glomerulus.
+ express called the glomerulus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hildebrand:1997eq"
+
+\end_inset
+
+.
  All ORNs that express the same OR project to one out of ~60 glomeruli in
  the antennal lobe, where they make synaptic contact with second order neurons
  called Projection Neurons (PNs).
  Typically, a single glomerulus pools ORs a single type, though there are
  exceptions in some specialized glomeruli.
  For example, in male moths, ORs that detect different components of a pheromone
- are pooled together in a single glomerulus (Hansson Science 1992) 
+ are pooled together in a single glomerulus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hansson:1992wg"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -514,12 +892,23 @@ Comparison with other olfactory systems
 \end_layout
 
 \begin_layout Standard
-The olfactory system of Drosophila exhibits many simialrities with that
- of other insects, and even with the mammalian olfactory system.
+The olfactory system of 
+\emph on
+Drosophila
+\emph default
+ exhibits many simialrities with that of other insects, and even with the
+ mammalian olfactory system.
  Both the mammalian and the insect olfactory system use several primary
- olfactory organs.: mammals' primary olfacttory organ is the olfactory epithelium
+ olfactory organs: mammals' primary olfacttory organ is the olfactory epithelium
  in the nose, but also include the vomeronasal organ, the Gureneberg ganglion,
- and the septal organ of Masera.
+ and the septal organ of Masera 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Su:2009es"
+
+\end_inset
+
+.
  The insect olfactory system is distributed across the antennae and the
  maxillary palp.
  The overall cellular structure of the olfactory system is also similar,
@@ -532,8 +921,18 @@ The olfactory system of Drosophila exhibits many simialrities with that
 Insect olfactory sytems differ from mammalian olfactory systems in many
  ways.
  Primarily, they are much smaller, and numericall less complex.
- While Drosophila have only ~60 olfactory receptors, and mosquitoes ~80,
- humans have around ~350, and mice over 1000.
+ While 
+\emph on
+Drosophila
+\emph default
+ have only ~60 olfactory receptors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ds,Vosshall:2000gt"
+
+\end_inset
+
+, and mosquitoes ~80, humans have around ~350, and mice over 1000.
  The gross anatomy of the olfactroy system is very different between insects
  and mammals, that has important consequences on their function.
  In insects, ORNs are housed in sensilla on external organs, where they
@@ -544,135 +943,439 @@ Insect olfactory sytems differ from mammalian olfactory systems in many
  of olfactory stimuli over ORNs, it also means that mammalian ORNs are locked
  to the kinetics of respiration.
  Recent studies have begun to uncover the consequences of this coupling
- (cite Rinberg).
- their ORNs are exposed to the air – irectly exposed to all kinetics of
- odorants in free air (exceptions? moths and fanning – kevin daly – but
- other insects fly, and flap their wings very quickly– so doesn't affect
- this) insect ORNs unqieuly located (physically) to know about fast kinetics
- of odorants in the air (Rinberg papaer about fluid mechanisc corckroach)
- Intrionisc temporal kinetics affect response of orns (carlotta)
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Resulaj:2015hp,Shusterman:2011cp,Smear:2011ez"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
-Gross overview on how odorants are encoded in the olfactroy system
+ORN responses, adaptation, and gain control 
 \end_layout
 
 \begin_layout Standard
-combinatorial code – cite de Bruyne, Carlson papers 
+The response of ORNs to odorants occurs in two stages.
+ First, odor binding induces transduction, which leads to an inward current
+ from the sensillum lymph to the dendrite of ORNs.
+ This transduction current can be detected by changes in the LFP in extracellula
+r single-sensillum recordings.
+ Transduction leads to action potential generation, and spikes generated
+ at ORNs propagate down the axon to glomeruli, where they activate downstream
+ neurons.
+ 
+\end_layout
+
+\begin_layout Subsection
+Baseline activity 
 \end_layout
 
 \begin_layout Standard
-inhibition/excitation 
+All ORNs fire spontanousley, even in the absence of any ligand.
+ Mutating a ORN's odorant receptor changes the baseline firing rate 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Olsen:2007ix"
+
+\end_inset
+
+, suggesting that baseline spiking of ORNs may be a consequence of receptors
+ being active even when there is no ligand.
+ Different ORNs have different characteristic spontaneous firing rates:
+ for example, the ab3B ORN has a relatively high spontaneous firing rate
+ (~10 Hz), while the ab2B ORN has a very low one (< 2 Hz).
+ The diversity in spontaneous activity may reflect a diversity in the equilibiru
+m constants between different receptors in these neurons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2006tm"
+
+\end_inset
+
+.
+ This is supported by the fact that expressing novel receptors in ORNs changes
+ not only their response profile but also their spontenaous activity levels
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ht,Hallem:2004jy"
+
+\end_inset
+
+.
+ No clear explanation for the baseline activity of ORNs currently exists,
+ though several possibilities have been proposed.
+ The partially active state of receptors with no ligand might make them
+ more sensitive to small stimuli, or the small but non zero activity of
+ the neuron might keep the ORN's membrane potential close to its spike threshold
+, making it easier and faster to respond to signals 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2006tm"
+
+\end_inset
+
+.
+ On the other hand, it might not be possible to evolve odorant receptor
+ systems that are entirely inactive when unbound, and sponteanous activity
+ of receptors and ORNs might be an unavoidable price to pay.
+ 
 \end_layout
 
-\begin_layout Section
-How does an individual ORN responsd to odorants?
+\begin_layout Subsection
+ORN response phenomonology 
 \end_layout
 
 \begin_layout Standard
-diificulty in recording from ORNs – they're small (Vosshall 2000 review)
+Despite being housed in sensilla that are exposed externally, ORNs are difficult
+ to record from as they are small, and protected by a thick and hard-to-breach
+ cuticle 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vosshall:2000gt"
+
+\end_inset
+
+.
+ One of the first attempts to record from ORNs directly using patch clamp
+ electophysiology reported a low yeild, and invovled a preparation that
+ dissected the antennae, that made it hard to know the identity of the neuron
+ being recorded from 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+[Dubin 1997 ]
 \end_layout
 
-\begin_layout Standard
-first attempt to record from ORNs (direct access/patch clamp) Dubin 1997
- – low yield (blind approach), cna't see what you record from, or what neuron
- it is you record form 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-improvement (Cao et al – genetically label the neuron of interest) drawbacks:
- liquid phase, eird responses that we don't normally see, low yeild.
+.
+ An improvement of the technique involved slicing the antenna into thin
+ sections, and recording from flies where ORNs of interest were genetically
+ labelled, allowing identification and targetting of individual ORNs of
+ known type 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cao:2016jl"
+
+\end_inset
+
+.
+ However, this approach involved introducing odorant stimuli in liquid phase,
+ which is not natural, and reported oscialltory responses to pulses of odorant,
+ which have not been observed using other techniques.
  
 \end_layout
 
 \begin_layout Standard
-so most people do extracellular recordings (de Bruyne and followers)
+The most common technique to record from ORNs is to use single sensillum
+ extracellulr recordings 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:1999uh,deBruyne:2001ur,Nagel:2011jj"
+
+\end_inset
+
+.
+ In this technique, a recording electrode is introduced into the sensillum
+ of an immobilized 
+\emph on
+Drosophila
+\emph default
+.
+ This technique can record spikes from both ORNs in the sensillum, and can
+ also record the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acf{LFP}
 \end_layout
 
-\begin_layout Subsection
-Odorant transduction 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-the first paper to patch clamp from Drosophila neurons (Dubin 1997)
-\end_layout
+, which has been used a measure of the transduction current in the sensillum.
+ All the results presented in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Gain-control"
 
-\begin_layout Subsection
-Spike initiation 
-\end_layout
+\end_inset
 
-\begin_layout Subsection
-Interactions between neurons in a sensillum 
-\end_layout
-
-\begin_layout Standard
-chcih-ying stuff
-\end_layout
-
-\begin_layout Standard
-there is also a paper that specifically looked at this
-\end_layout
-
-\begin_layout Subsection
-The olfactory world of insects 
-\end_layout
-
-\begin_layout Standard
-what would they smell flying around? whiffs? intermittentent plumes.
- flight and the complication that poses.
- dense abckgrounds.
+ use this technique.
  
 \end_layout
 
 \begin_layout Standard
-Intrinsic Temporal kinetics of odorants - the difference between olfaction
- in insects and mammals – mammals breate, and kinetics of olfaction are
- dominated by the respiratory cycle – insects are different –
+The large diversity in ORs leads to diverse response of ORNs to odor stimuli.
+ Most ORNs respond to multiple ligands, and many ligands activate mulitple
+ ORNs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ht,Kreher:2005va"
+
+\end_inset
+
+.
+ Increasing the concentrtion of the applied ligand has two effects.
+ First, ORN response amplitudes increases sigmoidally with the log of the
+ concentration 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:1999uh,deBruyne:2001ur,Martelli:2013it"
+
+\end_inset
+
+.
+ Second, more ORNs expressing different ORs start responding to the ligand,
+ as ORNs are more broadly tuned to large stimuli, presumably due to the
+ increasing effects of non-secific activation of ORs by ligands 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2006tm"
+
+\end_inset
+
+.
+ 
 \end_layout
 
-\begin_layout Section
-Representation of odorants in ORN responses
+\begin_layout Paragraph
+Odorant transduction
 \end_layout
 
 \begin_layout Standard
-Spontaneous and odor-evoked transduction 
+Odorant transduction can be fast, with initiation within milliseconds of
+ odor reaching the antenna 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Szyszka:2014in"
+
+\end_inset
+
+.
+ Transduction currents integrate temporally over brief stimuli, with more
+ prolonged stimuli leading to larger responses 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cao:2016jl"
+
+\end_inset
+
+.
+ Long pulses of odorant induce a rapid increase in transduction responses,
+ followed by decay to some steady state value.
+ These responses have been observed both using the LFP as a proxy for transducti
+on 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:1999uh,deBruyne:2001ur,Nagel:2011jj"
+
+\end_inset
+
+, and by direct patch clamp measurements 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cao:2016jl"
+
+\end_inset
+
+.
+ ORNs which express two different receptors, one native and one misexpressed,
+ and which are activated by two ligands that activate the two receptors
+ indepdnently show cross-adaptation between receptors, suggesting that adaptatio
+n state affects the entire neuron 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Spiking 
 \end_layout
 
 \begin_layout Standard
-Transduction kinetics
-\end_layout
+Odor transduction leads to spike generation in the ORN.
+ Spikes are elicited preferentially by the rate of change of transduction,
+ rather than simply by the magnitude of transduction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj,Wilson:2013fi"
 
-\begin_layout Standard
-Adaptation 
+\end_inset
+
+.
+ This means that the firing rate to a pulse of odor peaks when transduction
+ rises rapidly, and is supressed below baseline when transduction currents
+ fall back to baseline.
+ The transformation of transduction currents to firing rates is therefore
+ partially derivative taking 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nagel:2011jj"
+
+\end_inset
+
+, which means that ORN spike rates encode both the magnitude of the stimulus
+ and its derivative 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2010ds"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
-ORN Response phnemonology 
+Adaptation and gain control 
 \end_layout
 
 \begin_layout Standard
-How do ORNs respond to odorants? Complex spatio temoral code - what each
- receptor detects – Some specific receptors (phermonones, Co2), some generalist
- - ORs detect fruits, IR detect pheromones, Grs detect tastnts - Dose-response
- of ORs -
-\end_layout
-
-\begin_layout Subsection
-Odor representations downstream of ORNs
+Adaptation is a process by which the encoding of odorants in ORN responses
+ is modified, usually in response to a change in local stimulus statistics.
+ These modifications are 
+\emph on
+adaptive
+\emph default
+ in the sense that they may encode the stimulus more efficently, or make
+ use of the response range more effectively.
+ 
 \end_layout
 
 \begin_layout Standard
-going down to PNs – what happens in PNs – glomeruli – then downstream, mushroom
- body – 
+The term “adaptation” has been used to refer to a wide variety of phenomenon
+ in ORN response kinetics: (1) the decrease in response following an initial
+ transient on a step change in stimulus (Cafaro, 2016; Cao et al., 2016);
+ (2) the decrease in responses to brief test pulses following previous,
+ identical, pulses (Cao et al., 2016); (3) the decrease in response to brief
+ test pulses following longer conditioning pulses (Nagel and Wilson, 2011);
+ and (4) the decrease in response to brief test pulses presented on a background
+, vs.
+ those presented without a background (Cafaro, 2016; Cao et al., 2016; Martelli
+ et al., 2013).
+ 
+\end_layout
+
+\begin_layout Paragraph
+The effect of adaptation on response kinetics 
+\end_layout
+
+\begin_layout Standard
+what is expected from other sensory systems – theoretical reasons behind
+ this – olfaction is weird – transudciton results – apparnetly contradiuctroy
+ results from carlotta – ecological signficance of maintaining invariant
+ responses.
+ 
 \end_layout
 
 \begin_layout Section
-A quantitiative understanding of ORN response and adaptation 
+A multidiscplinary approach to study ORN response and adaptation
 \end_layout
 
 \begin_layout Standard
-what are the key questions: how do ORNs respond to individual pulses of
- odorant? to steps? to steps on background? what is adaptation? 
+Arising from the literature discussed so far, I identify the following areas
+ of interest:
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
+orn adaptation
+\end_layout
+
+\end_inset
+
+.
+ Given the wide range of statistics of odor signals that insects might encounter
+ (as discussed in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-olfactory-world-of-insects"
+
+\end_inset
+
+), how do ORNs change their encoding rule with the stimulus background?
+ What features of odor stimuli induce adaptation? How quickly can ORNs adapt?
+ 
+\end_layout
+
+\begin_layout aEnumerate (ClassicThesis)
+\begin_inset Flex CT - Spaced Low Small Caps
+status open
+
+\begin_layout Plain Layout
+timing of odor encounters
+\end_layout
+
+\end_inset
+
+.
+ need for preserving this – transduction slow down – intruiging firing invarianc
+e – what's going on? 
+\end_layout
+
+\begin_layout Standard
+To address these questions, it is first necessary to assemble a number of
+ tools, practical, conceptual and numerical: electrophysiological tools
+ to record from Drosophila ORNs, genetic tools to express proteins in cells
+ of interst, apparatus to control and measure odorant signals precisely,
+ and linear-nonlinear modelling to quantitatively describe the features
+ of ORN response.
+ While many of these techniques and tools have been long estabilished, some
+ of them are novel, and combining them as I have in this dissertation permits
+ me to ask and answer novel questions.
+ 
+\end_layout
+
+\begin_layout Standard
+In Part 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "part:Methods"
+
+\end_inset
+
+, I describe the methodology and tools that lets me answer these questions
+ experimentally.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+ details techniques to deliver odorant stimuli to animals in olfactory systems,
+ with a novel technique to measure the absolutle flux of oforant that is
+ being delivered.
+ These techniques allow for delivering measuring the absolute 
 \end_layout
 
 \end_body

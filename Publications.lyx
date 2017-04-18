@@ -116,7 +116,7 @@ reference "chap:methods-paper"
 \end_layout
 
 \begin_layout Itemize
-All the electrophysiology in Part 
+All the electrophysiology in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Gain-control"
@@ -131,7 +131,8 @@ reference "chap:methods-paper"
 
 \end_inset
 
- was originally collected by Carlotta Martelli, and was published in 
+ was originally collected by Carlotta Martelli, and was originlly published
+ in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Martelli:2013it"
@@ -155,7 +156,20 @@ reference "chap:methods-paper"
 \end_layout
 
 \begin_layout Itemize
-The model shown in Section 
+The model shown in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:bacteria-model"
@@ -166,7 +180,20 @@ reference "subsec:bacteria-model"
 \end_layout
 
 \begin_layout Itemize
-The model shown in Section 
+The model shown in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:puff-model"
