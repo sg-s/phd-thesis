@@ -142,11 +142,69 @@ acf{MFC}
 \end_inset
 
 ) to construct flexible odorant delivery systems that can deliver i) reproducibl
-e pulses of odorant at various intensities ii) fluctuating Gaussian stimuli
- with controlled means and variances and iii) intermittent odorant signals
- with naturalistic statistics.
+e pulses of odorant at various intensities (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+s
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:methods-gas-phase-dilution"
+
+\end_inset
+
+) ii) fluctuating Gaussian stimuli with controlled means and variances (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+s
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:methods-gaussians-mu-sigma"
+
+\end_inset
+
+).
  We also introduce a simple procedure to calibrate the PID to any detectable
- odorant without using any additional equipment.
+ odorant without using any additional equipment (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+s
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:calibrating-pid"
+
+\end_inset
+
+).
  The focus of this work is on experimental applications where changes in
  airspeed do not significantly affect the response properties of 
 \begin_inset ERT
@@ -185,7 +243,7 @@ There exists a variety of methods of delivering odorants.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "olfactometer-zoo"
+reference "fig:olfactometer-zoo"
 
 \end_inset
 
@@ -245,7 +303,15 @@ Odorants can be in liquid phase, pure or diluted, or can be contained on
 These design decisions come with intrinsic tradeoffs.
  Positioning the valve upstream of the valve means that no odorant is directly
  in contact with the valve, and that in principle, the valve is not contaminated
- by the odorant.
+ by the odorant (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+a).
  This has led previous work to use a single valve with many different odorants,
  lowering cost and speeding up the process of delivering several different
  odorants 
@@ -279,9 +345,15 @@ However, odorants can diffuse when there is no flow, contaminating valves
  Positioning the valve upstream of the odorant also necessarily introduces
  transients in the signal, as the odorant-vapor system is never at steady
  state.
- On the other hand, positioning the valve downstream of the odorant means
- that the odorant flows through the valve, necessitating using a different
- valve for every odorant to avoid cross-contamination.
+ On the other hand, positioning the valve downstream of the odorant (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+b, c) means that the odorant flows through the valve, necessitating using
+ a different valve for every odorant to avoid cross-contamination.
  The costs of choosing to place valves downstream of odorants, both of material
  and time, can be significant if hundreds of odorant-receptor combinations
  are to be tested, as in 
@@ -471,14 +543,22 @@ The topology of the olfactometer also determines whether diverting the odorized
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "olfactometer-zoo"
+reference "fig:olfactometer-zoo"
 
 \end_inset
 
- XX?.
+d.
  Special valves with two inputs and outputs are typically used, as pairing
  two valves is often impractical due to variations in the resistances from
- valve to valve, that make symmetric switches hard to achieve.
+ valve to valve, that make symmetric switches hard to achieve (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+f).
 \end_layout
 
 \begin_layout Standard
@@ -521,7 +601,15 @@ key "deBruyne:1999uh,Hallem:2006iu"
 
 .
  An alternative is to use a vial containing a larger quantity of the diluted
- odorant liquid, either with a very small headspace, as in 
+ odorant liquid, either with a very small headspace (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+e), as in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Nagel:2011jj"
@@ -537,7 +625,15 @@ key "Kim:2010ds"
 \end_inset
 
 , to create a large volume of odorized air that can be pushed towards the
- preparation.
+ preparation (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:olfactometer-zoo"
+
+\end_inset
+
+d).
  
 \end_layout
 
@@ -553,7 +649,7 @@ Diluting odorants in liquid phase using mineral or paraffin oil leads to
  layer, the gas phase concentration of the odorant continuously decreases
  with time.
  One way to ameliorate this depletion is to use a very large volume of odorant
- mixture, and to stir the mixture continuously
+ mixture, and to stir the mixture continuously 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Martelli:2013it"
@@ -833,8 +929,8 @@ acs{PID}
 
  to measure odorant stimuli in the gas phase.
  First used in olfactory research to measure the pheromone intensity delivered
- to moths, they have also been used for concentration control in an olfactometer
- 
+ to moths, they have been used in a variety of roles, including for concentratio
+n control in an olfactometer 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Johnson:2003eb"
@@ -876,7 +972,7 @@ key "Yao:2005wm,Larter:2016gv,Hallem:2004ht,deBruyne:2001ur"
  their response, and relying on liquid phase concentrations can bias characteriz
 ations of their response phenomenology.
  For example, consider a typical dose-response experiment where ethyl acetate
- stimuli of varying concentration are presented to a a ab3A ORN.
+ stimuli of varying concentration are presented to a ab3A ORN.
  Peak ORN responses exhibit a sigmoidal relationship with the log of the
  liquid phase dilution (Fig.
  
@@ -1642,6 +1738,12 @@ reference "eq:puff-model-parameters"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:calibrating-pid"
+
+\end_inset
+
 A simple procedure to calibrate the PID to any odorant
 \end_layout
 
@@ -1998,7 +2100,7 @@ PID calibration for arbitrary odorants.
  rate.
  (c) PID traces from start to complete depletion of odorant for various
  flow rates.
- (d) Interrated PID signal as a function of flow rate.
+ (d) Integrated PID signal as a function of flow rate.
  (e) Cumulative odorant 
 \emph on
 vs
@@ -2425,15 +2527,189 @@ and
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:methods-intermittent-stimuli"
+
+\end_inset
+
 How to deliver fluctuating odorant signals 
 \end_layout
 
 \begin_layout Standard
-why do it – white noise characterization – efficient.
- need for reproducibility.
- the old way: binary valves.
- limitations of binary stimuli: 0 to some value.
- extreme distributions.
+Time series of fluctuating odorant signals have been used to as an efficient
+ way to characterize the response properties of ORNs.
+ Paired recordings of a time series of some fluctuating odorant signal and
+ the response of a neuron can be used to recover the linear kernel that
+ best describes the transformation from the stimulus to the response.
+ Such a linear kernel can be used to predict the time series of response
+ of that neuron to a novel stimulus that the neuron has not previously been
+ exposed to, and even to predict the response of the neuron to a stimulus
+ from a second odorant
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ A favorable stimuli to use for this is Gaussian white noise.
+ This stimulus is Gaussian distributed, and is uncorrelated from any one
+ time point to another.
+ Its tight autocorrelation structure allows sampling all frequencies of
+ the neuron response (see 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+s
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Linear-kernel-extraction"
+
+\end_inset
+
+ for a discussion on linear kernel extraction).
+ Linear filters can be estimated in an unbiased fashion even in the presence
+ of an output nonlinearity if the stimulus is Gaussian 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chichilnisky:2001ua"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Odorant signals that is Gaussian and white is hard to realize in practice.
+ Interaction of the odorant with the walls of the delivery system (see 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+s
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:puff-model"
+
+\end_inset
+
+ , 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+), limits on the airspeed used in the delivery system, and finite timescales
+ of the components of the delivery system introduce correlations into any
+ odorant stimulus.
+ Furthermore, since the easiest way to control an odorant signal is to use
+ a valve to divert an odorized airstream towards or away from the preparation,
+ early work using fluctuating odorant signals to identify linear kernels
+ from ORN responses used binary odorant stimuli where the stimulus was either
+ on or off 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it,French:2014ek,Schuckel:2008cd,Schuckel:2008gz,Nagel:2011jj"
+
+\end_inset
+
+.
+ This creates a typically a bimodal stimulus distribution, with the lower
+ peak close to 0, and the larger peak at some value that can be controlled
+ by the concentration of the odorized airstream (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-gaussians"
+
+\end_inset
+
+a-b).
+ The correlation time of the signal can be controlled by varying the switching
+ time of the valve, and for volatile odorants that do not interact strongly
+ with the surfaces of the olfactometer, correlation times as fast as 30
+ ms can be realized 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it"
+
+\end_inset
+
+.
+ In these binary stimuli, the mean stimulus is typically rarely realized,
+ and the responses of the neuron are dominated by the large, rapid increases
+ of odorant on valve opening.
+ 
+\end_layout
+
+\begin_layout Standard
+Using a MFC permits delivering odorants with more varied distributions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kim:2010ds,Kim:2015dm"
+
+\end_inset
+
+.
+ Specifically, mono-modal distributions can be easily realized.
+ Fluctuating odorant signals can be delivered by varying the flow rate of
+ the MFC, and therefore the flow rate of an airstream through a vial containing
+ odorant (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-gaussians"
+
+\end_inset
+
+c-d).
+ The autocorrelation time of a stimulus delivered this way is limited by
+ update rate of the MFC, though multiple MFCs can be chained together in
+ parallel, driven by uncorrelated control signals, to achieve faster signals.
+ Odorants delivered this way typically need not 
+\begin_inset Quotes eld
+\end_inset
+
+bottom out
+\begin_inset Quotes erd
+\end_inset
+
+ at zero stimulus (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-gaussians"
+
+\end_inset
+
+c-d) and have distributions that are mono-modal (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-gaussians"
+
+\end_inset
+
+e-h).
  
 \end_layout
 
@@ -2531,33 +2807,269 @@ Delivering fluctuating odorant signals.
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:methods-gaussians-mu-sigma"
+
+\end_inset
+
 How to deliver Gaussian odorant signals with different means and variances
  
 \end_layout
 
 \begin_layout Standard
-why you would want to do this – measure how response properties of neurons
- change with first and second moment of the stimulus distribution.
- point to visual system where 1st and 2nd moment matter, but other moments
- don't matter so much.
+Adaptation is a process by which the amplitude and kinetics of the responses
+ of a system change with the statistics of the signal presented.
+ In principle, any moment of the stimulus distribution could induce adaptive
+ changes.
+ The visual system has been shown to adapt strongly to the first to the
+ first two moments of stimulus distributions – the mean and the variance
+ – with much smaller changes in response arising from changes in stimulus
+ kurtosis and skew.
+ Here, we demonstrate how stimuli that are dominated by changes in only
+ moment of the distribution can be generated, while keeping other features
+ of the stimulus unchanged.
  
 \end_layout
 
 \begin_layout Standard
-how to do it – MSG – single MFC set up, just change the control signals
- appropriately.
- ansatz for flow.
+The simplest way to generate odorant stimuli with varying means is to use
+ a MFC to vary airflows through a vial containing pure odorant.
+ We started with the ansatz that the flux of odorant in the odorized airstream
+ scales with the fraction of odorized air in the main airstream, or the
+ PID signal 
+\begin_inset Formula 
+\begin{equation}
+S\sim\frac{Q_{\textrm{odor}}}{Q_{\textrm{odor}}+Q_{\textrm{main}}}\label{eq:mfc-ansantz}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $Q$
+\end_inset
+
+ represents the flow rate.
+ We can therefore construct a set of control signals to the MFC using eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mfc-ansantz"
+
+\end_inset
+
+ and measure the resulting signals.
+ Deviations in the signals can be corrected by scaling and shifting the
+ MFC control signals iteratively till a stimulus distribution sufficiently
+ close to the desired distribution is achieved.
+ A set of odorant signals generated this way using ethyl acetate is shown
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+a.
+ Note that the time series appear correlated across intensities.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+b shows the distributions of these odorant stimuli, that are approximately
+ Gaussian.
+ In these stimuli, the mean changes by a factor of 10, with much smaller
+ changes in the variance (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+c).
+ Since the temporal structure of the control signals driving the MFC is
+ the same across all intensities, the autocorrelation structure of the signal
+ is similar across intensities (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+d).
  
 \end_layout
 
 \begin_layout Standard
-how to do it – variance switch – two MFC set up, fiddle with variances and
- means.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename gfx/methods_mu_sigma.eps
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:methods-mu-sigma"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+How to deliver fluctuating odorant signals.
  
 \end_layout
 
-\begin_layout Subsection
-How to deliver reproducible naturalistic signals 
+\end_inset
+
+
+\emph on
+Delivering fluctuating odorant signals.
+
+\emph default
+ (a-b) Using a valve to deliver binary random sequences of ethyl acetate
+ odorant.
+ (a) Mean ethyl acetate concentration (shading is standard error of mean).
+ (b) Individual traces.
+ (c-d) Using a MFC to deliver ethyl acetate with approximately Gaussian
+ statistics.
+ (c) Mean ethyl acetate concentration (shading is standard error of mean).
+ (d) Individual traces.
+ (e-l) Distributions and autocorrelation functions of stimulus time series
+ for various odorants.
+ Black traces are binary random sequences delivered using a valve and red
+ traces and Gaussian sequences delivered using a MFC.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Experiments where the variance of the stimulus is modulated, with a fixed
+ mean, typically involve switching between epochs where the variance is
+ low and where the variance is high.
+ A simple way to achieve odorant signals where signal variance alternates
+ between high and low values is to duplicate the apparatus used previously,
+ but drive the two MFCs with signals identical except for their variance.
+ A valve can be used to switch between the two airstreams, creating epochs
+ with high variance (from the MFC driven with control signals with large
+ variance) and epochs with low variance (from the other MFC).
+ An example of such a stimulus is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+e, where the low-variance epoch lasts from 0-5 s and the high variance epoch
+ lasts from 5-10 s.
+ The distribution of the stimulus during the two epochs shows that the variance
+ is clearly different (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+f).
+ If the stimuli during the high and low variance epochs are rescaled by
+ their variance, the distributions collapse onto each other, showing that
+ the low- and high-variance stimuli are similar in distribution (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+f inset).
+ Comparing the mean and variance of the stimuli during the two epochs (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+g) reveals that the means are not significantly different (
+\begin_inset Formula $p=0.07$
+\end_inset
+
+) , but the variances differ significantly.
+ Since the two MFCs are driven by control signals that are only rescaled
+ versions of each other, the temporal structure of the stimulus in the low-
+ and high-variance epochs is similar (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:methods-mu-sigma"
+
+\end_inset
+
+h).
+ 
 \end_layout
 
 \begin_layout Section

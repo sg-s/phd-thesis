@@ -119,9 +119,9 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/cc0.png
+	filename gfx/gpl.png
 	lyxscale 10
-	scale 4
+	scale 10
 
 \end_inset
 
@@ -140,38 +140,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The person who associated a work with this deed has dedicated the work to
- the public domain by waiving all of his or her right to the work worlwide
- under copyright law, including all related and neighboring rights, to the
- extent allowed by law.
- 
-\end_layout
-
-\begin_layout Standard
-You can copy, modify, distribute and perform the work, even for commercial
- purposes, all without asking permission.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -201,21 +169,8 @@ myTitle
 
 \end_inset
 
-,
+
 \shape default
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mySubtitle
-\end_layout
-
-\end_inset
-
 , 
 \begin_inset ERT
 status open
@@ -247,6 +202,58 @@ myTime
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This work is free information: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the Free
+ Software Foundation, either version 3 of the License, or (at your option)
+ any later version.
+\end_layout
+
+\begin_layout Standard
+This work is distributed in the hope that it will be useful, but without
+ any warranty, without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.
+ See the GNU General Public License for more details.
+\end_layout
+
+\begin_layout Standard
+You should have received a copy of the GNU General Public License along
+ with this work.
+ If not, see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.gnu.org/licenses/gpl-3.0
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 \begin_inset VSpace bigskip
 \end_inset
 

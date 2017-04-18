@@ -128,9 +128,9 @@ begingroup
 \backslash
 color{Maroon} 
 \backslash
-spacedallcaps{Gain Control in 
+LARGE Gain Control in 
 \backslash
-emph{Drosphila} Olfactory Receptor Neurons} 
+emph{Drosphila} Olfactory Receptor Neurons 
 \backslash
 endgroup
 \end_layout
