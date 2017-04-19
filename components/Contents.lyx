@@ -517,13 +517,6 @@ acro{cAMP}{cyclic adenosine monophosphate}
 
   
 \backslash
-acro{LN}{Local Neuron}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
 acro{PN}{Projection Neuron}
 \end_layout
 
@@ -644,6 +637,27 @@ acro{WBF}{Wing Beat Frequency}
   
 \backslash
 acro{WBA}{Wing Beat Amplitude}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{DA}{Dynamical Adaptation}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{NLN}{Nonlinear-Linear-Nonlinear}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{LN}{Linear-Nonlinear}
 \end_layout
 
 \begin_layout Plain Layout

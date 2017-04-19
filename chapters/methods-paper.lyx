@@ -396,7 +396,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/olfactometer-zoo.png
+	filename ../gfx/olfactometer-zoo.png
 	lyxscale 30
 	width 80page%
 
@@ -852,7 +852,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_why_measure_PID.eps
+	filename ../gfx/methods_why_measure_PID.eps
 	lyxscale 30
 	width 80page%
 
@@ -1135,7 +1135,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/puff-schematic.png
+	filename ../gfx/puff-schematic.png
 	lyxscale 30
 	width 80page%
 
@@ -1293,7 +1293,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_model_fits.eps
+	filename ../gfx/methods_model_fits.eps
 	lyxscale 30
 	width 80page%
 
@@ -2059,7 +2059,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_fig1.eps
+	filename ../gfx/methods_fig1.eps
 	lyxscale 30
 	width 80page%
 
@@ -2410,7 +2410,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_pulse_variability.eps
+	filename ../gfx/methods_pulse_variability.eps
 	lyxscale 30
 	width 80page%
 
@@ -2756,7 +2756,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_gaussian.eps
+	filename ../gfx/methods_gaussian.eps
 	lyxscale 30
 	width 80page%
 
@@ -2954,7 +2954,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/methods_mu_sigma.eps
+	filename ../gfx/methods_mu_sigma.eps
 	lyxscale 30
 	width 80page%
 

@@ -1,0 +1,1330 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass classicthesis
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Black-Box-Analysis"
+
+\end_inset
+
+Black Box Analysis of ORN Responses
+\end_layout
+
+\begin_layout Standard
+In this chapter, I describe numerical methods I use to analyze the responses
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+acfp{ORN}
+\end_layout
+
+\end_inset
+
+ to odorant stimuli.
+ These analysis methods treat the ORN as a black box, and do not explicitly
+ model the internal states of the ORN.
+ This black box approach is advantageous since the precise mechanisms of
+ ORN response are not quantitatively understood, and this approach generates
+ minimal models that reproduce ORN response phenomenology quantitatively.
+ These methods parametrize the transformation of the time series of the
+ stimulus (the odorant) into the time series of the output using a set of
+ linear filters and nonlinear blocks.
+ The goal of this approach is to build phenomenological models that can
+ describe the rules that ORNs use to transform inputs into outputs, and
+ to quantify features of ORN responses.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Linear-kernel-extraction"
+
+\end_inset
+
+Linear kernel extraction 
+\end_layout
+
+\begin_layout Subsection
+Spike triggered average and linear filters
+\end_layout
+
+\begin_layout Standard
+The typical neuron receives inputs through its dendrites, either in the
+ form of synaptic contacts with other neurons, or through transducers in
+ sensory neurons.
+ These inputs may lead to inward currents in the neuron, that when large
+ enough, lead to the generation of discrete, all-or-none action potentials
+ in the spike initiation segment, usually on the axon hillock.
+ Neurons fire action potentials or spikes in response to a continuous time
+ series input of stimuli.
+ What features of the stimulus induce a neuron to fire spikes? One way to
+ determine this is to systematically play all possible stimulus inputs to
+ the neuron, and determine which stimuli are most effective in eliciting
+ a spike.
+ However, since neurons integrate over time, the space of all possible stimuli
+ is extremely large, and this approach is impractical.
+ An alternative is to present Gaussian white noise to the neuron, and trigger
+ and average the stimulus whenever a spike is elicited.
+ This approach is called a 
+\emph on
+spike-triggered-average
+\emph default
+ of the stimulus.
+ A generalization of this technique allows us to work with continuous outputs,
+ such as the firing rate of spiking neurons, or the potential of its membrane
+ or the local field.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../gfx/filters.eps
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:filter-extraction"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Extracting linear filters from input and output time series data.
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Extracting linear filters from input and output time series data
+\emph default
+ (a) Gaussian white inputs (b) Responses generated by a linear model (c)
+ Distributions of input and output (d) Autocorrelation functions of the
+ input and the output.
+ Note that the input is white.
+ (e) Covariance matrix of the time-shifted stimulus.
+ It resembles a diagonal matrix.
+ (f) Comparison of actual filter, reconstructed filter, and cross correlation.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a system that responds to a continuous input time series 
+\begin_inset Formula $s(t)$
+\end_inset
+
+ with a continuous output time series 
+\begin_inset Formula $r(t)$
+\end_inset
+
+.
+ We assume that the system is linear, i.e., 
+\begin_inset Formula $r(t)$
+\end_inset
+
+ is generated by some linear operation on 
+\begin_inset Formula $s(t)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r(t)=K\otimes s(t)=\intop_{-\infty}^{t}K(t-t')s(t')dt'\label{eq:convolution-def}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Our task then is to find the linear filter 
+\begin_inset Formula $\hat{K}$
+\end_inset
+
+ from the time series of 
+\begin_inset Formula $s(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $r(t)$
+\end_inset
+
+ that best predicts 
+\begin_inset Formula $r(t)$
+\end_inset
+
+ given 
+\begin_inset Formula $s(t)$
+\end_inset
+
+.
+ In other words, we want to minimise 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert \hat{K}\otimes s(t)-r(t)\right\Vert _{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assuming that 
+\begin_inset Formula $\hat{K}$
+\end_inset
+
+ decays to zero after time 
+\begin_inset Formula $T$
+\end_inset
+
+, we can estimate 
+\begin_inset Formula $\hat{K}$
+\end_inset
+
+ by deconvolving 
+\begin_inset Formula $s(t)$
+\end_inset
+
+ from 
+\begin_inset Formula $r(t)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $s(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $r(t)$
+\end_inset
+
+ are discretely sampled, this problem can be thought of as an overdetermined
+ linear algebra problem.
+ First we reshape 
+\begin_inset Formula $s(t)$
+\end_inset
+
+ into overlapping chunks 
+\begin_inset Formula $\tau$
+\end_inset
+
+ elements long, to get a matrix 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+ with dimensions 
+\begin_inset Formula $L\times\tau$
+\end_inset
+
+ where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the length of the time series 
+\begin_inset Formula $s(t).$
+\end_inset
+
+ 
+\begin_inset Formula $\hat{K}$
+\end_inset
+
+ can be solved for using 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{K}=C\setminus(\hat{S}^{T}r)\label{eq:filter-no-reg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $C$
+\end_inset
+
+ is the covariance matrix of 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+, and 
+\begin_inset Formula $\hat{S}^{T}$
+\end_inset
+
+ is the transpose of 
+\begin_inset Formula $\hat{S}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filter-extraction"
+
+\end_inset
+
+ shows estimation of a filter from synthetic data using this technique.
+ 
+\end_layout
+
+\begin_layout Subsection
+Regularization 
+\end_layout
+
+\begin_layout Standard
+The method described above works well for white inputs (with 
+\begin_inset Formula $\delta$
+\end_inset
+
+ correlations).
+ What happens if correlations exist in the input? This is of practical importanc
+e as physically achievable stimuli typically are not perfectly white, but
+ are correlated on timescales that relate to the underlying physical process
+ that generates them.
+ For odorant stimuli, correlation times of the input can be large, based
+ on the chemical identity of the odorant and the details of the delivery
+ system (see Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:methods-paper"
+
+\end_inset
+
+for a detailed discussion).
+ 
+\end_layout
+
+\begin_layout Standard
+Using white stimuli permits reliable estimation of the linear kernel that
+ transforms stimuli to response (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+a-d).
+ Note that the autocorrelation function of the stimulus is close to zero
+ for all non-zero lags, as would be expected for white noise (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+b).
+ When we examine the covariance matrix of the time-shifted stimulus 
+\begin_inset Formula $C$
+\end_inset
+
+ (as in eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:filter-no-reg"
+
+\end_inset
+
+), we observe that it resembles a diagonal matrix, with a large numerical
+ difference between the diagonal elements and the off-diagonal elements
+ (Fig.
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+c).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../gfx/filters-reg.eps
+	lyxscale 50
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:filters-reg"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Extracting linear filters from correlated stimuli
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Extracting linear filters from correlated stimuli
+\emph default
+ (a-d) Extracting linear filters from 
+\emph on
+uncorrelated
+\emph default
+ stimulus.
+ (a) Gaussian white stimulus (b) Autocorrelation function of the stimulus
+ shown in (a).
+ Note that it is close to zero for all non-zero lags.
+ (c) Covariance matrix of time shifted stimulus 
+\begin_inset Formula $C$
+\end_inset
+
+ (see eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:filter-no-reg"
+
+\end_inset
+
+) (d) Actual filter (black) 
+\emph on
+vs.
+
+\emph default
+ estimated filter (red).
+ (e-j) Extracting linear filters from correlated stimuli.
+ (e) Correlated stimulus.
+ (f) Autocorrelation function of this stimulus.
+ Note that it is non-zero for many non-zero lags.
+ (g) Covariance matrix of time shifted stimulus.
+ (h) Actual filter (black) 
+\emph on
+vs.
+
+\emph default
+ estimated filter (red) (i) Adding a scaled diagonal matrix to the covariance
+ matrix makes it look more diagonal.
+ (j) Filter estimated from the regularized covarince matrix.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What happens when we repeat the procedure using correlated stimulus? This
+ approximates stimuli that can be realized in the lab, and an example is
+ shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+e.
+ The autocorrelation function of this stimulus is not a delta function,
+ and approaches zero only for relatively large lags (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+f).
+ The covariance matrix of the time shifted version of this stimulus resembles
+ a diagonal matrix less closely, with a smaller difference between diagonal
+ and off-diagonal terms (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+g, cf.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+c).
+ Solving eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:filter-no-reg"
+
+\end_inset
+
+ to recover the filter 
+\begin_inset Formula $K$
+\end_inset
+
+ yields a poor estimate, with the filter contaminated by high frequency
+ artifacts (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+h, cf.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+d).
+ To estimate the filter under these conditions, we regularize 
+\begin_inset Formula $C$
+\end_inset
+
+ using 
+\begin_inset Formula 
+\begin{equation}
+\hat{C}=C+rI\label{eq:filter-reg}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $I$
+\end_inset
+
+ is the identity matrix and 
+\begin_inset Formula $r$
+\end_inset
+
+ is a regularization factor in units of the mean eigenvalue of 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Regularizing the covariance matrix this way makes it appear more diagonal
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+i), resembling the covariance matrix of the white stimulus more closely
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+c).
+ The filter extracted using this regularized covariance matrix approximates
+ the actual filter more closely, and is less contaminated by high-frequency
+ artifacts (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:filters-reg"
+
+\end_inset
+
+j).
+ 
+\end_layout
+
+\begin_layout Section
+LN Modeling and gain estimation 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{LN}
+\end_layout
+
+\end_inset
+
+ model is a simple phenomenological model where responses to stimuli are
+ given by 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r(t)=N(K\otimes s(t))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $K$
+\end_inset
+
+ is a linear filter, 
+\begin_inset Formula $\otimes$
+\end_inset
+
+ represents convolution, and 
+\begin_inset Formula $N$
+\end_inset
+
+ is a static nonlinearity.
+ Since 
+\begin_inset Formula $N$
+\end_inset
+
+ acts on the stimulus after it has been convolved with the filter, it is
+ called an output nonlinearity, and the LN model comprises of two blocks:
+ a linear filter, followed by a static output nonlinearity.
+ LN models are commonly used in neuroscience as they provide a simple analogy
+ to many neurons, and theoretical work has shown that linear filters can
+ be reliable estimated even with strong output nonlinearities, if the stimulus
+ is Gaussian white noise 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chichilnisky:2001ua"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We define gain as the change in response due to a unit change in the stimulus:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\textrm{gain}=\frac{\Delta R}{\Delta S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and is a measure of how sensitive the system is to stimuli, or how much
+ it amplifies a signal in its response.
+ For systems that respond instantly, the gain is easily estimated by presenting
+ pulses of stimulus, and measuring the amplitude of the response to each
+ pulse.
+ However, the response of systems that integrate over time is more complicated,
+ and is harder to interpret.
+ The LN model presents a clear separation of the kinetic properties of a
+ system from its gain: while the kinetics of the model are captured by the
+ linear filter 
+\begin_inset Formula $K$
+\end_inset
+
+ only, normalizing 
+\begin_inset Formula $K$
+\end_inset
+
+ appropriately 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Baccus:2002fy"
+
+\end_inset
+
+ can make all its gain manifest in its output nonlinearity 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In the following, I demonstrate how LN modeling can be used to estimate
+ gain of models given time series data of the input and the output, and
+ no additional knowledge of the system that generated these responses.
+ To do this, I use two models, the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{DA}
+\end_layout
+
+\end_inset
+
+ model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Clark:2013bk"
+
+\end_inset
+
+ and a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{NLN}
+\end_layout
+
+\end_inset
+
+ model to generate synthetic datasets and fit LN models to them, estimating
+ gain in each case.
+ The DA model is a feed-forward model, where the stimulus is convolved with
+ two different filters and the response is a nonlinear combination of the
+ two signals:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{\textrm{DA}}(t)=\frac{\alpha K_{y}\otimes s(t)}{1+\beta K_{z}\otimes s(t)}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $K_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $K_{z}$
+\end_inset
+
+ are two filters and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are two parameters.
+ The gain of the DA model depends nonlinearly on the parameter 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ In the NLN model, an input nonlinearity acts on the stimulus, which is
+ then convolved by a filter, and finally passed through an output nonlinearity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{\textrm{NLN}}(t)=N(K\otimes a(t))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $a(t)$
+\end_inset
+
+ is parameterized by a simple Hill function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a(t)=\frac{s(t)}{s(t)+K_{D}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ is the half-maximum of the input nonlinearity.
+ In the NLN model, 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ sets the sensitivity of the model, and determines the range of stimuli
+ it can respond to.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement th
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/sigbhu/code/phd-thesis/gfx/ln-model-gain.png
+	lyxscale 30
+	width 80page%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ln-model-gain"
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Gain defined using a LN model
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Using a LN model to determine gain from input-output data.
+
+\emph default
+ (a-d) Gain estimation using synthetic data generated by a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acs{DA}
+\end_layout
+
+\end_inset
+
+ model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Clark:2013bk"
+
+\end_inset
+
+.
+ (a) Responses of a set of DA model with different 
+\begin_inset Formula $\beta$
+\end_inset
+
+ parameters to the same stimulus.
+ (b) Linear kernels fit to stimulus and response data.
+ (c) DA model responses 
+\emph on
+vs.
+
+\emph default
+ linear projections of the stimulus using the estimated filters in (b).
+ (d) Gain (the slope of the curves in (c) vs.
+ 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ for each model.
+ (e-j) Gain estimation using synthetic data generated by a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acf{NLN}
+\end_layout
+
+\end_inset
+
+ model.
+ (e) The half maximum 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ of the input nonlinearity is varied in this model.
+ (f) Linear filter of NLN model.
+ (g) Responses of NLN models with varying 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ are identical because the input stimulus is scaled by 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+.
+ (h) Estimated linear kernels (colors) cf.
+ actual filter (black).
+ (i) NLN model responses 
+\emph on
+vs.
+
+\emph default
+ linear projections of the stimulus using the estimated filters in (h).
+ (j) Gain (slopes of curves in (i) 
+\emph on
+vs.
+
+\emph default
+ 
+\begin_inset Formula $1/K_{D}$
+\end_inset
+
+ of the various models shown in (e).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Varying 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in the DA model generates responses that differ in magnitude to the same
+ stimulus (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+a).
+ However, filters extracted for all the models are similar (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+b), since the kinetic parameters of all the models used here do not change.
+ To visualize the effective nonlinearity of the LN model that best fits
+ this DA model, I plot the response of the DA model vs.
+ the stimulus projected through the best-fit filters (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+c).
+ These output nonlinearities resembled curves with different slopes, each
+ corresponding to the response of a different DA model with a different
+ value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Gain in this definition is simply the slope of the output nonlinearity
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+c).
+ Comparing gain computed this way to the 
+\begin_inset Formula $\beta$
+\end_inset
+
+ parameter of the DA model reveals a strong correlation (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+d), suggesting that LN analysis is able to estimate gain in this synthetic
+ data.
+ 
+\end_layout
+
+\begin_layout Standard
+Can LN analysis also estimate a meaningful gain in synthetic data generated
+ by a NLN model? Here, models with different sensitivities are constructed
+ by varying 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+e).
+ Does the gain of best-fit LN models recapitulate this changing 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+? To determine this, I generate synthetic data using scaled stimuli that
+ fluctuates around the 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ for each model shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+e.
+ The NLN model (filter shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+f) produces identical responses to these different stimulus (Fig.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+g), since changes in the stimulus scale are exactly compensated for by changes
+ in 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+ (by construction).
+ 
+\end_layout
+
+\begin_layout Standard
+The presence of the input nonlinearity means that the estimated filters
+ (colored curves in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+h) do not exactly correspond to the actual filter (black curve in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+h).
+ Nevertheless, they are similar.
+ Comparing the response of the NLN model to the stimuli projected through
+ each estimated filter shows that the nonlinearities of best-fit LN models
+ are different for the different NLN models with different 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+s.
+ In particular, responses from models with large 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+s produce shallow nonlinearities, and responses from models with small 
+\begin_inset Formula $K_{D}$
+\end_inset
+
+s produce steep nonlinearities (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ln-model-gain"
+
+\end_inset
+
+i).
+ Comparing the gain (the slope of the nonlinearities in (i)) to 
+\begin_inset Formula $1/K_{D}$
+\end_inset
+
+ revels a strong correlation, suggesting that LN analysis can be used to
+ estimate gain even when the underlying model has significant front-end
+ nonlinearities.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -5,9 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass classicthesis
-\begin_preamble
-
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language american
@@ -37,7 +34,7 @@
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
-\use_package esint 0
+\use_package esint 1
 \use_package mathdots 1
 \use_package mathtools 1
 \use_package mhchem 1
@@ -82,7 +79,21 @@ status open
 
 
 \backslash
-thispagestyle{empty}
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{addmargin}[-10mm]{-30mm}  %%%%% symmetrical margins
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+large
 \end_layout
 
 \begin_layout Plain Layout
@@ -98,13 +109,14 @@ hfill
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -112,34 +124,47 @@ status open
 
 
 \backslash
-centerline{
+begingroup 
+\backslash
+color{Maroon} 
+\backslash
+LARGE Gain Control in 
+\backslash
+emph{Drosphila} Olfactory Receptor Neurons 
+\backslash
+endgroup
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
-	filename gfx/gpl.png
-	lyxscale 10
-	scale 10
+	filename ../gfx/gain-control-cartoon.png
+	scale 30
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -147,16 +172,24 @@ status open
 
 
 \backslash
-noindent
-\backslash
-myName
+spacedlowsmallcaps{A Dissertation}
 \end_layout
 
 \end_inset
 
-: 
-\shape italic
+ 
+\end_layout
 
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -164,14 +197,24 @@ status open
 
 
 \backslash
-myTitle
+spacedlowsmallcaps{Presented to the Faculty of the Graduate school }
 \end_layout
 
 \end_inset
 
+ 
+\end_layout
 
-\shape default
-, 
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -179,16 +222,24 @@ status open
 
 
 \backslash
-textcopyright
+spacedlowsmallcaps{of}
 \end_layout
 
 \end_inset
 
+ 
+\end_layout
 
-\begin_inset space \space{}
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -196,50 +247,120 @@ status open
 
 
 \backslash
-myTime
+spacedlowsmallcaps{Yale University}
 \end_layout
 
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This work is free information: you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the Free
- Software Foundation, either version 3 of the License, or (at your option)
- any later version.
-\end_layout
-
-\begin_layout Standard
-This work is distributed in the hope that it will be useful, but without
- any warranty, without even the implied warranty of MERCHANTABILITY or FITNESS
- FOR A PARTICULAR PURPOSE.
- See the GNU General Public License for more details.
-\end_layout
-
-\begin_layout Standard
-You should have received a copy of the GNU General Public License along
- with this work.
- If not, see 
-\begin_inset Flex URL
+\align center
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-https://www.gnu.org/licenses/gpl-3.0
+
+\backslash
+spacedlowsmallcaps{in candidacy for the degree of}
 \end_layout
 
 \end_inset
 
-.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+spacedlowsmallcaps{Doctor of Philosophy}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+by 
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Srinivas Gorur-Shandilya 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Dissertation advisor: Thierry Emonet
+\end_layout
+
+\begin_layout Standard
+\align center
+Chair of advisory committee: Damon A.
+ Clark
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+December 2017 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -250,14 +371,6 @@ https://www.gnu.org/licenses/gpl-3.0
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace bigskip
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -265,148 +378,19 @@ status open
 
 
 \backslash
-noindent
-\backslash
-spacedlowsmallcaps{Supervisors}: 
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-myProf 
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-myOtherProf 
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mySupervisor
-\end_layout
-
-\end_inset
-
-
+end{addmargin} 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset VSpace medskip
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
 
 
 \backslash
-noindent
-\backslash
-spacedlowsmallcaps{Location}: 
-\backslash
-
-\backslash
-
+end{titlepage}
 \end_layout
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-myLocation
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace medskip
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-noindent
-\backslash
-spacedlowsmallcaps{Time Frame}: 
-\backslash
-
-\backslash
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-myTime
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \end_body

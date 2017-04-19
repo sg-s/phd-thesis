@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass classicthesis
+\begin_preamble
+
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language american
@@ -79,87 +82,14 @@ status open
 
 
 \backslash
-pdfbookmark[1]{Acknowledgments}{acknowledgments}
+thispagestyle{empty}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align right
-
-\shape slanted
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-\align right
-
-\shape slanted
-We have seen that computer programming is an art, 
-\begin_inset Newline newline
-\end_inset
-
- because it applies accumulated knowledge to the world, 
-\begin_inset Newline newline
-\end_inset
-
- because it requires skill and ingenuity, and especially 
-\begin_inset Newline newline
-\end_inset
-
- because it produces objects of beauty.
-
-\shape default
- 
-\begin_inset Newline newline
-\end_inset
-
- 
-\begin_inset VSpace medskip
-\end_inset
-
- — 
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-defcitealias{knuth:1974}{Donald E.
- Knuth}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-citetalias{knuth:1974}
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "knuth:1974"
-
-\end_inset
-
- 
+hfill
 \end_layout
 
 \end_inset
@@ -182,105 +112,290 @@ status open
 
 
 \backslash
-begingroup
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-let
-\backslash
-clearpage
-\backslash
-relax
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-let
-\backslash
-cleardoublepage
-\backslash
-relax
+centerline{
 \end_layout
 
 \end_inset
 
- 
+
+\begin_inset Graphics
+	filename ../gfx/gpl.png
+	lyxscale 10
+	scale 10
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
-\begin_layout Chapter*
-Acknowledgments
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-My advisor, Prof.
- Thierry Emonet, for the mentoring.
- 
-\end_layout
-
-\begin_layout Itemize
-Prof.
- Damon A.
- Clark, for introducing me to the problem of gain control, and for close
- support during my thesis work.
- 
-\end_layout
-
-\begin_layout Itemize
-My thesis committee, Profs.
- Damon A.
- Clark (chair), Charles Greer and John R.
- Carlson for their guidance and support.
-\end_layout
-
-\begin_layout Itemize
-The Yale INP department, especially Carol Russo, for making academic life
- at Yale a pleasure.
- 
-\end_layout
-
-\begin_layout Itemize
-My colleagues in the Emonet lab, past and present, especially Mahmut Demir,
- Carlotta Martelli, Yann Dufour, Nicholas Frankel, Amitabha Nandi, Xiongfei
- Fu, Setsu Kato, and Junjiajia Long, for pushing, pulling, and walking with.
- 
-\end_layout
-
-\begin_layout Itemize
-My colleagues in the Carlson lab, especially Zhe He, Neeraj Soni, Jennifer
- Sun, Tong-Wey Koh and Karen Menuz, for selfless help and opening their
- lab to me.
- 
-\end_layout
-
-\begin_layout Itemize
-All the people I have discussed my work with, at Yale and elsewhere, whose
- suggestions and help have made this work richer.
- 
-\end_layout
-
-\begin_layout Itemize
-My partner, Vanessa, for welcome distraction.
- 
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-endgroup
+noindent
+\backslash
+myName
+\end_layout
+
+\end_inset
+
+: 
+\shape italic
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myTitle
+\end_layout
+
+\end_inset
+
+
+\shape default
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcopyright
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myTime
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This work is free information: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the Free
+ Software Foundation, either version 3 of the License, or (at your option)
+ any later version.
+\end_layout
+
+\begin_layout Standard
+This work is distributed in the hope that it will be useful, but without
+ any warranty, without even the implied warranty of merchantability or fitness
+ for a particular purpose.
+ See the GNU General Public License for more details, available here: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.gnu.org/licenses/gpl-3.0
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+spacedlowsmallcaps{Supervisors}: 
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myProf 
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myOtherProf 
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mySupervisor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+spacedlowsmallcaps{Location}: 
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myLocation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+spacedlowsmallcaps{Time Frame}: 
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+myTime
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

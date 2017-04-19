@@ -298,7 +298,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-1.png
+	filename ../gfx/tfa-1.png
 	lyxscale 30
 	width 80page%
 
@@ -554,7 +554,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-2.png
+	filename ../gfx/tfa-2.png
 	lyxscale 30
 	width 80page%
 
@@ -731,7 +731,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-3.png
+	filename ../gfx/tfa-3.png
 	lyxscale 30
 	width 80page%
 
@@ -957,7 +957,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-4.png
+	filename ../gfx/tfa-4.png
 	lyxscale 30
 	width 80page%
 
@@ -1141,7 +1141,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-trial-to-trial.png
+	filename ../gfx/tfa-trial-to-trial.png
 	lyxscale 30
 	width 80page%
 
@@ -1431,7 +1431,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-design-2.png
+	filename ../gfx/tfa-design-2.png
 	lyxscale 30
 	width 60page%
 
@@ -1648,7 +1648,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-design-2-results.png
+	filename ../gfx/tfa-design-2-results.png
 	lyxscale 30
 	width 80page%
 
@@ -1816,7 +1816,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/tfa-design-3-results.png
+	filename ../gfx/tfa-design-3-results.png
 	lyxscale 30
 	width 80page%
 
@@ -1884,7 +1884,7 @@ Flight responses to ethyl acetate pulses delivered by olfactometer design
 \end_layout
 
 \begin_layout Section
-Conclusion 
+Discussion 
 \end_layout
 
 \begin_layout Standard

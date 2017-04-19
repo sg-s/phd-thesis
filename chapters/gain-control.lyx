@@ -428,7 +428,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/gain-control-fig1.pdf
+	filename ../gfx/gain-control-fig1.pdf
 	lyxscale 30
 	width 80page%
 
@@ -679,7 +679,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig1_S3.eps
+	filename ../gfx/fig1_S3.eps
 	lyxscale 30
 	width 80page%
 
@@ -876,7 +876,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig1_S4.eps
+	filename ../gfx/fig1_S4.eps
 	lyxscale 30
 	width 80page%
 
@@ -1063,7 +1063,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig2_nat_stim_main_annotated.pdf
+	filename ../gfx/fig2_nat_stim_main_annotated.pdf
 	lyxscale 70
 	width 80page%
 
@@ -1298,7 +1298,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig1_supp5.eps
+	filename ../gfx/fig1_supp5.eps
 	lyxscale 70
 	width 80page%
 
@@ -1641,7 +1641,7 @@ key "Baccus:2002fy"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1659,7 +1659,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig2_main.eps
+	filename ../gfx/fig2_main.eps
 	lyxscale 30
 	width 80page%
 
@@ -1830,7 +1830,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig2_S1.eps
+	filename ../gfx/fig2_S1.eps
 	lyxscale 30
 	width 80page%
 
@@ -1863,18 +1863,20 @@ name "fig:weber-law-supp"
 \end_inset
 
 
+\emph default
+
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
-\emph on
 Weber-Fechner Law broadly observed across odor-receptor combinations.
 \end_layout
 
 \end_inset
 
-Weber-Fechner Law broadly observed across odor-receptor combinations.
+
+\emph on
+ Weber-Fechner Law broadly observed across odor-receptor combinations.
 
 \emph default
  (a) Standard deviation 
@@ -2022,7 +2024,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig2_S2.eps
+	filename ../gfx/fig2_S2.eps
 	lyxscale 30
 	width 80page%
 
@@ -2223,7 +2225,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_main_annotated.pdf
+	filename ../gfx/fig4_main_annotated.pdf
 	lyxscale 30
 	width 80page%
 
@@ -2387,7 +2389,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_S3.eps
+	filename ../gfx/fig4_S3.eps
 	lyxscale 30
 	width 80page%
 
@@ -2601,7 +2603,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_main.eps
+	filename ../gfx/fig4_main.eps
 	lyxscale 30
 	width 80page%
 
@@ -2634,20 +2636,23 @@ name "fig:modularity"
 \end_inset
 
 
+\emph default
+
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
-\emph on
 Mean gain control occurs primarily at transduction, and variance gain control
  occurs both at transduction and at the firing machinery.
 \end_layout
 
 \end_inset
 
+
+\emph on
 Mean gain control occurs primarily at transduction, and variance gain control
- occurs both at transduction and at the firing machinery
+ occurs both at transduction and at the firing machinery.
+
 \emph default
  (a) Transduction input-output curves from stimulus to LFP.
  Colors indicate increasing mean stimulus.
@@ -2826,7 +2831,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_S1.eps
+	filename ../gfx/fig4_S1.eps
 	lyxscale 30
 	width 80page%
 
@@ -2993,7 +2998,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_S2.png
+	filename ../gfx/fig4_S2.png
 	lyxscale 30
 	width 80page%
 
@@ -3107,7 +3112,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig4_S3.png
+	filename ../gfx/fig4_S3.png
 	lyxscale 30
 	width 80page%
 
@@ -3329,7 +3334,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig5_main.eps
+	filename ../gfx/fig5_main.eps
 	lyxscale 30
 	width 80page%
 
@@ -3512,7 +3517,7 @@ key "Martelli:2013it"
  responses to odor pulses 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Cao:2016jl,Nagel:2011jj,Kaissling:1987gv"
+key "Cao:2016jl,Nagel:2011jj,Kaissling:1987gva"
 
 \end_inset
 
@@ -3546,7 +3551,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig6_main.pdf
+	filename ../gfx/fig6_main.pdf
 	lyxscale 30
 	width 80page%
 
@@ -3759,7 +3764,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig6_S1.eps
+	filename ../gfx/fig6_S1.eps
 	lyxscale 30
 	width 80page%
 
@@ -4180,7 +4185,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig8_s2.png
+	filename ../gfx/fig8_s2.png
 	lyxscale 30
 	width 50page%
 
@@ -4379,7 +4384,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig8_main.eps
+	filename ../gfx/fig8_main.eps
 	lyxscale 30
 	width 80page%
 
@@ -4625,7 +4630,7 @@ centerline{
 
 
 \begin_inset Graphics
-	filename gfx/fig8_S1_firing.png
+	filename ../gfx/fig8_S1_firing.png
 	lyxscale 30
 	width 80page%
 

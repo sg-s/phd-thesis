@@ -34,7 +34,7 @@
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
-\use_package esint 1
+\use_package esint 0
 \use_package mathdots 1
 \use_package mathtools 1
 \use_package mhchem 1
@@ -79,44 +79,53 @@ status open
 
 
 \backslash
-begin{titlepage}
+pdfbookmark[1]{Acknowledgments}{acknowledgments}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
 
-\backslash
-begin{addmargin}[-10mm]{-30mm}  %%%%% symmetrical margins
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hfill
-\end_layout
-
+\begin_inset Separator latexpar
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace vfill
+\align right
+
+\shape slanted
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align right
+
+\shape slanted
+We have seen that computer programming is an art, 
+\begin_inset Newline newline
 \end_inset
 
+ because it applies accumulated knowledge to the world, 
+\begin_inset Newline newline
+\end_inset
 
-\end_layout
+ because it requires skill and ingenuity, and especially 
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-\align center
+ because it produces objects of beauty.
+
+\shape default
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+ — 
 \begin_inset ERT
 status open
 
@@ -124,13 +133,148 @@ status open
 
 
 \backslash
-begingroup 
+defcitealias{knuth:1974}{Donald E.
+ Knuth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
 \backslash
-color{Maroon} 
+citetalias{knuth:1974}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "knuth:1974"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
 \backslash
-LARGE Gain Control in 
+begingroup
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-emph{Drosphila} Olfactory Receptor Neurons 
+let
+\backslash
+clearpage
+\backslash
+relax
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+let
+\backslash
+cleardoublepage
+\backslash
+relax
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter*
+Acknowledgments
+\end_layout
+
+\begin_layout Itemize
+My advisor, Prof.
+ Thierry Emonet, for the mentoring.
+ 
+\end_layout
+
+\begin_layout Itemize
+Prof.
+ Damon A.
+ Clark, for introducing me to the problem of gain control, and for close
+ support during my thesis work.
+ 
+\end_layout
+
+\begin_layout Itemize
+My thesis committee, Profs.
+ Damon A.
+ Clark (chair), Charles Greer and John R.
+ Carlson for their guidance and support during the twists and turns.
+ 
+\end_layout
+
+\begin_layout Itemize
+The Yale INP department, especially Carol Russo, for making academic life
+ at Yale a pleasure.
+ 
+\end_layout
+
+\begin_layout Itemize
+My colleagues in the Emonet lab, past and present, especially Mahmut Demir,
+ Carlotta Martelli, Yann Dufour, Nicholas Frankel, Amitabha Nandi, Xiongfei
+ Fu, Setsu Kato, Junjiajia Long and Adam Waite, for pushing, pulling, and
+ walking with.
+ 
+\end_layout
+
+\begin_layout Itemize
+My colleagues in the Carlson lab, especially Zhe He, Neeraj Soni, Jennifer
+ Sun, Tong-Wey Koh and Karen Menuz, for selfless help and opening their
+ lab to me.
+ 
+\end_layout
+
+\begin_layout Itemize
+My partner, Vanessa, for welcome distraction.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
 \backslash
 endgroup
 \end_layout
@@ -138,259 +282,6 @@ endgroup
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename gfx/gain-control-cartoon.png
-	scale 30
-
-\end_inset
-
-
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{A Dissertation}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{Presented to the Faculty of the Graduate school }
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{of}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{Yale University}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{in candidacy for the degree of}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-spacedlowsmallcaps{Doctor of Philosophy}
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-by 
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-Srinivas Gorur-Shandilya 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-Dissertation advisor: Thierry Emonet
-\end_layout
-
-\begin_layout Standard
-\align center
-Chair of advisory committee: Damon A.
- Clark
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-December 2017 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{addmargin} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{titlepage}
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \end_body
