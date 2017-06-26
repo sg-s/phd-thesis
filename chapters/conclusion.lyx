@@ -81,5 +81,170 @@ name "chap:Conclusion"
 Conclusion
 \end_layout
 
+\begin_layout Standard
+Although this dissertation still leaves many aspects of gain control in
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acfp{ORN}
+\end_layout
+
+\end_inset
+
+ unexplored, I hope that it will serve as a framework for further studies
+ on how ORNs encode odor signals and how they adapt their coding scheme
+ in the face of changing stimuli.
+ This dissertation studied gain control properties of one of three classes
+ of ORNs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ds"
+
+\end_inset
+
+, those expressing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acfp{OR}
+\end_layout
+
+\end_inset
+
+, and found two important features of ORN gain control in these neurons:
+ (i) gain control that followed the Weber-Fechner law; and (ii) complementary
+ kinetics that preserved the timing of odor encounters despite front-end
+ adaptation that slowed transduction responses.
+ It is of significant interest if these two features are preserved in the
+ two other classes of ORNs.
+ ORNs that express IRs and GRs detect signals that are qualitatively different
+ (like carbon dioxide), or function in ways that are mechanistically distinct
+ from ORs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wilson:2013fi"
+
+\end_inset
+
+, making it an open question if these ORNs show the same features of gain
+ control that I described in this dissertation.
+ Intriguingly, a recent study found that IR-expressing ORNs may not show
+ any adaptation to prolonged pulses, or pairs of pulses, but it is not clear
+ if they also do not follow the Weber-Fechner law 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cao:2016jl"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We found that the slowdown in kinetics of response emerged as a natural
+ consequence of receptor binding and activation, using a model that has
+ been widely used to reproduce disparate phenomenon like bacterial chemotaxis
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barkai:1997vj"
+
+\end_inset
+
+ or activation at the neuromuscular junction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BKatz:1957wz"
+
+\end_inset
+
+.
+ Whether these systems also show a slowdown in response kinetics could be
+ a question for further investigation, especially in cases like bacterial
+ chemotaxis where the overall output of the system is believed to exhibit
+ kinetics that are invariant with the adapted state 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Goentoro:2009gs"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A central principle in this dissertation is the importance of measuring
+ and precisely controlling odorant stimuli applied to ORNs, which led to
+ a quantitative understanding of how ORNs respond to various statistical
+ features of odorant stimuli.
+ While pioneering studies in ORN response phenomenology that used simple
+ odor stimuli led to a general understanding of how ORNs response to various
+ odor stimuli 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:2001ur,deBruyne:1999uh,Ayer:1992fj"
+
+\end_inset
+
+, more recent studies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Martelli:2013it,Nagel:2011jj,Kim:2010ds"
+
+\end_inset
+
+, and this dissertation, that have relied on more sophisticated stimuli
+ have uncovered new features of ORN response phenomenology that had not
+ been previously quantitatively understood.
+ 
+\end_layout
+
+\begin_layout Standard
+We have used the 
+\emph on
+Drosophila
+\emph default
+ olfactory system as a model system due to the large corpus of earlier studies
+ that have established techniques to record from these neurons 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:2001ur"
+
+\end_inset
+
+, the locations of identified neurons on the antenna 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shanbhag:1999wg,Shanbhag:2000kw"
+
+\end_inset
+
+, and maps that link the morphology of sensilla to the neurons they house
+ to the receptors they express to the odorant molecules they respond to
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hallem:2004ht,Kreher:2005va"
+
+\end_inset
+
+.
+ The framework we have used here could also be used in other insect species,
+ like mosquitoes or tsetse flies, to understand how their primary olfactory
+ neurons detect signals that help them feed on humans.
+ 
+\end_layout
+
 \end_body
 \end_document

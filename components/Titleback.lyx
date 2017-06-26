@@ -105,35 +105,14 @@ hfill
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centerline{
-\end_layout
-
+\begin_inset VSpace bigskip
 \end_inset
 
 
-\begin_inset Graphics
-	filename ../gfx/gpl.png
-	lyxscale 10
-	scale 10
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace bigskip
 \end_inset
 
 

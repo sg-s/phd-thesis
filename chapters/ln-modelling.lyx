@@ -89,6 +89,8 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
 acfp{ORN}
 \end_layout
 
@@ -209,7 +211,7 @@ name "fig:filter-extraction"
 status open
 
 \begin_layout Plain Layout
-Extracting linear filters from input and output time series data.
+Extracting linear filters from input and output time series data
 \end_layout
 
 \end_inset
@@ -312,7 +314,7 @@ Assuming that
 \end_inset
 
  decays to zero after time 
-\begin_inset Formula $T$
+\begin_inset Formula $\tau$
 \end_inset
 
 , we can estimate 
@@ -593,7 +595,7 @@ vs.
 \emph default
  estimated filter (red) (i) Adding a scaled diagonal matrix to the covariance
  matrix makes it look more diagonal.
- (j) Filter estimated from the regularized covarince matrix.
+ (j) Filter estimated from the regularized covariance matrix.
  
 \end_layout
 

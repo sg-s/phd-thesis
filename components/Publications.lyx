@@ -82,6 +82,15 @@ status open
 pdfbookmark[1]{Publications}{publications}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+numberline{}Disclosures}
+\end_layout
+
 \end_inset
 
  
@@ -104,8 +113,8 @@ reference "chap:Gain-control"
 
 \end_inset
 
- has been closely reproduced from a manuscript that is currently being revised
- for publication (Gorur-Shandilya S*, Demir M*, Long J, Clark DA
+ has been closely reproduced from a manuscript (Gorur-Shandilya S*, Demir
+ M*, Long J, Clark DA
 \begin_inset Formula $^{\dagger}$
 \end_inset
 
@@ -113,7 +122,7 @@ reference "chap:Gain-control"
 \begin_inset Formula $^{\dagger}$
 \end_inset
 
-, under review 
+, under review
 \begin_inset Foot
 status open
 
@@ -311,6 +320,24 @@ status open
 \begin_layout Plain Layout
 
 http://eneuro.org/content/3/4/ENEURO.0080-16.2016
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+numberline{}Publications during thesis work}
 \end_layout
 
 \end_inset

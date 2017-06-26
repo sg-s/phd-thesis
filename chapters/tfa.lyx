@@ -335,7 +335,7 @@ name "fig:tfa-schematic"
 status open
 
 \begin_layout Plain Layout
-Schematic of the tethered flight assay.
+Schematic of the tethered flight assay
 \end_layout
 
 \end_inset
@@ -591,7 +591,7 @@ name "fig:tfa-diff-odors"
 status open
 
 \begin_layout Plain Layout
-Flight responses to different odorants.
+Flight responses to different odorants
 \end_layout
 
 \end_inset
@@ -768,7 +768,7 @@ name "fig:tfa-pulse-amplitude"
 status open
 
 \begin_layout Plain Layout
-Flight responses to ethyl acetate pulses of different concentrations.
+Flight responses to ethyl acetate pulses of different concentrations
 \end_layout
 
 \end_inset
@@ -782,6 +782,8 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
 acs{WBF}
 \end_layout
 
@@ -994,7 +996,7 @@ name "fig:tfa-durations"
 status open
 
 \begin_layout Plain Layout
-Flight responses to ethyl acetate pulses with different durations.
+Flight responses to ethyl acetate pulses with different durations
 \end_layout
 
 \end_inset
@@ -1008,6 +1010,8 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
 acs{WBF}
 \end_layout
 
@@ -1178,7 +1182,7 @@ name "fig:tfa-trial-to-trial"
 status open
 
 \begin_layout Plain Layout
-Trial-to-trial variability in flight responses.
+Trial-to-trial variability in flight responses
 \end_layout
 
 \end_inset
@@ -1355,18 +1359,8 @@ acs{MFC}
 s are used to create an odorized airstream by blowing air over a scintillation
  vial containing pure odorant.
  The concentration of the odorant in the airstream is controlled by varying
- the ratio of the air flows through the odor vial and through the diluent
- vial (green box in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:tfa-design-2"
-
-\end_inset
-
-a).
- 
-\begin_inset Marginal
+ the ratio
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
@@ -1395,7 +1389,17 @@ reference "subsec:methods-gas-phase-dilution"
 
 \end_inset
 
-This odorized airstream feeds into a dual three way valve, which switches
+ of the air flows through the odor vial and through the diluent vial (green
+ box in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tfa-design-2"
+
+\end_inset
+
+a).
+ This odorized airstream feeds into a dual three way valve, which switches
  between two states.
  Normally, the valve diverts the odorized airstream to waste, and directs
  another clean airstream to the fly.
@@ -1468,7 +1472,7 @@ name "fig:tfa-design-2"
 status open
 
 \begin_layout Plain Layout
-A better olfactometer.
+A better olfactometer
 \end_layout
 
 \end_inset
@@ -1686,7 +1690,7 @@ status open
 
 \begin_layout Plain Layout
 Flight responses to ethyl acetate pulses delivered by olfactometer design
- #2.
+ #2
 \end_layout
 
 \end_inset
@@ -1701,6 +1705,8 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
 acs{WBF}
 \end_layout
 
@@ -1712,6 +1718,8 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
 acs{WBA}
 \end_layout
 
@@ -1854,7 +1862,7 @@ status open
 
 \begin_layout Plain Layout
 Flight responses to ethyl acetate pulses delivered by olfactometer design
- #3.
+ #3
 \end_layout
 
 \end_inset
@@ -1889,7 +1897,7 @@ Discussion
 
 \begin_layout Standard
 The flight of flies is a complex behavior, and depends on the integration
- of sensory cues from many modalities, including vision
+ of sensory cues from many modalities, including vision 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Frye:2004gj,Maimon:2010jy,Muijres:2014km"
@@ -1903,7 +1911,7 @@ key "Budick:2007gx"
 
 \end_inset
 
- and olfaction
+ and olfaction 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Frye:2004gj,Krishnan:2011eb"
@@ -1918,7 +1926,7 @@ one
 \emph default
  modality, olfaction, affect the response of flies.
  This task was made even more challenging by the fact that flies rely heavily
- on vision and mechanosensation during flight
+ on vision and mechanosensation during flight 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Maimon:2010jy,Muijres:2014km,Muijres:2015ku,Reiser:2013jt,Sherman:2003tg,Tammero:2002wd"
@@ -1933,7 +1941,7 @@ key "Maimon:2010jy,Muijres:2014km,Muijres:2015ku,Reiser:2013jt,Sherman:2003tg,Ta
 g any olfactory cue typically relies on valves that switches airstreams.
  Earlier studies have shown that turning valves on and off introduces large,
  transient fluctuations in the airspeed that occur on timescales as fast
- as a few milliseconds
+ as a few milliseconds 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Daly:2013ij"

@@ -489,6 +489,111 @@ acro{ab2B}{antennal basiconic 2 B}
 
   
 \backslash
+acro{cAMP}{cyclic adenosine monophosphate}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{DA}{Dynamical Adaptation}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{FCD}{Fold Change Detection}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{FT-IR}{Fourier-Transform Infrared Spectroscopy}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{GC-MS}{Gas Chromatography - Mass Spectroscopy}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{HH}{Hodgkin Huxley}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{IR}{Infra red}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{KS}{Kolmogorv-Smirnoff}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{LFP}{Local Field Potential}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{LED}{Light Emitting Diode}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{LIF}{Linear Integrate and Fire}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{LN}{Linear-Nonlinear}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{MFC}{Mass Flow Controller}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{NLN}{Nonlinear-Linear-Nonlinear}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+acro{NL}{Nonlinear-Linear}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
 acro{ORN}{Olfactory Receptor Neuron}
 \end_layout
 
@@ -510,27 +615,6 @@ acro{Orco}{Olfactory coreceptor}
 
   
 \backslash
-acro{cAMP}{cyclic adenosine monophosphate}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{PN}{Projection Neuron}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{LFP}{Local Field Potential}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
 acro{pb1A}{palp basiconic 1 A}
 \end_layout
 
@@ -545,49 +629,7 @@ acro{PID}{Photo Ionization Detector}
 
   
 \backslash
-acro{LIF}{Linear Integrate and Fire}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{MFC}{Mass Flow Controller}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{GC-MS}{Gas Chromatography - Mass Spectroscopy}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{FT-IR}{Fourier-Transform Infrared Spectroscopy}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{UV}{Ultra Violet}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{IR}{Infra red}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{LED}{Light Emitting Diode}
+acro{PN}{Projection Neuron}
 \end_layout
 
 \begin_layout Plain Layout
@@ -608,28 +650,7 @@ acro{TTX}{Tetrodotoxin}
 
   
 \backslash
-acro{KS}{Kolmogorv-Smirnoff}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{FCD}{Fold Change Detection}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{HH}{Hodgkin Huxley}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{WBF}{Wing Beat Frequency}
+acro{UV}{Ultra Violet}
 \end_layout
 
 \begin_layout Plain Layout
@@ -643,21 +664,7 @@ acro{WBA}{Wing Beat Amplitude}
 
   
 \backslash
-acro{DA}{Dynamical Adaptation}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{NLN}{Nonlinear-Linear-Nonlinear}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-acro{LN}{Linear-Nonlinear}
+acro{WBF}{Wing Beat Frequency}
 \end_layout
 
 \begin_layout Plain Layout

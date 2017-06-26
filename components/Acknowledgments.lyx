@@ -207,6 +207,15 @@ cleardoublepage
 relax
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+numberline{}Acknowledgements}
+\end_layout
+
 \end_inset
 
  
@@ -247,8 +256,7 @@ The Yale INP department, especially Carol Russo, for making academic life
 \begin_layout Itemize
 My colleagues in the Emonet lab, past and present, especially Mahmut Demir,
  Carlotta Martelli, Yann Dufour, Nicholas Frankel, Amitabha Nandi, Xiongfei
- Fu, Setsu Kato, Junjiajia Long and Adam Waite, for pushing, pulling, and
- walking with.
+ Fu, Setsu Kato, and Junjiajia Long, for pushing, pulling, and walking with.
  
 \end_layout
 

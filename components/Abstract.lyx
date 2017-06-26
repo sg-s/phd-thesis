@@ -145,23 +145,35 @@ Srinivas Gorur-Shandilya
 \end_layout
 
 \begin_layout Standard
-Insects find food and mates by navigating odorant plumes that can be highly
+Insects find food and mates by navigating odor plumes that can be highly
  intermittent, with intensities and durations that vary rapidly over orders
  of magnitude.
- Much is known about olfactory responses to pulses and steps, but it remains
- unclear how Olfactory Receptor Neurons (ORNs) detect the intensity and
- timing of natural stimuli, where the absence of scale in the signal makes
- detection a formidable olfactory task.
- By eliciting responses to stimuli with naturalistic and Gaussian statistics,
- I show in vivo that Drosophila ORNs contribute to naturalistic sensing
- by using receptor adaptation and saturation to change their gain in response
- to stimulus mean and variance.
+ Much is known about olfactory responses to simple pulses and steps of odor,
+ but it remains unclear how Olfactory Receptor Neurons (ORNs) detect the
+ intensity and timing of natural signals, where the absence of a characteristic
+ scale in the stimulus makes detection a formidable task.
+\end_layout
+
+\begin_layout Standard
+Here we propose a method by which odorant signals with naturalistic and
+ Gaussian statistics can be generated in a reproducible manner, and show
+ how the instantaneous flux of odorant molecules can be measured.
+ By eliciting ORN responses to these stimuli, we show 
+\emph on
+in vivo
+\emph default
+ that 
+\emph on
+Drosophila
+\emph default
+ ORNs contribute to naturalistic sensing by using receptor adaptation and
+ saturation to change their gain in response to stimulus mean and variance.
  Mean-dependent gain control followed the Weber-Fechner relation and occurred
  primarily at odor transduction, while variance-dependent gain control occurred
  both at transduction and at spiking.
  Odorant transduction and spiking generation possessed complementary kinetic
- properties, that together preserved the timing of odorant encounters in
- ORN spiking, regardless of intensity.
+ properties, that together preserved the timing of odor encounters in ORN
+ spiking despite the fact that adaptation slowed transduction.
  
 \end_layout
 
@@ -171,13 +183,20 @@ Insects find food and mates by navigating odorant plumes that can be highly
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
 endgroup
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
 \end_inset

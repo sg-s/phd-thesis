@@ -94,7 +94,7 @@ The olfactory world of insects
 \begin_layout Standard
 Olfaction — the sense of smell — is a key sensory modality in animals.
  Airborne chemicals can be transported through the air over long distances,
- and their detection can help insects navigate plumes of odors to their
+ and their detection allows insects to navigate plumes of odors to their
  source, helping them find food and mates 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -105,7 +105,7 @@ key "Murlis:1992kp,Riffell:2008hp,Gaudry:2012hk"
 .
  For example, mosquitoes use their sense of smell to detect a variety of
  volatile molecules produced by humans and animals, especially carbon dioxide,
- to find hosts to feed on
+ to find hosts to feed on 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Takken:1999ez,Verhulst:2011ko,Qiu:2006ei"
@@ -760,16 +760,13 @@ key "Shanbhag:2000kw"
 , while the maxillary palp only has basiconic sensilla.
  The structural and functional organization of sensilla into these groups
  is similar in other insects 
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-(de Bruyne and Baker 2008).
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deBruyne:2008er"
 
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Standard
@@ -1428,24 +1425,7 @@ where
 \begin_inset Formula $F<1$
 \end_inset
 
-, the system responds to steps of stimulus with transient responses reminiscent
- of the 
-\begin_inset Quotes eld
-\end_inset
-
-adaptation
-\begin_inset Quotes erd
-\end_inset
-
- described in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cao:2016jl,Cafaro:2016ed,Nagel:2011jj"
-
-\end_inset
-
-.
- Under these conditions, eq.
+, the system is stable, and eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref

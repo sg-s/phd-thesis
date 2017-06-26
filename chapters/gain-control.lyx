@@ -466,8 +466,7 @@ status open
 
 \begin_layout Plain Layout
 Adaptation and saturation modulate ORN responses to broadly distributed
- naturalistic stimuli.
- 
+ naturalistic stimuli 
 \end_layout
 
 \end_inset
@@ -572,7 +571,7 @@ status open
 
 
 \backslash
-acf(LFP)
+acf{LFP}
 \end_layout
 
 \end_inset
@@ -587,7 +586,7 @@ status open
 
 
 \backslash
-acf(TTX)
+acf{TTX}
 \end_layout
 
 \end_inset
@@ -914,8 +913,7 @@ status open
 
 \begin_layout Plain Layout
 Deviations from linearity persist even when filters extracted from Gaussian
- stimuli are used to project naturalistic stimulus.
- 
+ stimuli are used to project naturalistic stimulus
 \end_layout
 
 \end_inset
@@ -1346,6 +1344,8 @@ d whiffs
  
 \emph on
 An 
+\emph default
+
 \begin_inset ERT
 status open
 
@@ -1358,7 +1358,9 @@ acs{NL}
 
 \end_inset
 
- model (static input nonlinearity followed by a linear filter) cannot reproduce
+
+\emph on
+model (static input nonlinearity followed by a linear filter) cannot reproduce
  context-dependence of LFP responses to similar-sized whiffs.
 
 \emph default
@@ -1697,8 +1699,7 @@ status open
 
 \begin_layout Plain Layout
 ORNs decrease gain with stimulus mean, consistent with the Weber-Fechner
- Law.
- 
+ Law
 \end_layout
 
 \end_inset
@@ -1869,7 +1870,7 @@ name "fig:weber-law-supp"
 status open
 
 \begin_layout Plain Layout
-Weber-Fechner Law broadly observed across odor-receptor combinations.
+Weber-Fechner Law broadly observed across odor-receptor combinations
 \end_layout
 
 \end_inset
@@ -2062,8 +2063,6 @@ status open
 
 \begin_layout Plain Layout
 Ability of NL models to reproduce observed change in input-output curves
-\emph on
-.
 \end_layout
 
 \end_inset
@@ -2263,8 +2262,6 @@ status open
 
 \begin_layout Plain Layout
 ORNs decrease gain with stimulus variance
-\emph on
-.
 \end_layout
 
 \end_inset
@@ -2427,8 +2424,6 @@ status open
 
 \begin_layout Plain Layout
 Variance gain control in Gaussian stimuli
-\emph on
-.
 \end_layout
 
 \end_inset
@@ -2643,7 +2638,7 @@ status open
 
 \begin_layout Plain Layout
 Mean gain control occurs primarily at transduction, and variance gain control
- occurs both at transduction and at the firing machinery.
+ occurs both at transduction and at the firing machinery
 \end_layout
 
 \end_inset
@@ -2868,8 +2863,7 @@ name "fig:modularity-supp"
 status open
 
 \begin_layout Plain Layout
-Mean and variance gain control at transduction and spiking.
- 
+Mean and variance gain control at transduction and spiking 
 \end_layout
 
 \end_inset
@@ -3035,8 +3029,7 @@ name "fig:calcium-mean"
 status open
 
 \begin_layout Plain Layout
-Intracellular Calcium increases with odor concentration.
- 
+Intracellular Calcium increases with odor concentration 
 \end_layout
 
 \end_inset
@@ -3149,8 +3142,7 @@ name "fig:calcium-variance"
 status open
 
 \begin_layout Plain Layout
-Intracellular Calcium does not change with stimulus variance.
- 
+Intracellular Calcium does not change with stimulus variance 
 \end_layout
 
 \end_inset
@@ -3162,7 +3154,7 @@ Intracellular Calcium does not change with stimulus variance.
  variance (0 - 5 s) and high variance (5 - 10 s).
  (b) Relative fold change of GCamp6f fluorescence from ROIs over ab3 sensilla
  in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
- (c) Relative fold change of GCamp6 fluorescence from ROIs over control
+ (c) Relative fold change of GCamp6f fluorescence from ROIs over control
  regions outside sensilla in w; 22a-GAL4/+; UAS-GCamp6f/+ flies.
  (d) Mean stimulus 
 \emph on
@@ -3371,7 +3363,7 @@ name "fig:chrimson"
 status open
 
 \begin_layout Plain Layout
-Modularity of gain control revealed by optogenetic stimulation.
+Modularity of gain control revealed by optogenetic stimulation
 \end_layout
 
 \end_inset
@@ -3588,7 +3580,7 @@ name "fig:kinetics"
 status open
 
 \begin_layout Plain Layout
-Adaptation to the mean slows down LFP, but not firing rate.
+Adaptation to the mean slows down LFP, but not firing rate
 \end_layout
 
 \end_inset
@@ -3803,8 +3795,7 @@ name "fig:kinetics-variance"
 status open
 
 \begin_layout Plain Layout
-Variance gain control does not change response kinetics.
- 
+Variance gain control does not change response kinetics
 \end_layout
 
 \end_inset
@@ -4422,8 +4413,7 @@ status open
 
 \begin_layout Plain Layout
 A modified two state receptor model reproduces Weber’s Law and adaptive
- slowdown in LFP responses.
- 
+ slowdown in LFP responses 
 \end_layout
 
 \end_inset
@@ -4668,7 +4658,7 @@ status open
 
 \begin_layout Plain Layout
 Front-end adaptation followed by a LN model reproduces firing rate responses
- to Gaussian and naturalistic stimuli.
+ to Gaussian and naturalistic stimuli
 \end_layout
 
 \end_inset
@@ -5141,7 +5131,11 @@ key "Nagel:2011jj"
  a of the Or-Orco complex feeds back onto the free energy difference between
  the active and inactive state of the unbound Or-Orco complex, which in
  turns affects both the rates of activation and inactivation of the complex;
- (ii) the rate at which is modified only depends on the activity a.
+ (ii) the rate at which is modified only depends on the activity 
+\begin_inset Formula $a$
+\end_inset
+
+.
  
 \end_layout
 
@@ -5437,7 +5431,7 @@ Dynamic gain control could aid in naturalistic odor detection
 
 \begin_layout Standard
 Previous studies of olfactory adaptation employed conditioning and probe
- stimuli
+ stimuli 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cafaro:2016ed,Martelli:2013it,Nagel:2011jj"
@@ -5617,7 +5611,7 @@ acf{FCD}
 
 \end_inset
 
-
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Goentoro:2009gs"
@@ -5709,7 +5703,7 @@ key "Cao:2016jl"
 \end_inset
 
 .
- While ORs play an important role in larval olfactory navigation
+ While ORs play an important role in larval olfactory navigation 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "HernandezNunez:2015dd,Skanata:2015ea,Mathew:2013ic,Schulze:2015bt"
@@ -5789,7 +5783,7 @@ Spike sorting.
 
 \end_inset
 
- All sensilla recorded from in this study contained two neurons
+ All sensilla recorded from in this study contained two neurons 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "deBruyne:2001ur,Song:2012gp"
@@ -5972,7 +5966,7 @@ Odor stimulus generation
 \end_layout
 
 \begin_layout Standard
-Details on the odoroant stimulus delivery are found in Chapter 
+Details on the odorant stimulus delivery are found in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:methods-paper"
@@ -6576,7 +6570,7 @@ f-g).
 \end_layout
 
 \begin_layout Subsection
-Modelling
+Modeling
 \end_layout
 
 \begin_layout Subsubsection
@@ -6587,9 +6581,23 @@ Stimulus binding and the activity of the Or-Orco complexes.
 \begin_layout Standard
 We assume that Or and Orco form a complex that can exist in two conformations
  that can bind ligand.
- The concentration of unbound active complexes is C* and that of unbound
- inactive one is C.
- The corresponding concentrations for the bound complexes are C*S and CS
+ The concentration of unbound active complexes is 
+\begin_inset Formula $C^{*}$
+\end_inset
+
+ and that of unbound inactive one is 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ The corresponding concentrations for the bound complexes are 
+\begin_inset Formula $C^{*}S$
+\end_inset
+
+ and 
+\begin_inset Formula $CS$
+\end_inset
+
  (Fig.
  
 \begin_inset CommandInset ref
@@ -6605,7 +6613,7 @@ a).
 \begin_layout Standard
 \begin_inset Formula 
 \[
-a=\frac{C*+C*S}{C+CS+C*+C*S}
+a=\frac{C^{*}+C^{*}S}{C+CS+C^{*}+C^{*}S}
 \]
 
 \end_inset
@@ -6622,7 +6630,7 @@ a=\frac{C*+C*S}{C+CS+C*+C*S}
 \begin_inset Formula 
 \begin{flalign*}
 {} & P_{b}=\frac{S}{S+K_{\textrm{off}}}\\
-{} & P_{b}*=\frac{S}{S+K_{\textrm{on}}}
+{} & P_{b}^{*}=\frac{S}{S+K_{\textrm{on}}}
 \end{flalign*}
 
 \end_inset
@@ -6659,11 +6667,19 @@ key "Skoge:2013fq"
 
 ), which constrains the free energy difference between 
 \emph on
-C*S
+
+\begin_inset Formula $C^{*}S$
+\end_inset
+
+
 \emph default
  and 
 \emph on
-CS
+
+\begin_inset Formula $CS$
+\end_inset
+
+
 \emph default
  to be 
 \begin_inset Formula $\varepsilon^{b}=\varepsilon+\log(K_{\textrm{on}}/K_{\textrm{off}})$
@@ -6676,7 +6692,7 @@ CS
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{dC*}{dt}=w_{+}^{u}C-w_{-}^{u}C*
+\frac{dC^{*}}{dt}=w_{+}^{u}C-w_{-}^{u}C^{*}
 \]
 
 \end_inset
@@ -6788,7 +6804,7 @@ Given a steady state signal
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\bar{a}(S,\varepsilon)=\frac{1}{1+\frac{w_{-}}{w_{+}}}=\frac{1}{1+e^{\varepsilon(\frac{1+S/K_{\textrm{off}}}{1+S/K_{\textrm{on}}})}}
+\bar{a}(S,\varepsilon)=\frac{1}{1+\frac{w_{-}}{w_{+}}}=\frac{1}{1+e^{\varepsilon}\frac{1+S/K_{\textrm{off}}}{1+S/K_{\textrm{on}}}}
 \]
 
 \end_inset
@@ -6964,7 +6980,7 @@ where
 \begin_inset Formula $K_{LFP}$
 \end_inset
 
- is a linear time-invariant monolobed filter that is given by
+ is a linear time-invariant mono-lobed filter that is given by
 \end_layout
 
 \begin_layout Standard
