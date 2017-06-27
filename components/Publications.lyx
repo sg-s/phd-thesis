@@ -122,7 +122,7 @@ reference "chap:Gain-control"
 \begin_inset Formula $^{\dagger}$
 \end_inset
 
-, under review
+, eLife 2017 
 \begin_inset Foot
 status open
 
@@ -325,6 +325,50 @@ http://eneuro.org/content/3/4/ENEURO.0080-16.2016
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Gorur-Shandilya S*, Demir M*, Long J, Clark DA
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+, Emonet T
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+.
+ (2017) eLife 2017 
+\emph on
+Olfactory receptor neurons use gain control and complementary kinetics to
+ encode intermittent odorant stimuli.
+
+\emph default
+ Available at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://elifesciences.org/articles/27670
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+*, 
+\begin_inset Formula $\dagger$
+\end_inset
+
+ (equal contribution)
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
