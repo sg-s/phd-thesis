@@ -98,6 +98,10 @@ status open
 pdfbookmark[1]{Abstract}{Abstract}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -141,6 +145,10 @@ Srinivas Gorur-Shandilya
 \begin_inset VSpace bigskip
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
