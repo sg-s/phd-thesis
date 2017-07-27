@@ -1,9 +1,8 @@
 *.DS_Store
 *.docx
 *.lyx~
-*.pdf
-*.jpg
-*.png
-*.eps
+pdfs/
+keynote-design-files/
+*.key
 *.lyx#
 *lyxformat*
